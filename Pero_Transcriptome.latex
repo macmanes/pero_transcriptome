@@ -9,6 +9,7 @@
 % dvipdf plos.template
 \documentclass[11pt]{article}
 \usepackage{natbib}
+\usepackage{hyperref}
 
 % amsmath package, useful for mathematical formulas
 \usepackage{amsmath}
@@ -89,7 +90,16 @@ $\ast$ E-mail: macmanes@gmail.com, @PeroMHC
 
 For biologists interested in understanding the relationship between fitness, genotype, and phenotype, modern sequencing technologies provide for an unprecedented opportunity to gain a deep understanding of genome level processes that together, underlie adaptation.  One interesting example of adaptation lies in animals ability to survive desert conditions. Here, heat \emph{and} drought provide for powerful selective forces, testing animals' ability to osmoregulate and thus to survive. \\
 
-Specifically, the maintenance of water balance in animals is one of the most important physiologic processes, and is critical to desert survival. Indeed, mammals are exquisitely sensitive to changes in osmolality, with slight derangement eliciting physiologic compromise.  When the loss of water exceeds dietary intake, dehydration - and in extreme cases, death - can occur.  Unlike most mammals, animals living in desert habitats are subjected to long periods of extreme heat and intense drought.  As a result, desert animals have evolved mechanisms through which physiologic homeostasis is maintained despite severe and prolonged dehydration. While the elucidation of these mechanisms is beyond the scope of this manuscript, we aim here to lay the groundwork by characterizing the transcriptome from four distinct tissues (brain, liver, kidney, testes). Further, via sequencing the renal tissue of a total of 15 additional animals, we characterize nucleotide polymorphism and genome wide patterns of natural selection. 
+Specifically, the maintenance of water balance in animals is one of the most important physiologic processes, and is critical to desert survival. Indeed, mammals are exquisitely sensitive to changes in osmolality, with slight derangement eliciting physiologic compromise.  When the loss of water exceeds dietary intake, dehydration - and in extreme cases, death - can occur.  Unlike most mammals, animals living in desert habitats are subjected to long periods of extreme heat and intense drought.  As a result, desert animals have evolved mechanisms through which physiologic homeostasis is maintained despite severe and prolonged dehydration. \\
+
+One such desert-adapted rodent, a cricetid rodent endemic to the Southwest United states is a novel model for the study of adaptation to desert environments. These rodents, positioned in a clade of well known animals (e.g. \textit{P. maniculatus} and \textit{P. polionotus}) and are sister \citep{Bradley:2007jo} to the genetically monogamous California mouse \textit{P. californicus}. The genus has been extensively studied , 
+
+They have a lifespan typical of small mammals, and therefore an animal may live it's entire life without ever drinking water.  
+
+
+
+
+While the elucidation of these mechanisms is beyond the scope of this manuscript, we aim here to lay the groundwork by characterizing the transcriptome from four distinct tissues (brain, liver, kidney, testes). Further, via sequencing the renal tissue of a total of 15 additional animals, we characterize nucleotide polymorphism and genome wide patterns of natural selection. 
 
 
 
@@ -123,14 +133,17 @@ submitted for Illumina sequencing using two lanes of 150nt paired end sequencing
 
 \subsection*{Sequence Data Preprocessing and Assembly}
 
-Following recommendations from MacManes \citep{MacManes:2014io} and Mbandi \citep{Christoffels:2014bg}, adapter sequence contamination was removed, and low quality nucleotides (defined as \textsc{Phred} \textless 2) were removed from the dataset using the program Trimmomatic version 0.32  \citep{Lohse:2012fg}. We concatenated sequence data from each reference tissue type and assembled them using the Trinity beta version released 16 March 2014 \citep{Haas:2013jq}. We used flags indicating the stranded nature of sequencing reads and set maximum physical distance between read pairs to 999nt. To filter the raw sequence assembly, I estimated TPM for each assembled sequence using bwa-mem \citep{Li:2013wn} and eXpress \citep{Roberts:2012dh}, removing all contigs whose expression was less than TPM=1 \citep{Haas:2013jq}.  
-
-\\
+Following recommendations from MacManes \citep{MacManes:2014io} and Mbandi \citep{Christoffels:2014bg}, adapter sequence contamination was removed, and low quality nucleotides (defined as \textsc{Phred} \textless 2) were removed from the dataset using the program Trimmomatic version 0.32  \citep{Lohse:2012fg}. We concatenated sequence data from each reference tissue type and assembled them using the Trinity beta version released 16 March 2014 \citep{Haas:2013jq}. We used flags indicating the stranded nature of sequencing reads and set maximum allowable physical distance between read pairs to 999nt. The assembly was conducted on the \textsc{Xsede} computer resource Blacklight. To filter the raw sequence assembly, I estimated TPM for each assembled sequence using bwa-mem version 0.77 \citep{Li:2013wn} and eXpress version 1.51 \citep{Roberts:2012dh}, removing all contigs whose expression was less than TPM=1 \citep{Haas:2013jq}. \\
 
 \subsection*{Assembled Sequence Annotation}
 
+From the filtered assembly, I extracted putative coding sequences using Transdecoder version 16Jan2014 (\url{http://transdecoder.sourceforge.net/}). These putative protein coding sequences were annotated using default settings of the blastx algorithm \citep{Camacho:2009fc} against the SwissProt database downloaded on 1 March 2014. Because transcriptome assemblies typically contain non-coding elements (e.g. ncRNA) in addition to protein coding sequence, we annotated the entire filtered dataset using the NCBI nt dataset, downloaded on 1 March 2014. Lastly, because rapidly evolving nucleotide sequences may evade detection by blast algorithms, we used HMMER3 \citep{Wheeler:2013gj} to search for conserved protein domains contained in the Pfam database \citep{Punta:2012ko}. \\
 
+To identify sequences unique to each tissue type, I mapped sequence reads from each tissue type to the reference assembly using bwa-mem. We estimated expression individually for the four tissues. Interesting patterns of expression, including instances where expression was limited to a single tissue type were identified. \\ 
 
+\subsection*{Population Genomics}
+
+In addition to the reference individual sequenced at four different tissue types, we sequenced 15 other conspecific individuals from the same population, located in Palm Desert, California. Sequence data were mapped to the reference transcriptome using bwa-mem. The alignments were sorted and converted to BAM format, then passed to the program \textsc{Angsd}, which was used for calculating the folded site frequency spectrum (SFS) and Tajima's D \citep{Korneliussen:2013uz}.
 
 % Do NOT remove this, even if you are not including acknowledgments
 \section*{Acknowledgments}
