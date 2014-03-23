@@ -10,6 +10,7 @@
 \documentclass[11pt]{article}
 \usepackage{natbib}
 \usepackage{hyperref}
+\usepackage{lineno}
 
 % amsmath package, useful for mathematical formulas
 \usepackage{amsmath}
@@ -81,6 +82,8 @@ Michael B. Eisen $^{2}$,
 $\ast$ E-mail: macmanes@gmail.com, @PeroMHC
 \end{flushleft}
 
+\linenumbers
+
 % Please keep the abstract between 250 and 300 words
 \section*{Abstract}
 
@@ -92,30 +95,10 @@ For biologists interested in understanding the relationship between fitness, gen
 
 Specifically, the maintenance of water balance in animals is one of the most important physiologic processes, and is critical to desert survival. Indeed, mammals are exquisitely sensitive to changes in osmolality, with slight derangement eliciting physiologic compromise.  When the loss of water exceeds dietary intake, dehydration - and in extreme cases, death - can occur.  Unlike most mammals, animals living in desert habitats are subjected to long periods of extreme heat and intense drought.  As a result, desert animals have evolved mechanisms through which physiologic homeostasis is maintained despite severe and prolonged dehydration. \\
 
-One such desert-adapted rodent, a cricetid rodent endemic to the Southwest United states is a novel model for the study of adaptation to desert environments. These rodents, positioned in a clade of well known animals (e.g. \textit{P. maniculatus} and \textit{P. polionotus}) and are sister \citep{Bradley:2007jo} to the genetically monogamous California mouse \textit{P. californicus}. The genus has been extensively studied , 
+One such desert-adapted rodent, a cricetid rodent endemic to the Southwest United states is a novel model for the study of adaptation to desert environments. They have a lifespan typical of small mammals, and therefore an individual may live it's entire life without ever drinking water. These rodents have distinct advantage over other desert animals (e.g. \textit{Dipodomys}) in that they breed readily in captivity, which enables laboratory studies of the phenotype of interest. In addition the focal species is positioned in a clade of well known animals (e.g.\textit{P. californicus}, \textit{P. maniculatus} and \textit{P. polionotus}) \citep{Bradley:2007jo}. There are growing genetic and genomic resources available \citep{Shorter:2014kw,Panhuis:2011co,Shorter:2012ib}. \\
 
-They have a lifespan typical of small mammals, and therefore an animal may live it's entire life without ever drinking water.  
+While the elucidation of the mechanisms underlying adaptation to desert survival is beyond the scope of this manuscript, we aim here to lay the groundwork by characterizing the transcriptome from four distinct tissues (brain, liver, kidney, testes). These data will be included in current larger effort aimed at sequencing the entire genome. Further, via sequencing the renal tissue of a total of 15 additional animals, we characterize nucleotide polymorphism and genome wide patterns of natural selection. Together, these investigations will aid in our overarching goal -- to understand the genetic bases of adaptation in \textit{P. eremicus}.
 
-
-
-
-While the elucidation of these mechanisms is beyond the scope of this manuscript, we aim here to lay the groundwork by characterizing the transcriptome from four distinct tissues (brain, liver, kidney, testes). Further, via sequencing the renal tissue of a total of 15 additional animals, we characterize nucleotide polymorphism and genome wide patterns of natural selection. 
-
-
-
-
-% Results and Discussion can be combined.
-\section*{Results}
-
-\subsection*{Subsection 1}
-
-\subsection*{Subsection 2}
-
-\section*{Discussion}
-
-% You may title this section "Methods" or "Models". 
-% "Models" is not a valid title for PLoS ONE authors. However, PLoS ONE
-% authors may use "Analysis" 
 \section*{Materials and Methods}
 
 \subsection*{RNA extraction and Sequencing}
@@ -143,7 +126,21 @@ To identify sequences unique to each tissue type, I mapped sequence reads from e
 
 \subsection*{Population Genomics}
 
-In addition to the reference individual sequenced at four different tissue types, we sequenced 15 other conspecific individuals from the same population, located in Palm Desert, California. Sequence data were mapped to the reference transcriptome using bwa-mem. The alignments were sorted and converted to BAM format, then passed to the program \textsc{Angsd}, which was used for calculating the folded site frequency spectrum (SFS) and Tajima's D \citep{Korneliussen:2013uz}.
+In addition to the reference individual sequenced at four different tissue types, we sequenced 15 other conspecific individuals from the same population, located in Palm Desert, California. Sequence data were mapped to the reference transcriptome using bwa-mem. The alignments were sorted and converted to BAM format, then passed to the program \textsc{Angsd}, which was used for calculating the folded site frequency spectrum (SFS) and Tajima's D \citep{Korneliussen:2013uz}. \\
+
+
+% Results and Discussion can be combined.
+\section*{Results}
+
+\subsection*{Subsection 1}
+
+\subsection*{Subsection 2}
+
+\section*{Discussion}
+
+% You may title this section "Methods" or "Models". 
+% "Models" is not a valid title for PLoS ONE authors. However, PLoS ONE
+% authors may use "Analysis" 
 
 % Do NOT remove this, even if you are not including acknowledgments
 \section*{Acknowledgments}
