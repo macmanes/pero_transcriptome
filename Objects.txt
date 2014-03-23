@@ -1,0 +1,22 @@
+Object IDs and corresponding URLs:
+
+2697010: http://www.ncbi.nlm.nih.gov/biosample/2697010
+2697011: http://www.ncbi.nlm.nih.gov/biosample/2697011
+2697012: http://www.ncbi.nlm.nih.gov/biosample/2697012
+2697013: http://www.ncbi.nlm.nih.gov/biosample/2697013
+2697014: http://www.ncbi.nlm.nih.gov/biosample/2697014
+2697015: http://www.ncbi.nlm.nih.gov/biosample/2697015
+2697016: http://www.ncbi.nlm.nih.gov/biosample/2697016
+2697017: http://www.ncbi.nlm.nih.gov/biosample/2697017
+2697018: http://www.ncbi.nlm.nih.gov/biosample/2697018
+2697019: http://www.ncbi.nlm.nih.gov/biosample/2697019
+2697020: http://www.ncbi.nlm.nih.gov/biosample/2697020
+2697021: http://www.ncbi.nlm.nih.gov/biosample/2697021
+2697022: http://www.ncbi.nlm.nih.gov/biosample/2697022
+2697023: http://www.ncbi.nlm.nih.gov/biosample/2697023
+2697024: http://www.ncbi.nlm.nih.gov/biosample/2697024
+2697025: http://www.ncbi.nlm.nih.gov/biosample/2697025
+2697026: http://www.ncbi.nlm.nih.gov/biosample/2697026
+2697027: http://www.ncbi.nlm.nih.gov/biosample/2697027
+2697028: http://www.ncbi.nlm.nih.gov/biosample/2697028
+2697029: http://www.ncbi.nlm.nih.gov/biosample/2697029

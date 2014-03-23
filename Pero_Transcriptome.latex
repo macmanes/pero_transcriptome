@@ -101,6 +101,10 @@ While the elucidation of the mechanisms underlying adaptation to desert survival
 
 \section*{Materials and Methods}
 
+\subsection*{Animal Collection and Study Design}
+
+Animals 
+
 \subsection*{RNA extraction and Sequencing}
 
 Total RNA was extracted from each tissue using a TRIzol extraction (Invitrogen) following the manufacturers instructions. Because preparation of an RNA
@@ -132,7 +136,12 @@ In addition to the reference individual sequenced at four different tissue types
 % Results and Discussion can be combined.
 \section*{Results}
 
-\subsection*{Subsection 1}
+\subsection*{RNA extraction, Sequencing, Assembly}
+
+Raw assembly 743314 and 418Mb
+Filtered Assembly: 130764 149Mb
+cds: 64355 and 60Mb 37960 complete 4203 3prime  16880 5prime 5312 internal
+
 
 \subsection*{Subsection 2}
 
@@ -165,16 +174,44 @@ In addition to the reference individual sequenced at four different tissue types
 
 
 \section*{Tables}
-%\begin{table}[!ht]
-%\caption{
-%\bf{Table title}}
-%\begin{tabular}{|c|c|c|}
-%table information
-%\end{tabular}
-%\begin{flushleft}Table caption
-%\end{flushleft}
-%\label{tab:label}
-% \end{table}
+
+\vspace{10mm}
+\textbf{\hypertarget{Table 1}{Table 1}} \\
+\begin{center}
+\begin{tabular}{l|c }
+\textsc{Dataset}& \textsc{Num. Raw Reads} \\
+\hline 
+\textsc{Peer360 Testes} & 32M PE  \\
+\textsc{Peer360 Liver} & 53M PE   \\
+\textsc{Peer360 Kidney} & 56M PE   \\
+\textsc{Peer360 Brain}  & 23M PE \\
+\textsc{Peer305}  & 19M PE  \\
+\textsc{Peer308}  & 15M PE  \\
+\textsc{Peer319}  & 14M PE  \\
+\textsc{Peer321}  & 9M SE  \\
+\textsc{Peer340}  & 16M PE  \\
+\textsc{Peer352}  & 14M PE  \\
+\textsc{Peer354}  & 9M SE  \\
+\textsc{Peer359}  & 14M PE  \\
+\textsc{Peer365}  & 16M PE \\
+\textsc{Peer366}  & 16M PE  \\
+\textsc{Peer368}  & 14M PE  \\
+\textsc{Peer369}  & 14M PE  \\
+\textsc{Peer372}  & 17M SE  \\
+\textsc{Peer373}  & 23M SE  \\
+\textsc{Peer380}  & 16M SE  \\
+\textsc{Peer382}  & 14M SE  \\
+\end{tabular}
+\begin{quote}
+\small{Table 1. The number of sequencing reads per sample}
+\end{quote}
+
+
+\end{center}  
+
+
+\vspace{5mm}
+
 
 \end{document}
 

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.5.30)  23 MAR 2014 15:53
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.5.30)  23 MAR 2014 19:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -395,56 +395,39 @@ File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 ]
 
 Package natbib Warning: Citation `MacManes:2014io' on page 2 undefined on input
- line 119.
+ line 123.
 
 
 Package natbib Warning: Citation `Christoffels:2014bg' on page 2 undefined on i
-nput line 119.
+nput line 123.
 
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 119.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 123.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 119.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 123.
 
 
 Package natbib Warning: Citation `Lohse:2012fg' on page 2 undefined on input li
-ne 119.
+ne 123.
 
 
 Package natbib Warning: Citation `Haas:2013jq' on page 2 undefined on input lin
-e 119.
+e 123.
 
 
 Package natbib Warning: Citation `Li:2013wn' on page 2 undefined on input line 
-119.
+123.
 
 
 Package natbib Warning: Citation `Roberts:2012dh' on page 2 undefined on input 
-line 119.
+line 123.
 
 
 Package natbib Warning: Citation `Haas:2013jq' on page 2 undefined on input lin
-e 119.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
-
- []
-
-
-Package natbib Warning: Citation `Camacho:2009fc' on page 2 undefined on input 
-line 123.
-
-
-Package natbib Warning: Citation `Wheeler:2013gj' on page 2 undefined on input 
-line 123.
-
-
-Package natbib Warning: Citation `Punta:2012ko' on page 2 undefined on input li
-ne 123.
+e 123.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 123--124
@@ -452,33 +435,55 @@ Underfull \hbox (badness 10000) in paragraph at lines 123--124
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--126
+Package natbib Warning: Citation `Camacho:2009fc' on page 2 undefined on input 
+line 127.
+
+
+Package natbib Warning: Citation `Wheeler:2013gj' on page 2 undefined on input 
+line 127.
+
+
+Package natbib Warning: Citation `Punta:2012ko' on page 2 undefined on input li
+ne 127.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
 
  []
 
 [2]
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
+
+ []
+
 
 Package natbib Warning: Citation `Korneliussen:2013uz' on page 3 undefined on i
-nput line 129.
+nput line 133.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--130
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
 
  []
 
 No file Pero_Transcriptome.bbl.
 
+Underfull \hbox (badness 10000) in paragraph at lines 179--180
+
+ []
+
+[3]
+
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 179.
-[3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 179.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 216.
+[4]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 216.
 
 (/Users/macmanes/Documents/pero_transcriptome/.texpadtmp/Pero_Transcriptome.aux
 )
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 179.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 179.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 179.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 216.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 216.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 216.
  ) 
 Here is how much of TeX's memory you used:
  10571 strings out of 493938
@@ -487,7 +492,7 @@ Here is how much of TeX's memory you used:
  13808 multiletter control sequences out of 15000+600000
  11993 words of font info for 44 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 36i,5n,38p,1056b,379s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,6n,38p,1056b,425s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on /Users/macmanes/Documents/pero_transcriptome/.texpadtmp/Pero_
-Transcriptome.pdf (3 pages).
+Transcriptome.pdf (4 pages).
