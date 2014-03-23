@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.5.30)  23 MAR 2014 09:31
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.5.30)  23 MAR 2014 11:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -9,8 +9,8 @@ LaTeX2e <2011/06/27>
 Babel <3.9f> and hyphenation patterns for 78 languages loaded.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2013/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count80
 \c@section=\count81
@@ -24,9 +24,16 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
+(/usr/local/texlive/2013/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count88
+)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
-\@mathmargin=\skip43
+\@mathmargin=\skip45
 
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -44,13 +51,13 @@ Package: amsbsy 1999/11/29 v1.2d
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count88
+\inf@bad=\count89
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count89
-\leftroot@=\count90
+\uproot@=\count90
+\leftroot@=\count91
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count91
-\DOTSCASE@=\count92
+\classnum@=\count92
+\DOTSCASE@=\count93
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
@@ -59,15 +66,15 @@ LaTeX Info: Redefining \cdots on input line 466.
 \big@size=\dimen105
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count93
-\c@MaxMatrixCols=\count94
+\macc@depth=\count94
+\c@MaxMatrixCols=\count95
 \dotsspace@=\muskip10
-\c@parentequation=\count95
-\dspbrk@lvl=\count96
+\c@parentequation=\count96
+\dspbrk@lvl=\count97
 \tag@help=\toks15
-\row@=\count97
-\column@=\count98
-\maxfields@=\count99
+\row@=\count98
+\column@=\count99
+\maxfields@=\count100
 \andhelp@=\toks16
 \eqnshift@=\dimen106
 \alignsep@=\dimen107
@@ -76,8 +83,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \totwidth@=\dimen110
 \lineht@=\dimen111
 \@envbody=\toks17
-\multlinegap=\skip44
-\multlinetaggap=\skip45
+\multlinegap=\skip46
+\multlinetaggap=\skip47
 \mathdisplay@stack=\toks18
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
@@ -144,7 +151,7 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \caption@parindent=\dimen119
 \caption@hangindent=\dimen120
 )
-\c@ContinuedFloat=\count100
+\c@ContinuedFloat=\count101
 )
 (/Users/macmanes/Documents/pero_transcriptome/.texpadtmp/Pero_Transcriptome.aux
 )
@@ -180,16 +187,68 @@ Underfull \hbox (badness 10000) in paragraph at lines 90--91
 [1
 
 ]
+
+Package natbib Warning: Citation `MacManes:2014io' on page 2 undefined on input
+ line 126.
+
+
+Package natbib Warning: Citation `Christoffels:2014bg' on page 2 undefined on i
+nput line 126.
+
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 126.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 126.
+
+
+Package natbib Warning: Citation `Lohse:2012fg' on page 2 undefined on input li
+ne 126.
+
+
+Package natbib Warning: Citation `Haas:2013jq' on page 2 undefined on input lin
+e 126.
+
+
+Package natbib Warning: Citation `Li:2013wn' on page 2 undefined on input line 
+126.
+
+
+Package natbib Warning: Citation `Roberts:2012dh' on page 2 undefined on input 
+line 126.
+
+
+Package natbib Warning: Citation `Haas:2013jq' on page 2 undefined on input lin
+e 126.
+
+
+./Pero_Transcriptome.latex:129: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.129 
+      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
 No file Pero_Transcriptome.bbl.
+
+Package natbib Warning: There were undefined citations.
+
 [2]
 (/Users/macmanes/Documents/pero_transcriptome/.texpadtmp/Pero_Transcriptome.aux
 ) ) 
 Here is how much of TeX's memory you used:
- 2623 strings out of 493938
- 38065 string characters out of 6148857
- 103094 words of memory out of 5000000
- 5935 multiletter control sequences out of 15000+600000
- 7915 words of font info for 30 fonts, out of 8000000 for 9000
+ 2986 strings out of 493938
+ 42532 string characters out of 6148857
+ 108890 words of memory out of 5000000
+ 6285 multiletter control sequences out of 15000+600000
+ 11165 words of font info for 41 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  36i,5n,38p,1048b,154s stack positions out of 5000i,500n,10000p,200000b,80000s
 

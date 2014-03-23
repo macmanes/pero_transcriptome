@@ -7,8 +7,8 @@
 % latex plos.template
 % latex plos.template
 % dvipdf plos.template
-
-\documentclass[10pt]{article}
+\documentclass[11pt]{article}
+\usepackage{natbib}
 
 % amsmath package, useful for mathematical formulas
 \usepackage{amsmath}
@@ -117,10 +117,17 @@ analyzed on a Bioanalyzer 2100 (Agilent, Palo Alto, CA, USA).
 Following confirmation of sample quality, the reference sequencing libraries
 were made using the TruSeq stranded RNA prep kit
 (Illumina), while an unstranded TruSeq kit was used to construct the other sequencing libraries. A unique index was ligated to each sample to allow for multiplexed
-sequencing. Libraries were then pooled to
+sequencing. Reference libraries (n=4 tissue types) were then pooled to
 contain equimolar quantities of each individual library and
-submitted for Illumina sequencing on a HiSeq 2000 sequencer
-at The Vincent Coates Genome Sequencing Lab at UC Berkeley.
+submitted for Illumina sequencing using two lanes of 150nt paired end sequencing using the rapid-mode of the HiSeq 2500 sequencer at The Hubbard Center for Genome Sciences (University of New Hampshire). The remaining 14 libraries were similarly multiplexed and sequenced in a mixture of 100nt paired and single end across two lanes of an Illumina HiSeq 2000 at the Vincent G. Coates Gnome Center (University of California, Berkeley).
+
+\subsection*{Sequence Data Preprocessing and Assembly}
+
+Following recommendations from MacManes \citep{MacManes:2014io} and Mbandi \citep{Christoffels:2014bg}, adapter sequence contamination was removed, and low quality nucleotides (defined as \textsc{Phred} \textless 2) were removed from the dataset using the program Trimmomatic version 0.32  \citep{Lohse:2012fg}. We concatenated sequence data from each reference tissue type and assembled them using the Trinity beta version released 16 March 2014 \citep{Haas:2013jq}. We used flags indicating the stranded nature of sequencing reads and set maximum physical distance between read pairs to 999nt. To filter the raw sequence assembly, I estimated TPM for each assembled sequence using bwa-mem \citep{Li:2013wn} and eXpress \citep{Roberts:2012dh}, removing all contigs whose expression was less than TPM=1 \citep{Haas:2013jq}.  
+
+\\
+
+\subsection*{Assembled Sequence Annotation}
 
 
 
