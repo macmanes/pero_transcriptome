@@ -136,11 +136,12 @@ In addition to the reference individual sequenced at four different tissue types
 % Results and Discussion can be combined.
 \section*{Results}
 
-\subsection*{RNA extraction, Sequencing, Assembly}
+\subsection*{RNA extraction, Sequencing, Assembly, Mapping}
 
-Raw assembly 743314 and 418Mb
-Filtered Assembly: 130764 149Mb
-cds: 64355 and 60Mb 37960 complete 4203 3prime  16880 5prime 5312 internal
+RNA was extracted from the hypothalamus, renal medulla, testes, or liver from each individual using sterile technique. TRIzol extraction resulted in a large amount of high quality (RIN $\geq$ 8) total RNA, which was used as input. Libraries were constructed as per the standard Illumina protocol, and ere sequenced as described above. The number of reads per library varied from 56 million strand-specific paired-end reads in Peer360 kidney, to 9 million single-end reads in Peer321. Adapter sequence contamination and low-quality nucleotides were eliminated, which resulted in a loss of \textless 2\% of reads. \\
+
+Transcriptome assembly was accomplished using the program Trinity. The raw assembly contained 743314 assembled sequenced measuring 418Mb. This assembly was filtered using TMP \textgreater 1 as a threshold. The filtered assembly contained 130764 sequences measuring 149Mb. from this filteres dataset, I extracted 64355 putative coding sequences (60Mb). Of these 64355 sequences, 37960 were complete exons (containing both start and stop codons), while other were either truncated at the 5-prime end (16880 sequences), 3-prime end (4203 sequences), or were internal (5312 sequencing having neither stop nor start codon). 
+
 
 
 \subsection*{Subsection 2}
@@ -157,7 +158,7 @@ cds: 64355 and 60Mb 37960 complete 4203 3prime  16880 5prime 5312 internal
 
 %\section*{References}
 % The bibtex filename
-\bibliography{formatted.bib}
+\bibliography{formatted1.bib}
 
 \section*{Figure Legends}
 %\begin{figure}[!ht]

@@ -13,6 +13,13 @@
   \textsc{Annotation:}\ #2\end{quotation}}
 \providecommand{\eprint}[2][]{\url{#2}}
 
+\bibitem{Bradley:2007jo}
+Feng BJ, Sun LD, Soltani-Arabshahi R, Bowcock AM, Nair RP, et~al. (2007)
+  {Toward a Molecular Phylogeny for \textit{Peromyscus}: Evidence from
+  Mitochondrial Cytochrome- b Sequences}.
+\newblock Journal of Mammalogy 88: 1146--1159.
+\bibAnnoteFile{Bradley:2007jo}
+
 \bibitem{Shorter:2014kw}
 Shorter KR, Owen A, anderson V, Hall-South AC, Hayford S, et~al. (2014)
   {Natural Genetic Variation Underlying Differences in \textit{Peromyscus}
@@ -38,6 +45,11 @@ MacManes MD (2014) {On the optimal trimming of high-throughput mRNA sequence
   data}.
 \newblock Frontiers in Genetics 5.
 \bibAnnoteFile{MacManes:2014io}
+
+\bibitem{Christoffels:2014bg}
+Christoffels A (2014) {A glance at quality score: implication for \textit{de
+  novo} transcriptome reconstruction of Illumina reads} : 1--5.
+\bibAnnoteFile{Christoffels:2014bg}
 
 \bibitem{Lohse:2012fg}
 Lohse M, Bolger AM, Nagel A, Fernie AR, Lunn JE, et~al. (2012) {RobiNA: a
@@ -75,5 +87,18 @@ Wheeler TJ, Wheeler TJ, Eddy SR, Eddy SR (2013) {nhmmer: DNA homology search
   with profile HMMs}.
 \newblock Bioinformatics (Oxford, England) 29: 2487--2489.
 \bibAnnoteFile{Wheeler:2013gj}
+
+\bibitem{Punta:2012ko}
+Punta M, Coggill PC, Eberhardt RY, Mistry J, Tate J, et~al. (2012) {The Pfam
+  protein families database.}
+\newblock Nucleic Acids Research 40: D290--301.
+\bibAnnoteFile{Punta:2012ko}
+
+\bibitem{Korneliussen:2013uz}
+Korneliussen TS, Moltke I, Albrechtsen A (2013) {Calculation of Tajima's D and
+  other neutrality test statistics from low depth next-generation sequencing
+  data}.
+\newblock BMC {\ldots} .
+\bibAnnoteFile{Korneliussen:2013uz}
 
 \end{thebibliography}
