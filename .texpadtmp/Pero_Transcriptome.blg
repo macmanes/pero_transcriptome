@@ -1,0 +1,77 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Pero_Transcriptome.aux
+The style file: ../plos2009.bst
+Database file #1: formatted.bib.bib
+"}" immediately follows an entry type---line 27184 of file formatted.bib.bib
+ : affiliation = {Department of Integrative Biology, Museum of Vertebrate Zoology, University of California, Berkeley, California, United States of America. macmanes@gmail.com
+ :                                                                                                                                                                             },
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 30036 of file formatted.bib.bib
+ : abstract = {Horseshoe crabs are marine arthropods with a fossil record extending back approximately 450 million years. They exhibit remarkable morphological stability over their long evolutionary history, retaining a number of ancestral arthropod traits, and are often cited as examples of "living fossils." As arthropods, they belong to the Ecdysozoa}, an 
+ :                                                                                                                                                                                                                                                                                                                                                                      ancient super-phylum whose sequenced genomes (including insects and nematodes) have thus far shown more divergence from the ancestral pattern of eumetazoan genome organization than cnidarians, deuterostomes, and lophotrochozoans. However, much of ecdysozoan diversity remains unrepresented in comparative genomic analyses. Here we use a new strategy of combined \textit{de novo} assembly and genetic mapping to examine the chromosome-scale genome organization of the Atlantic horseshoe crab Limulus polyphemus. We constructed a genetic linkage map of this 2.7 Gbp genome by sequencing the nuclear DNA of 34 wild-collected, full-sibling embryos and their parents at a mean redundancy of 1.1x per sample. The map includes 84,307 sequence markers and 5,775 candidate conserved protein coding genes. Comparison to other metazoan genomes shows that the L. polyphemus genome preserves ancestral bilaterian linkage groups, and that a common ancestor of modern horseshoe crabs underwent one or more ancient whole genome duplications (WGDs) {\textasciitilde} 300 MYA, followed by extensive chromosome fusion.},
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 48001 of file formatted.bib.bib
+ : 
+ : @article{Chesh:2012jd,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+"}" immediately follows an entry type---line 55761 of file formatted.bib.bib
+ : affiliation = {California Institute for Quantitative Biosciences, University of California, Berkeley, California, USA. macmanes@gmail.com
+ :                                                                                                                                          },
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 80521 of file formatted.bib.bib
+ : 
+ : @article{Flatz:2010io,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "Bradley:2007jo"
+Warning--I didn't find a database entry for "Christoffels:2014bg"
+Warning--I didn't find a database entry for "Punta:2012ko"
+Warning--I didn't find a database entry for "Korneliussen:2013uz"
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+`journal' is a missing field, not a string, for entry Li:2013wn
+while executing---line 2643 of file ../plos2009.bst
+Warning--empty journal in Li:2013wn
+You've used 10 entries,
+            2441 wiz_defined-function locations,
+            631 strings with 8260 characters,
+and the built_in function-call counts, 9201 in all, are:
+= -- 844
+> -- 176
+< -- 0
++ -- 88
+- -- 44
+* -- 805
+:= -- 1120
+add.period$ -- 19
+call.type$ -- 10
+change.case$ -- 10
+chr.to.int$ -- 0
+cite$ -- 21
+duplicate$ -- 914
+empty$ -- 938
+format.name$ -- 52
+if$ -- 2025
+int.to.chr$ -- 0
+int.to.str$ -- 10
+missing$ -- 109
+newline$ -- 64
+num.names$ -- 10
+pop$ -- 109
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 87
+stack$ -- 0
+substring$ -- 1329
+swap$ -- 212
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 71
+width$ -- 12
+write$ -- 120
+(There were 6 error messages)

@@ -1,0 +1,79 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\bibAnnoteFile}[1]{%
+  \IfFileExists{#1}{\begin{quotation}\noindent\textsc{Key:} #1\\
+  \textsc{Annotation:}\ \input{#1}\end{quotation}}{}}
+\providecommand{\bibAnnote}[2]{%
+  \begin{quotation}\noindent\textsc{Key:} #1\\
+  \textsc{Annotation:}\ #2\end{quotation}}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem{Shorter:2014kw}
+Shorter KR, Owen A, anderson V, Hall-South AC, Hayford S, et~al. (2014)
+  {Natural Genetic Variation Underlying Differences in \textit{Peromyscus}
+  Repetitive and Social/Aggressive Behaviors}.
+\newblock Behavior genetics .
+\bibAnnoteFile{Shorter:2014kw}
+
+\bibitem{Panhuis:2011co}
+Panhuis TM, Panhuis TM, Broitman-Maduro G, Broitman-Maduro G, Uhrig J, et~al.
+  (2011) {Analysis of Expressed Sequence Tags from the Placenta of the
+  Live-Bearing Fish Poeciliopsis (Poeciliidae)}.
+\newblock Journal of Heredity 102: 352--361.
+\bibAnnoteFile{Panhuis:2011co}
+
+\bibitem{Shorter:2012ib}
+Shorter KR, Crossland JP, Webb D, Szalai G, Felder MR, et~al. (2012)
+  {\textit{Peromyscus} as a Mammalian Epigenetic Model}.
+\newblock Genetics Research International 2012: 1--11.
+\bibAnnoteFile{Shorter:2012ib}
+
+\bibitem{MacManes:2014io}
+MacManes MD (2014) {On the optimal trimming of high-throughput mRNA sequence
+  data}.
+\newblock Frontiers in Genetics 5.
+\bibAnnoteFile{MacManes:2014io}
+
+\bibitem{Lohse:2012fg}
+Lohse M, Bolger AM, Nagel A, Fernie AR, Lunn JE, et~al. (2012) {RobiNA: a
+  user-friendly, integrated software solution for RNA-Seq-based
+  transcriptomics.}
+\newblock Nucleic Acids Research 40: W622--7.
+\bibAnnoteFile{Lohse:2012fg}
+
+\bibitem{Haas:2013jq}
+Haas BJ, Papanicolaou A, Yassour M, Grabherr M, Blood PD, et~al. (2013)
+  {\textit{De novo} transcript sequence reconstruction from RNA-seq using the
+  Trinity platform for reference generation and analysis.}
+\newblock Nature protocols 8: 1494--1512.
+\bibAnnoteFile{Haas:2013jq}
+
+\bibitem{Li:2013wn}
+Li H (2013) {Aligning sequence reads, clone sequences and assembly contigs with
+  BWA-MEM} .
+\bibAnnoteFile{Li:2013wn}
+
+\bibitem{Roberts:2012dh}
+Roberts A, Pachter L (2013) {Streaming fragment assignment for real-time
+  analysis of sequencing experiments.}
+\newblock Nature Methods 10: 71--73.
+\bibAnnoteFile{Roberts:2012dh}
+
+\bibitem{Camacho:2009fc}
+Camacho C, Coulouris G, Avagyan V, Ma N, Papadopoulos J, et~al. (2009) {BLAST+:
+  architecture and applications}.
+\newblock BMC Bioinformatics 10: 421.
+\bibAnnoteFile{Camacho:2009fc}
+
+\bibitem{Wheeler:2013gj}
+Wheeler TJ, Wheeler TJ, Eddy SR, Eddy SR (2013) {nhmmer: DNA homology search
+  with profile HMMs}.
+\newblock Bioinformatics (Oxford, England) 29: 2487--2489.
+\bibAnnoteFile{Wheeler:2013gj}
+
+\end{thebibliography}
