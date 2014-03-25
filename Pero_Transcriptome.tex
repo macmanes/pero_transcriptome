@@ -37,7 +37,7 @@
 \evensidemargin 0.5cm
 \textwidth 16cm 
 \textheight 21cm
-
+\linespread{1.2}
 % Bold the 'Figure #' in the caption and separate it with a period
 % Captions will be left justified
 \usepackage[labelfont=bf,labelsep=period,justification=raggedright]{caption}
@@ -91,11 +91,13 @@ $\ast$ E-mail: macmanes@gmail.com, @PeroMHC
 
 \section*{Introduction}
 
-For biologists interested in understanding the relationship between fitness, genotype, and phenotype, modern sequencing technologies provide for an unprecedented opportunity to gain a deep understanding of genome level processes that together, underlie adaptation.  One interesting example of adaptation lies in animals ability to survive desert conditions. Here, heat \emph{and} drought provide for powerful selective forces, testing animals' ability to osmoregulate and thus to survive. \\
+For biologists interested in understanding the relationship between fitness, genotype, and phenotype, modern sequencing technologies provide for an unprecedented opportunity to gain a deep understanding of genome level processes that together, underlie adaptation. Unlike more traditional approaches
 
-Specifically, the maintenance of water balance in animals is one of the most important physiologic processes, and is critical to desert survival. Indeed, mammals are exquisitely sensitive to changes in osmolality, with slight derangement eliciting physiologic compromise.  When the loss of water exceeds dietary intake, dehydration - and in extreme cases, death - can occur.  Unlike most mammals, animals living in desert habitats are subjected to long periods of extreme heat and intense drought.  As a result, desert animals have evolved mechanisms through which physiologic homeostasis is maintained despite severe and prolonged dehydration. \\
+ One interesting example of adaptation lies in animals ability to survive desert conditions. Here, heat \emph{and} drought provide for powerful selective forces, testing animals' ability to osmoregulate and thus to survive. \\
 
-One such desert-adapted rodent, a cricetid rodent endemic to the Southwest United states is a novel model for the study of adaptation to desert environments. They have a lifespan typical of small mammals, and therefore an individual may live it's entire life without ever drinking water. These rodents have distinct advantage over other desert animals (e.g. \textit{Dipodomys}) in that they breed readily in captivity, which enables laboratory studies of the phenotype of interest. In addition the focal species is positioned in a clade of well known animals (e.g. \textit{P. californicus}, \textit{P. maniculatus} and \textit{P. polionotus}) \cite{Bradley:2007jo}. There are growing genetic and genomic resources available \cite{Shorter:2014kw,Panhuis:2011co,Shorter:2012ib}. \\
+Specifically, the maintenance of water balance in animals is one of the most important physiologic processes, and is critical to desert survival \cite{Walsberg:2000uu}. Indeed, mammals are exquisitely sensitive to changes in osmolality, with slight derangement eliciting physiologic compromise.  When the loss of water exceeds dietary intake, dehydration - and in extreme cases, death - can occur.  Unlike most mammals, animals living in desert habitats are subjected to long periods of extreme heat and intense drought.  As a result, desert animals have evolved mechanisms through which physiologic homeostasis is maintained despite severe and prolonged dehydration. \\
+
+One such desert-adapted rodent, a cricetid rodent endemic to the Southwest United States \cite{Veal:2001vp}, is a novel model for the study of adaptation to desert environments. They have a lifespan typical of small mammals, and therefore an individual may live it's entire life without ever drinking water. These rodents have distinct advantage over other desert animals (e.g. \textit{Dipodomys}) in that they breed readily in captivity, which enables laboratory studies of the phenotype of interest. In addition the focal species is positioned in a clade of well known animals (e.g. \textit{P. californicus}, \textit{P. maniculatus} and \textit{P. polionotus}) \cite{Bradley:2007jo}. There are growing genetic and genomic resources available \cite{Shorter:2014kw,Panhuis:2011co,Shorter:2012ib}. \\
 
 While the elucidation of the mechanisms underlying adaptation to desert survival is beyond the scope of this manuscript, we aim here to lay the groundwork by characterizing the transcriptome from four distinct tissues (brain, liver, kidney, testes). These data will be included in current larger effort aimed at sequencing the entire genome. Further, via sequencing the renal tissue of a total of 15 additional animals, we characterize nucleotide polymorphism and genome wide patterns of natural selection. Together, these investigations will aid in our overarching goal -- to understand the genetic bases of adaptation in \textit{P. eremicus}.
 
@@ -103,24 +105,22 @@ While the elucidation of the mechanisms underlying adaptation to desert survival
 
 \subsection*{Animal Collection and Study Design}
 
-To begin to understand how genes may underlie desert adaptation, I collected ~15 individuals from a single population \textit{P. eremicus} over a two year time period (2012-2013). These individuals were captured in live traps, then euthanized using isoflurane overdose and decapitation. Immediately post-mortem, the abdominal and pelvis organs were removed, cut in half (in the case of kidney), placed in RNAlater and flash frozen in liquid Nitrogen. Removal of the brain, with similar preservation techniques followed that. Time from euthanasia to removal of all organs never exceeded five minutes. Samples were transferred to a -80C freezer at a later date. These procedures were approved by the University of California Berkeley Animal Care and Use Committee and follow guidelines established by the American Society of Mammalogy for the use of wild animals in research \cite{Sikes:2011dz}.  
+To begin to understand how genes may underlie desert adaptation, I collected ~15 individuals from a single population \textit{P. eremicus} over a two year time period (2012-2013). These individuals were captured in live traps, then euthanized using isoflurane overdose and decapitation. Immediately post-mortem, the abdominal and pelvic organs were removed, cut in half (in the case of kidney), placed in RNAlater and flash frozen in liquid Nitrogen. Removal of the brain, with similar preservation techniques, followed that. Time from euthanasia to removal of all organs never exceeded five minutes. Samples were transferred to a -80C freezer at a later date. These procedures were approved by the University of California Berkeley Animal Care and Use Committee and follow guidelines established by the American Society of Mammalogy for the use of wild animals in research \cite{Sikes:2011dz}.  
 
 \subsection*{RNA extraction and Sequencing}
 
-Total RNA was extracted from each tissue using a TRIzol extraction (Invitrogen) following the manufacturers instructions. Because preparation of an RNA
-library suitable for sequencing is dependent on having high
+Total RNA was extracted from each tissue using a TRIzol extraction (Invitrogen) following the manufacturers instructions. Because preparation of an RNA library suitable for sequencing is dependent on having high
 quality, intact RNA, a small aliquot of each total RNA extract was
 analyzed on a Bioanalyzer 2100 (Agilent, Palo Alto, CA, USA).
 Following confirmation of sample quality, the reference sequencing libraries
 were made using the TruSeq stranded RNA prep kit
-(Illumina), while an unstranded TruSeq kit was used to construct the other sequencing libraries. A unique index was ligated to each sample to allow for multiplexed
-sequencing. Reference libraries (n=4 tissue types) were then pooled to
+(Illumina), while an unstranded TruSeq kit was used to construct the other sequencing libraries. A unique index was ligated to each sample to allow for multiplexed sequencing. Reference libraries (n=4 tissue types) were then pooled to
 contain equimolar quantities of each individual library and
 submitted for Illumina sequencing using two lanes of 150nt paired end sequencing using the rapid-mode of the HiSeq 2500 sequencer at The Hubbard Center for Genome Sciences (University of New Hampshire). The remaining 14 libraries were similarly multiplexed and sequenced in a mixture of 100nt paired and single end across two lanes of an Illumina HiSeq 2000 at the Vincent G. Coates Gnome Center (University of California, Berkeley).
 
 \subsection*{Sequence Data Preprocessing and Assembly}
 
-Following recommendations from MacManes \cite{MacManes:2014io} and Mbandi \cite{Christoffels:2014bg}, adapter sequence contamination was removed, and low quality nucleotides (defined as \textsc{Phred} \textless 2) were removed from the dataset using the program Trimmomatic version 0.32  \cite{Lohse:2012fg}. We concatenated sequence data from each reference tissue type and assembled them using the Trinity beta version released 16 March 2014 \cite{Haas:2013jq}. We used flags indicating the stranded nature of sequencing reads and set maximum allowable physical distance between read pairs to 999nt. The assembly was conducted on the \textsc{Xsede} computer resource Blacklight. To filter the raw sequence assembly, I estimated TPM for each assembled sequence using bwa-mem version 0.77 \cite{Li:2013wn} and eXpress version 1.51 \cite{Roberts:2012dh}, removing all contigs whose expression was less than TPM=1 \cite{Haas:2013jq}. \\
+Following recommendations from MacManes \cite{MacManes:2014io} and Mbandi \cite{Christoffels:2014bg}, adapter sequence contamination was removed, and low quality nucleotides (defined as \textsc{Phred} \textless 2) were removed from the dataset using the program Trimmomatic version 0.32  \cite{Lohse:2012fg}. We concatenated sequence data from each reference tissue type and assembled them jointly using the Trinity beta version released 16 March 2014 \cite{Haas:2013jq}. We used flags indicating the stranded nature of sequencing reads and set maximum allowable physical distance between read pairs to 999nt. The assembly was conducted on the \textsc{Xsede} computer resource Blacklight. To filter the raw sequence assembly, I estimated TPM for each assembled sequence using bwa-mem version 0.75 \cite{Li:2013wn} and eXpress version 1.51 \cite{Roberts:2012dh}, removing all contigs whose expression was less than TPM=1 \cite{Haas:2013jq}. \\
 
 \subsection*{Assembled Sequence Annotation}
 
