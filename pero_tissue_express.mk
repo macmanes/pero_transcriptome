@@ -59,7 +59,3 @@ $(RUN).xprs: $(RUN).Trinity.fasta
 		express -o $(RUN).xprs \
 		-p $(CPU) $(RUN).Trinity.fasta $(RUN).bam 2>express.log
 		@echo TIMESTAMP: `date +'%a %d%b%Y  %H:%M:%S'` Finished eXpress '\n\n'
-
-
-
-
