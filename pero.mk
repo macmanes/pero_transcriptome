@@ -23,8 +23,8 @@ TRIM=2
 CPU=2
 BCPU=$(CPU)
 RUN=run
-READ1=left.fastq
-READ2=right.fastq
+READ1=left.fq
+READ2=right.fq
 BCODES=barcodes.fa
 
 
