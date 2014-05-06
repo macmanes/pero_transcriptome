@@ -14,8 +14,6 @@
 
 ##### No Editing should be necessary below this line  #####
 
-OVLMIN=20
-OVLMAX=140
 MINLEN=25
 PHRED=33
 SEQ=fq
