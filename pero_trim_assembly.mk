@@ -30,7 +30,6 @@ BCODES=barcodes.fa
 
 MAKEDIR := $(dir $(firstword $(MAKEFILE_LIST)))
 DIR := ${CURDIR}
-export PATH := ${MAKEDIR}plugins/trinityrnaseq-code/:${MAKEDIR}/plugins:$(PATH)
 
 .PHONY: check clean
 all: check $(RUN)_left.$(TRIM).fastq $(RUN)_right.$(TRIM).fastq $(RUN).Trinity.fasta $(RUN).xprs
@@ -68,3 +67,17 @@ $(RUN)_left.$(TRIM).fastq $(RUN)_right.$(TRIM).fastq: $(READ1) $(READ2)
 $(RUN).Trinity.fasta: $(RUN)_left.$(TRIM).fastq $(RUN)_right.$(TRIM).fastq
 	Trinity --full_cleanup --min_kmer_cov $(MINK) --seqType $(SEQ) --JM $(MEM)G --bflyHeapSpaceMax $(MEM)G --bflyCPU $(BCPU) \
 	--left $(RUN)_left.$(TRIM).fastq --right $(RUN)_right.$(TRIM).fastq --group_pairs_distance 999 --CPU $(CPU) --output $(RUN) >>$(RUN).trinity.pe.log
+
+$(RUN).xprs: $(RUN).Trinity.fasta
+		@echo ---Quantitiating Transcripts---
+		bwa index -p index $(RUN).Trinity.fasta
+		bwa mem -t $(CPU) index $(READ1) $(READ2) 2>bwa.log | samtools view -@ $(CPU) -1 - > $(RUN).bam
+		samtools flagstat $(RUN).bam > $(RUN).map.stats &
+		@echo --eXpress---
+		express -o $(RUN).xprs \
+		-p $(CPU) $(RUN).Trinity.fasta $(RUN).bam 2>express.log
+		@echo TIMESTAMP: `date +'%a %d%b%Y  %H:%M:%S'` Finished eXpress '\n\n'
+
+
+
+
