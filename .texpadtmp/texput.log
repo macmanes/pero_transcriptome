@@ -1,19 +1,19 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.5.30)  24 MAR 2014 07:11
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.5.30)  24 MAR 2014 18:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**Pero_Transcriptome.tex
+**Pero_Transcriptome.latex
 
 ! Emergency stop.
-<*> Pero_Transcriptome.tex
-                          
+<*> Pero_Transcriptome.latex
+                            
 *** (job aborted, file error in nonstop mode)
 
  
 Here is how much of TeX's memory you used:
- 3 strings out of 493938
- 140 string characters out of 6148857
+ 4 strings out of 493938
+ 146 string characters out of 6148857
  51899 words of memory out of 5000000
  3408 multiletter control sequences out of 15000+600000
  3640 words of font info for 14 fonts, out of 8000000 for 9000
