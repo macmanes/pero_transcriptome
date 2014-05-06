@@ -56,15 +56,15 @@ check:
 
 $(RUN)_left.$(TRIM).fastq $(RUN)_right.$(TRIM).fastq: $(READ1) $(READ2)
 	@echo TIMESTAMP: `date +'%a %d%b%Y  %H:%M:%S'` About to start trimming
-		java -Xmx$(MEM)g -jar trimmomatic-0.32.jar PE -phred$(PHRED) -threads $(CPU) \
+		java -Xmx$(MEM)g -jar trimmomatic-0.32.jar PE -baseout run.fq -phred$(PHRED) -threads $(CPU) \
 		$(READ1) \
 		$(READ2) \
 		ILLUMINACLIP:${MAKEDIR}/$(BCODES):2:40:15 \
 		LEADING:$(TRIM) TRAILING:$(TRIM) SLIDINGWINDOW:4:$(TRIM) MINLEN:$(MINLEN) 2> trim.log ;
-		cat $(RUN).pp.1.fq $(RUN).up.1.fq > $(RUN)_left.$(TRIM).fastq ;
-		cat $(RUN).pp.2.fq $(RUN).up.2.fq > $(RUN)_right.$(TRIM).fastq ;
+		cat $(RUN)_1P.fq $(RUN)_1U.fq > $(RUN)_left.$(TRIM).fastq ;
+		cat $(RUN)_2P.fq $(RUN)_2U.fq > $(RUN)_right.$(TRIM).fastq ;
 		@echo TIMESTAMP: `date +'%a %d%b%Y  %H:%M:%S'` Finished trimming '\n\n'
 
 $(RUN).Trinity.fasta: $(RUN)_left.$(TRIM).fastq $(RUN)_right.$(TRIM).fastq
-	Trinity.pl --full_cleanup --min_kmer_cov $(MINK) --seqType $(SEQ) --JM $(MEM)G --PasaFly --bflyGCThreads 25 --bflyHeapSpaceMax $(MEM)G --bflyCPU $(BCPU) \
+	Trinity --full_cleanup --min_kmer_cov $(MINK) --seqType $(SEQ) --JM $(MEM)G --bflyHeapSpaceMax $(MEM)G --bflyCPU $(BCPU) \
 	--left $(RUN)_left.$(TRIM).fastq --right $(RUN)_right.$(TRIM).fastq --group_pairs_distance 999 --CPU $(CPU) --output $(RUN) >>$(RUN).trinity.pe.log
