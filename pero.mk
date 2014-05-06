@@ -56,7 +56,7 @@ check:
 
 $(RUN)_left.$(TRIM).fastq $(RUN)_right.$(TRIM).fastq: $(READ1) $(READ2)
 	@echo TIMESTAMP: `date +'%a %d%b%Y  %H:%M:%S'` About to start trimming
-		java -Xmx$(MEM)g -jar trimmomatic-0.32.jar PE -baseout run.fq -phred$(PHRED) -threads $(CPU) \
+		java -Xmx$(MEM)g -jar trimmomatic-0.32.jar PE -baseout $(RUN).fq -phred$(PHRED) -threads $(CPU) \
 		$(READ1) \
 		$(READ2) \
 		ILLUMINACLIP:${MAKEDIR}/$(BCODES):2:40:15 \
