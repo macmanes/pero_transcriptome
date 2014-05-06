@@ -49,6 +49,7 @@ check:
 	@echo Your PATH=$$PATH
 
 
+
 $(RUN).xprs: $(RUN).Trinity.fasta
 		@echo ---Quantitiating Transcripts---
 		bwa index -p index $(RUN).Trinity.fasta
