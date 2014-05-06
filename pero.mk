@@ -1,7 +1,7 @@
 #!/usr/bin/make -rRsf
 
 ###########################################
-###        -usage 'assembly.mk RUN=run CPU=8 MEM=15 READ1=/location/of/read1.fastq READ2=/location/of/read2.fastq'
+###        -usage 'assembly.mk RUN=run CPU=2 MEM=15 READ1=/location/of/read1.fastq READ2=/location/of/read2.fastq'
 ###         -RUN= name of run
 ###
 ###
@@ -22,7 +22,7 @@ MEM=2
 TRIM=2
 CPU=2
 BCPU=$(CPU)
-RUN=run
+RUN=test123
 READ1=left.fq
 READ2=right.fq
 BCODES=barcodes.fa
