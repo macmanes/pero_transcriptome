@@ -12,7 +12,7 @@
 ############################################
 
 
-##### No Editing should be necessary below this line  #####
+##### No more Editing should be necessary below this line  #####
 
 MINLEN=25
 PHRED=33
@@ -37,10 +37,6 @@ all: check $(RUN)_left.$(TRIM).fastq $(RUN)_right.$(TRIM).fastq $(RUN).Trinity.f
 trim: check $(RUN)_left.$(TRIM).fastq $(RUN)_right.$(TRIM).fastq
 assemble: check $(RUN).Trinity.fasta
 express: check $(RUN).xprs
-single: check $(RUN)_SE.$(TRIM).fastq $(RUN).SE.Trinity.fasta $(RUN).SE.xprs
-flash: check out.notCombined_1.fastq out.notCombined_2.fastq out.extendedFrags.fastq \
-$(RUN)_left.FL$(TRIM).fastq $(RUN)_right.FL$(TRIM).fastq $(RUN)_extended.$(TRIM).fastq \
-$(RUN).FLASH.Trinity.fasta $(RUN).FLASH.xprs
 
 
 check:
@@ -60,13 +56,9 @@ check:
 
 $(RUN)_left.$(TRIM).fastq $(RUN)_right.$(TRIM).fastq: $(READ1) $(READ2)
 	@echo TIMESTAMP: `date +'%a %d%b%Y  %H:%M:%S'` About to start trimming
-		java -XX:ParallelGCThreads=32 -Xmx$(MEM)g -jar ${MAKEDIR}/plugins/trimmomatic-0.32.jar PE -phred$(PHRED) -threads $(CPU) \
+		java -Xmx$(MEM)g -jar trimmomatic-0.32.jar PE -phred$(PHRED) -threads $(CPU) \
 		$(READ1) \
 		$(READ2) \
-		$(RUN).pp.1.fq \
-		$(RUN).up.1.fq \
-		$(RUN).pp.2.fq \
-		$(RUN).up.2.fq \
 		ILLUMINACLIP:${MAKEDIR}/$(BCODES):2:40:15 \
 		LEADING:$(TRIM) TRAILING:$(TRIM) SLIDINGWINDOW:4:$(TRIM) MINLEN:$(MINLEN) 2> trim.log ;
 		cat $(RUN).pp.1.fq $(RUN).up.1.fq > $(RUN)_left.$(TRIM).fastq ;
