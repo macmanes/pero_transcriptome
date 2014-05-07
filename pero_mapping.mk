@@ -109,28 +109,6 @@ pero380k='/media/macmanes/raid/121027_HS3A_pero/raw_reads/380k_dry_peer_index1.f
 pero372k='/media/macmanes/raid/121027_HS3A_pero/raw_reads/372k_wet_peer_index2.fastq.gz'
 ###
 ##
-mkdir -p  /media/macmanes/hd3/pero/`date +%d%b%Y`/305
-mkdir -p  /media/macmanes/hd3/pero/`date +%d%b%Y`/340
-mkdir -p  /media/macmanes/hd3/pero/`date +%d%b%Y`/365
-mkdir -p  /media/macmanes/hd3/pero/`date +%d%b%Y`/366
-mkdir -p  /media/macmanes/hd3/pero/`date +%d%b%Y`/368
-mkdir -p  /media/macmanes/hd3/pero/`date +%d%b%Y`/369
-mkdir -p  /media/macmanes/hd3/pero/`date +%d%b%Y`/305
-mkdir -p  /media/macmanes/hd3/pero/`date +%d%b%Y`/308
-mkdir -p  /media/macmanes/hd3/pero/`date +%d%b%Y`/352
-mkdir -p  /media/macmanes/hd3/pero/`date +%d%b%Y`/359
-mkdir -p  /media/macmanes/hd3/pero/`date +%d%b%Y`/360
-mkdir -p  /media/macmanes/hd3/pero/`date +%d%b%Y`/365b
-mkdir -p  /media/macmanes/hd3/pero/`date +%d%b%Y`/326
-mkdir -p  /media/macmanes/hd3/pero/`date +%d%b%Y`/321
-mkdir -p  /media/macmanes/hd3/pero/`date +%d%b%Y`/354
-mkdir -p  /media/macmanes/hd3/pero/`date +%d%b%Y`/372b
-mkdir -p  /media/macmanes/hd3/pero/`date +%d%b%Y`/373b
-mkdir -p  /media/macmanes/hd3/pero/`date +%d%b%Y`/382k
-mkdir -p  /media/macmanes/hd3/pero/`date +%d%b%Y`/373k
-mkdir -p  /media/macmanes/hd3/pero/`date +%d%b%Y`/380k
-mkdir -p  /media/macmanes/hd3/pero/`date +%d%b%Y`/372k
-mkdir -p  /media/macmanes/hd3/pero/`date +%d%b%Y`/380b
 
 index=/media/macmanes/hd3/pero
 home=/media/macmanes/hd3/pero/`date +%d%b%Y`
@@ -138,16 +116,19 @@ home=/media/macmanes/hd3/pero/`date +%d%b%Y`
 fasta='/media/macmanes/hd3/pero_for_annont/candidates.fa'
 bwa_index='bwa_index'
 
-echo "##################################################"
-echo "Making Bowtie2 Index @ `date`."
-echo "##################################################"
-cd $index
-if [ -f $bwa_index.bwt ];
-then
-   echo "Index exists"
-else
-	bwa index -p $bwa_index $fasta
-fi
+
+
+
+
+index.bwt: $(FASTA)
+		@echo ---Quantitiating Transcripts---
+		bwa index -p index $(FASTA)
+		
+out:in
+	name=372
+	bwa mem -t $(CPU) index $(READ1) $(READ2) 2>bwa.log | samtools view -@ $(CPU) -1 - | samtools sort -@ 6 -m 1G - $(name) > $(name).bam
+	samtools mpileup -uvf $(FASTA) $(name).bam | bcftools view -cgIS - | vcfutils.pl vcf2fq > $(name).fq
+
 
 echo "##################################################"
 echo "Beginning pero372k @ `date`."
