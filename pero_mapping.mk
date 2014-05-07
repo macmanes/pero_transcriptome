@@ -18,13 +18,11 @@ MAKEDIR := $(dir $(firstword $(MAKEFILE_LIST)))
 DIR := ${CURDIR}
 
 CPU=2
-RUN=test123
+RUN=test
 REF=
-index=/media/macmanes/hd3/pero
+INDEX=/media/macmanes/hd3/pero
 WD=$(DIR)/`date +%d%b%Y`
 
-fasta='/media/macmanes/hd3/pero_for_annont/candidates.fa'
-bwa_index='bwa_index'
 
 
 
@@ -106,7 +104,7 @@ pero373k='/mnt/data3/macmanes/121027_HS3A_pero/raw_reads/373k_wet_peer_index3.fa
 ##
 pero380k='/mnt/data3/macmanes/121027_HS3A_pero/raw_reads/380k_dry_peer_index1.fastq.gz'
 ##
-pero372k='/mnt/data3/macmanes/121027_HS3A_pero/raw_reads/372k_wet_peer_index2.fastq.gz'
+372_read1='/mnt/data3/macmanes/121027_HS3A_pero/raw_reads/372k_wet_peer_index2.fastq.gz'
 ###
 ##
 
@@ -115,12 +113,12 @@ pero372k='/mnt/data3/macmanes/121027_HS3A_pero/raw_reads/372k_wet_peer_index2.fa
 
 
 index.bwt: $(REF)
-		@echo ---Quantitiating Transcripts---
-		bwa index -p index $(REF)
+	@echo ---Quantitiating Transcripts---
+	bwa index -p index $(REF)
 		
-out:in
+$(name).fq:$($(name)_read1)
 	name=372
-	bwa mem -t $(CPU) index $(READ1) $(READ2) 2>bwa.log | samtools view -@ $(CPU) -1 - | samtools sort -@ 6 -m 1G - $(name) > $(name).bam
+	bwa mem -t $(CPU) index $($(name)_read1) 2>bwa.log | samtools view -@ $(CPU) -1 - | samtools sort -@ 6 -m 1G - $(name) > $(name).bam
 	samtools mpileup -uvf $(REF) $(name).bam | bcftools view -cgIS - | vcfutils.pl vcf2fq > $(name).fq
 
 
