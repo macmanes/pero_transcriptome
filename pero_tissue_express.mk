@@ -18,16 +18,16 @@
 MEM=2
 CPU=2
 BCPU=$(CPU)
-RUN=test123
 READ1=left.fq
 READ2=right.fq
-
+RUN=tissue
+REF=
 
 MAKEDIR := $(dir $(firstword $(MAKEFILE_LIST)))
 DIR := ${CURDIR}
 
 .PHONY: check clean
-all: check $(RUN)_left.$(TRIM).fastq $(RUN)_right.$(TRIM).fastq $(RUN).Trinity.fasta $(RUN).xprs
+all: $(RUN).xprs
 trim: check $(RUN)_left.$(TRIM).fastq $(RUN)_right.$(TRIM).fastq
 assemble: check $(RUN).Trinity.fasta
 express: check $(RUN).xprs
@@ -44,16 +44,15 @@ check:
 	if [ -f $(READ2) ]; then echo 'right fastQ exists \n'; else echo 'Im having trouble finding your right fastQ file, check PATH \n'; fi;
 	chmod -w $(READ1) 2>/dev/null; true
 	chmod -w $(READ2) 2>/dev/null; true
-	@echo Your PATH=$$PATH
 
 
 
 $(RUN).xprs: $(RUN).Trinity.fasta
 		@echo ---Quantitiating Transcripts---
-		bwa index -p index $(RUN).Trinity.fasta
+		bwa index -p index $(REF)
 		bwa mem -t $(CPU) index $(READ1) $(READ2) 2>bwa.log | samtools view -@ $(CPU) -1 - > $(RUN).bam
 		samtools flagstat $(RUN).bam > $(RUN).map.stats &
 		@echo --eXpress---
 		express -o $(RUN).xprs \
-		-p $(CPU) $(RUN).Trinity.fasta $(RUN).bam 2>express.log
+		-p $(CPU) $(REF) $(RUN).bam 2>express.log
 		@echo TIMESTAMP: `date +'%a %d%b%Y  %H:%M:%S'` Finished eXpress '\n\n'
