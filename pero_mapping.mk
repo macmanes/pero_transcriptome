@@ -126,305 +126,52 @@ $(name).fasta:$($(name)_read1)
 
 
 
-echo "##################################################"
-echo "Beginning pero372k @ `date`."
-echo "##################################################"
-cd $home
-name=372
-if [ -f $name.bam ];
-then
-   echo "File exists"
-else
-	bwa mem -t 8  $index/$bwa_index $pero372k | samtools view -Sb - | samtools sort -@ 6 -m 1G - $name > $name
-	samtools mpileup -uvf $fasta $name.bam | bcftools view -cgIS - | vcfutils.pl vcf2fq > $name.fq
-	python ~/Desktop/python/fq2fa.py $name.fq $name.fa
-	sed -i "s_>.*_&-${name}_g" $name.fa
-	fasta_formatter -i $name.fa -o $name.fasta	
-fi
-echo "##################################################"
-echo "Beginning pero380k @ `date`."
-echo "##################################################"
-cd $home
-name=380
-if [ -f $name.bam ];
-then
-   echo "File exists"
-else
-	bwa mem -t 8  $index/$bwa_index $pero380k | samtools view -Sb - | samtools sort -@ 6 -m 1G - $name
-	samtools mpileup -uvf $fasta $name.bam | bcftools view -cgIS - | vcfutils.pl vcf2fq > $name.fq
-	python ~/Desktop/python/fq2fa.py $name.fq $name.fa
-	sed -i "s_>.*_&-${name}_g" $name.fa
-	fasta_formatter -i $name.fa -o $name.fasta	
-fi
-echo "##################################################"
-echo "Beginning pero373k @ `date`."
-echo "##################################################"
-cd $home
-name=373
-if [ -f $name.bam ];
-then
-   echo "File exists"
-else
-	bwa mem -t 8  $index/$bwa_index $pero373k | samtools view -Sb - | samtools sort -@ 6 -m 1G - $name
-	samtools mpileup -uvf $fasta $name.bam | bcftools view -cgIS - | vcfutils.pl vcf2fq > $name.fq
-	python ~/Desktop/python/fq2fa.py $name.fq $name.fa
-	sed -i "s_>.*_&-${name}_g" $name.fa
-	fasta_formatter -i $name.fa -o $name.fasta	
-fi
-echo "##################################################"
-echo "Beginning pero382k @ `date`."
-echo "##################################################"
-cd $home
-name=382
-if [ -f $name.bam ];
-then
-   echo "File exists"
-else
-	bwa mem -t 8  $index/$bwa_index $pero382k | samtools view -Sb - | samtools sort -@ 6 -m 1G - $name
-	samtools mpileup -uvf $fasta $name.bam | bcftools view -cgIS - | vcfutils.pl vcf2fq > $name.fq
-	python ~/Desktop/python/fq2fa.py $name.fq $name.fa
-	sed -i "s_>.*_&-${name}_g" $name.fa
-	fasta_formatter -i $name.fa -o $name.fasta
-	sed -i ':begin;$!N;/[ACTG]\n[ACTG]/s/\n//;tbegin;P;D' $name.fasta
-fi
-echo "##################################################"
-echo "Beginning pero321 @ `date`."
-echo "##################################################"
-cd $home
-name=321
-if [ -f $name.bam ];
-then
-   echo "File exists"
-else
-	bwa mem -t 8  $index/$bwa_index $pero321 | samtools view -Sb - | samtools sort -@ 6 -m 1G - $name
-	samtools mpileup -uvf $fasta $name.bam | bcftools view -cgIS - | vcfutils.pl vcf2fq > $name.fq
-	python ~/Desktop/python/fq2fa.py $name.fq $name.fa
-	sed -i "s_>.*_&-${name}_g" $name.fa
-	fasta_formatter -i $name.fa -o $name.fasta
-	sed -i ':begin;$!N;/[ACTG]\n[ACTG]/s/\n//;tbegin;P;D' $name.fasta
-fi
-echo "##################################################"
-echo "Beginning pero326 @ `date`."
-echo "##################################################"
-cd $home
-name=326
-if [ -f $name.bam ];
-then
-   echo "File exists"
-else
-	bwa mem -t 8  $index/$bwa_index $pero326 | samtools view -Sb - | samtools sort -@ 6 -m 1G - $name
-	samtools mpileup -uvf $fasta $name.bam | bcftools view -cgIS - | vcfutils.pl vcf2fq > $name.fq
-	python ~/Desktop/python/fq2fa.py $name.fq $name.fa
-	sed -i "s_>.*_&-${name}_g" $name.fa
-	fasta_formatter -i $name.fa -o $name.fasta
-	sed -i ':begin;$!N;/[ACTG]\n[ACTG]/s/\n//;tbegin;P;D' $name.fasta	
-fi
-echo "##################################################"
-echo "Beginning 305 @ `date`."
-echo "##################################################"
-
-cd $home
-name=305
-if [ -f $name.bam ];
-then
-   echo "File exists"
-else
-	bwa mem -t 8  $index/$bwa_index $pero305_1 $pero305_2 | samtools view -Sb - | samtools sort -@ 6 -m 1G - $name
-	samtools mpileup -uvf $fasta $name.bam | bcftools view -cgIS - | vcfutils.pl vcf2fq > $name.fq
-	python ~/Desktop/python/fq2fa.py $name.fq $name.fa
-	sed -i "s_>.*_&-${name}_g" $name.fa
-	fasta_formatter -i $name.fa -o $name.fasta
-	sed -i ':begin;$!N;/[ACTG]\n[ACTG]/s/\n//;tbegin;P;D' $name.fasta	
-fi
 
 
 
-echo "##################################################"
-echo "Beginning 340 @ `date`."
-echo "##################################################"
-
-cd $home
-name=340
-if [ -f $name.bam ];
-then
-   echo "File exists"
-else
-	bwa mem -t 8  $index/$bwa_index $pero340_1 $pero340_2 | samtools view -Sb - | samtools sort -@ 6 -m 1G - $name
-	samtools mpileup -uvf $fasta $name.bam | bcftools view -cgIS - | vcfutils.pl vcf2fq > $name.fq
-	python ~/Desktop/python/fq2fa.py $name.fq $name.fa
-	sed -i "s_>.*_&-${name}_g" $name.fa
-	fasta_formatter -i $name.fa -o $name.fasta	
-	sed -i ':begin;$!N;/[ACTG]\n[ACTG]/s/\n//;tbegin;P;D' $name.fasta
-fi
 
 
-echo "##################################################"
-echo "Beginning 308 @ `date`."
-echo "##################################################"
-cd $home
-name=308
-if [ -f $name.bam ];
-then
-   echo "File exists"
-else
-	bwa mem -t 8  $index/$bwa_index $pero308_1 $pero308_2 | samtools view -Sb - | samtools sort -@ 6 -m 1G - $name
-	samtools mpileup -uvf $fasta $name.bam | bcftools view -cgIS - | vcfutils.pl vcf2fq > $name.fq
-	python ~/Desktop/python/fq2fa.py $name.fq $name.fa
-	sed -i "s_>.*_&-${name}_g" $name.fa
-	fasta_formatter -i $name.fa -o $name.fasta	
-	sed -i ':begin;$!N;/[ACTG]\n[ACTG]/s/\n//;tbegin;P;D' $name.fasta
-fi
-echo "##################################################"
-echo "Beginning 352 @ `date`."
-echo "##################################################"
-cd $home
-name=352
-if [ -f $name.bam ];
-then
-   echo "File exists"
-else
-	bwa mem -t 8  $index/$bwa_index $pero352_1 $pero352_2 | samtools view -Sb - | samtools sort -@ 6 -m 1G - $name
-	samtools mpileup -uvf $fasta $name.bam | bcftools view -cgIS - | vcfutils.pl vcf2fq > $name.fq
-	python ~/Desktop/python/fq2fa.py $name.fq $name.fa
-	sed -i "s_>.*_&-${name}_g" $name.fa
-	fasta_formatter -i $name.fa -o $name.fasta	
-	sed -i ':begin;$!N;/[ACTG]\n[ACTG]/s/\n//;tbegin;P;D' $name.fasta
-fi
-
-echo "##################################################"
-echo "Beginning pero354 @ `date`."
-echo "##################################################"
-cd $home
-name=354
-if [ -f $name.bam ];
-then
-   echo "File exists"
-else
-	bwa mem -t 8  $index/$bwa_index $pero354 | samtools view -Sb - | samtools sort -@ 6 -m 1G - $name
-	samtools mpileup -uvf $fasta $name.bam | bcftools view -cgIS - | vcfutils.pl vcf2fq > $name.fq
-	python ~/Desktop/python/fq2fa.py $name.fq $name.fa
-	sed -i "s_>.*_&-${name}_g" $name.fa
-	fasta_formatter -i $name.fa -o $name.fasta	
-	sed -i ':begin;$!N;/[ACTG]\n[ACTG]/s/\n//;tbegin;P;D' $name.fasta
-fi
 
 
-echo "##################################################"
-echo "Beginning 359 @ `date`."
-echo "##################################################"
-cd $home
-name=359
-if [ -f $name.bam ];
-then
-   echo "File exists"
-else
-	bwa mem -t 8  $index/$bwa_index $pero359_1 $pero359_2 | samtools view -Sb - | samtools sort -@ 6 -m 1G - $name
-	samtools mpileup -uvf $fasta $name.bam | bcftools view -cgIS - | vcfutils.pl vcf2fq > $name.fq
-	python ~/Desktop/python/fq2fa.py $name.fq $name.fa
-	sed -i "s_>.*_&-${name}_g" $name.fa
-	fasta_formatter -i $name.fa -o $name.fasta	
-	sed -i ':begin;$!N;/[ACTG]\n[ACTG]/s/\n//;tbegin;P;D' $name.fasta
-fi
-echo "##################################################"
-echo "Beginning 360 @ `date`."
-echo "##################################################"
-#need to do SE elignments
-cd $home
-name=360
-if [ -f $name.bam ];
-then
-   echo "File exists"
-else
-	bwa mem -t 8  $index/$bwa_index $pero360_1 $pero360_2 | samtools view -Sb - | samtools sort -@ 6 -m 1G - $name
-	samtools mpileup -uvf $fasta $name.bam | bcftools view -cgIS - | vcfutils.pl vcf2fq > $name.fq
-	python ~/Desktop/python/fq2fa.py $name.fq $name.fa
-	sed -i "s_>.*_&-${name}_g" $name.fa
-	fasta_formatter -i $name.fa -o $name.fasta
-	sed -i ':begin;$!N;/[ACTG]\n[ACTG]/s/\n//;tbegin;P;D' $name.fasta
-fi
 
 
-echo "##################################################"
-echo "Beginning 365 @ `date`."
-echo "##################################################"
-cd $home
-name=365
-if [ -f $name.bam ];
-then
-   echo "File exists"
-else
-	bwa mem -t 8  $index/$bwa_index $pero365_1 $pero365_2 | samtools view -Sb - | samtools sort -@ 6 -m 1G - $name
-	samtools mpileup -uvf $fasta $name.bam | bcftools view -cgIS - | vcfutils.pl vcf2fq > $name.fq
-	python ~/Desktop/python/fq2fa.py $name.fq $name.fa
-	sed -i "s_>.*_&-${name}_g" $name.fa
-	fasta_formatter -i $name.fa -o $name.fasta	
-	sed -i ':begin;$!N;/[ACTG]\n[ACTG]/s/\n//;tbegin;P;D' $name.fasta
-fi
 
 
-echo "##################################################"
-echo "Beginning Index 366 @ `date`."
-echo "##################################################"
-cd $home
-name=366
-if [ -f $name.bam ];
-then
-   echo "File exists"
-else
-	bwa mem -t 8  $index/$bwa_index $pero366_1 $pero366_2 | samtools view -Sb - | samtools sort -@ 6 -m 1G - $name
-	samtools mpileup -uvf $fasta $name.bam | bcftools view -cgIS - | vcfutils.pl vcf2fq > $name.fq
-	python ~/Desktop/python/fq2fa.py $name.fq $name.fa
-	sed -i "s_>.*_&-${name}_g" $name.fa
-	fasta_formatter -i $name.fa -o $name.fasta	
-	sed -i ':begin;$!N;/[ACTG]\n[ACTG]/s/\n//;tbegin;P;D' $name.fasta
-fi
-echo "##################################################"
-echo "Beginning 366b @ `date`."
-echo "##################################################"
-#cd $p366b
-#name=366
-#if [ -f $name.bam ];
-#then
-#   echo "File exists"
-#else
-#	bwa mem -t 8  $index/$bwa_index $pero366b_1 $pero366b_2 | samtools view -Sb - | samtools sort -@ 6 -m 1G - $name
-#	
-#fi
 
 
-echo "##################################################"
-echo "Beginning Index 368b @ `date`."
-echo "##################################################"
-echo "##################################################"
-echo "Beginning Index 368 @ `date`."
-echo "##################################################"
-cd $home
-name=368
-if [ -f $name.bam ];
-then
-   echo "File exists"
-else
-	bwa mem -t 8  $index/$bwa_index $pero368_1 $pero368_2 | samtools view -Sb - | samtools sort -@ 6 -m 1G - $name
-	samtools mpileup -uvf $fasta $name.bam | bcftools view -cgIS - | vcfutils.pl vcf2fq > $name.fq
-	python ~/Desktop/python/fq2fa.py $name.fq $name.fa
-	sed -i "s_>.*_&-${name}_g" $name.fa
-	fasta_formatter -i $name.fa -o $name.fasta
-	sed -i ':begin;$!N;/[ACTG]\n[ACTG]/s/\n//;tbegin;P;D' $name.fasta
-fi
 
-echo "##################################################"
-echo "Beginning Index 369 @ `date`."
-echo "##################################################"
-cd $home
-name=369
-if [ -f $name.bam ];
-then
-   echo "File exists"
-else
-	bwa mem -t 8 $index/$bwa_index $pero369_1 $pero369_2 | samtools view -Sb - | samtools sort -@ 6 -m 1G - $name 
-	samtools mpileup -uvf $fasta $name.bam | bcftools view -cgIS - | vcfutils.pl vcf2fq > $name.fq
-	python ~/Desktop/python/fq2fa.py $name.fq $name.fa
-	sed -i "s_>.*_&-${name}_g" $name.fa
-	fasta_formatter -i $name.fa -o $name.fasta
-       	sed -i ':begin;$!N;/[ACTG]\n[ACTG]/s/\n//;tbegin;P;D' $name.fasta
-fi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
