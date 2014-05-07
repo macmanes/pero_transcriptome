@@ -106,18 +106,15 @@ pero380k='/mnt/data3/macmanes/121027_HS3A_pero/raw_reads/380k_dry_peer_index1.fa
 ##
 372_read1='/mnt/data3/macmanes/121027_HS3A_pero/raw_reads/372k_wet_peer_index2.fastq.gz'
 ###
-##
-
-
-
 
 
 index.bwt: $(REF)
 	@echo ---Quantitiating Transcripts---
 	bwa index -p index $(REF)
-		
+
+@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin 372--- '\n\n'
+name=372		
 $(name).fasta:$($(name)_read1)
-	name=372
 	bwa mem -t $(CPU) index $($(name)_read1) 2>bwa.log | samtools view -@ $(CPU) -1 - | samtools sort -@ 6 -m 1G - $(name) > $(name).bam
 	samtools mpileup -uvf $(REF) $(name).bam | bcftools view -cgIS - | vcfutils.pl vcf2fq > $(name).fq
 	python ~/Desktop/python/fq2fa.py $(name).fq $(name).fa
