@@ -21,12 +21,12 @@ BCPU=$(CPU)
 READ1=left.fq
 READ2=right.fq
 RUN=tissue
-REF=
+REF=input.fasta
 
 MAKEDIR := $(dir $(firstword $(MAKEFILE_LIST)))
 DIR := ${CURDIR}
 
-.PHONY: check clean
+.PHONY: check
 all: check $(RUN).xprs
 
 
