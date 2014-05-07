@@ -116,10 +116,17 @@ index.bwt: $(REF)
 	@echo ---Quantitiating Transcripts---
 	bwa index -p index $(REF)
 		
-$(name).fq:$($(name)_read1)
+$(name).fasta:$($(name)_read1)
 	name=372
 	bwa mem -t $(CPU) index $($(name)_read1) 2>bwa.log | samtools view -@ $(CPU) -1 - | samtools sort -@ 6 -m 1G - $(name) > $(name).bam
 	samtools mpileup -uvf $(REF) $(name).bam | bcftools view -cgIS - | vcfutils.pl vcf2fq > $(name).fq
+	python ~/Desktop/python/fq2fa.py $(name).fq $(name).fa
+	sed -i "s_>.*_&-${name}_g" $(name).fa
+	fasta_formatter -i $(name).fa -o $(name).fasta
+
+
+
+
 
 
 echo "##################################################"
