@@ -46,11 +46,11 @@ check:
 
 
 $(RUN).xprs: $(REF)
-		@echo ---Quantitiating Transcripts---
-		bwa index -p index $(REF)
-		bwa mem -t $(CPU) index $(READ1) $(READ2) 2>bwa.log | samtools view -@ $(CPU) -1 - > $(RUN).bam
-		samtools flagstat $(RUN).bam > $(RUN).map.stats &
-		@echo --eXpress---
-		express -o $(RUN).xprs \
-		-p $(CPU) $(REF) $(RUN).bam 2>express.log
-		@echo TIMESTAMP: `date +'%a %d%b%Y  %H:%M:%S'` Finished eXpress '\n\n'
+	@echo ---Quantitiating Transcripts---
+	bwa index -p index $(REF)
+	bwa mem -t $(CPU) index $(READ1) $(READ2) 2>bwa.log | samtools view -@ $(CPU) -1 - > $(RUN).bam
+	samtools flagstat $(RUN).bam > $(RUN).map.stats &
+	@echo --eXpress---
+	express -o $(RUN).xprs \
+	-p $(CPU) $(REF) $(RUN).bam 2>express.log
+	@echo TIMESTAMP: `date +'%a %d%b%Y  %H:%M:%S'` Finished eXpress '\n\n'
