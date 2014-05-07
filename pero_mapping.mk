@@ -1,4 +1,4 @@
-#!/usr/bin/make -rRsf
+	#!/usr/bin/make -rRsf
 
 ###########################################
 ###        -usage 'assembly.mk RUN=run CPU=2 MEM=15 READ1=/location/of/read1.fastq READ2=/location/of/read2.fastq'
