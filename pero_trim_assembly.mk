@@ -51,7 +51,6 @@ check:
 	if [ -f $(READ2) ]; then echo 'right fastQ exists \n'; else echo 'Im having trouble finding your right fastQ file, check PATH \n'; fi;
 	chmod -w $(READ1) 2>/dev/null; true
 	chmod -w $(READ2) 2>/dev/null; true
-	@echo Your PATH=$$PATH
 
 $(RUN)_left.$(TRIM).fastq $(RUN)_right.$(TRIM).fastq: $(READ1) $(READ2)
 	@echo TIMESTAMP: `date +'%a %d%b%Y  %H:%M:%S'` About to start trimming
