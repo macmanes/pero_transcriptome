@@ -27,10 +27,8 @@ MAKEDIR := $(dir $(firstword $(MAKEFILE_LIST)))
 DIR := ${CURDIR}
 
 .PHONY: check clean
-all: $(RUN).xprs
-trim: check $(RUN)_left.$(TRIM).fastq $(RUN)_right.$(TRIM).fastq
-assemble: check $(RUN).Trinity.fasta
-express: check $(RUN).xprs
+all: check $(RUN).xprs
+
 
 
 check:
