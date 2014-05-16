@@ -29,7 +29,7 @@ WD=$(DIR)/`date +%d%b%Y`
 
 
 .PHONY: check clean
-all: check $(RUN)_left.$(TRIM).fastq $(RUN)_right.$(TRIM).fastq $(RUN).Trinity.fasta $(RUN).xprs
+all: 
 
 
 
