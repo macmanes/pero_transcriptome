@@ -18,7 +18,7 @@ CONVERT=$(shell locate fq2fa.py)
 
 
 .PHONY: check clean
-all: check index.bwt 380.fasta 372.fasta
+all: check index.bwt 19.fasta 321.fasta 354.fasta 382.fasta 373.fasta 380.fasta 372.fasta
 
 
 check:
@@ -28,10 +28,7 @@ check:
 	@echo BWA is Installed
 	command -v samtools >/dev/null 2>&1 || { echo >&2 "I require samTools but it's not installed.  Aborting."; exit 1; }
 	@echo samTools is Installed
-	if [ -f $(READ1) ]; then echo 'left fastQ exists'; else echo 'Im having trouble finding your left fastQ file, check PATH \n'; exit 1; fi;
-	if [ -f $(READ2) ]; then echo 'right fastQ exists \n'; else echo 'Im having trouble finding your right fastQ file, check PATH \n'; fi;
-	chmod -w $(READ1) 2>/dev/null; true
-	chmod -w $(READ2) 2>/dev/null; true
+
 
 
 
