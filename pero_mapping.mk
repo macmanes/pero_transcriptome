@@ -1,4 +1,4 @@
-	#!/usr/bin/make -rRsf
+#!/usr/bin/make -rRsf
 
 ###########################################
 ###        -usage 'assembly.mk RUN=run CPU=2 MEM=15 READ1=/location/of/read1.fastq READ2=/location/of/read2.fastq'
@@ -29,7 +29,7 @@ WD=$(DIR)/`date +%d%b%Y`
 
 
 .PHONY: check clean
-all: 
+all: check index.bwt 372.fasta
 
 
 
@@ -108,55 +108,18 @@ pero380k='/mnt/data3/macmanes/121027_HS3A_pero/raw_reads/380k_dry_peer_index1.fa
 ###
 
 
-index.bwt: $(REF)
+index.bwt:
 	@echo ---Quantitiating Transcripts---
 	bwa index -p index $(REF)
 
-@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin 372--- '\n\n'
 name=372		
-$(name).fasta:$($(name)_read1)
-	bwa mem -t $(CPU) index $($(name)_read1) 2>bwa.log | samtools view -@ $(CPU) -1 - | samtools sort -@ 6 -m 1G - $(name) > $(name).bam
+372.fasta:
+	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin 372--- '\n\n'
+	bwa mem -t $(CPU) index $(372_read1) 2>bwa.log | samtools view -@ $(CPU) -1 - | samtools sort -@ 6 -m 1G - $(name) > $(name).bam
 	samtools mpileup -uvf $(REF) $(name).bam | bcftools view -cgIS - | vcfutils.pl vcf2fq > $(name).fq
 	python ~/Desktop/python/fq2fa.py $(name).fq $(name).fa
 	sed -i "s_>.*_&-${name}_g" $(name).fa
 	fasta_formatter -i $(name).fa -o $(name).fasta
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
