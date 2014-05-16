@@ -29,7 +29,7 @@ CONVERT=$(shell locate fq2fa.py)
 
 
 .PHONY: check clean
-all: check index.bwt 372.fasta
+all: check index.bwt $(name).fasta
 
 
 
@@ -102,7 +102,7 @@ pero382k='/mnt/data3/macmanes/121027_HS3A_pero/raw_reads/382k_notx_peer_index15.
 ##
 pero373k='/mnt/data3/macmanes/121027_HS3A_pero/raw_reads/373k_wet_peer_index3.fastq.gz'
 ##
-pero380k='/mnt/data3/macmanes/121027_HS3A_pero/raw_reads/380k_dry_peer_index1.fastq.gz'
+380_read1='/mnt/data3/macmanes/121027_HS3A_pero/raw_reads/380k_dry_peer_index1.fastq.gz'
 ##
 372_read1=/mnt/data3/macmanes/121027_HS3A_pero/raw_reads/372k_wet_peer_index2.fastq.gz
 ###
@@ -113,10 +113,36 @@ index.bwt:
 	bwa index -p index $(REF)
 
 name=372
-372.fasta:
+$(name).fasta:
 	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin 372--- '\n\n'
 	bwa mem -t $(CPU) index $($(name)_read1) 2> bwa.log | samtools view -@ $(CPU) -1 - | samtools sort -m 20G - $(name)
 	samtools mpileup -uvf $(REF) $(name).bam | bcftools view -cgIS - | vcfutils.pl vcf2fq > $(name).fq
 	python $(CONVERT) $(name).fq $(name).fa
 	sed -i "s_>.*_&-${name}_g" $(name).fa
 	fasta_formatter -i $(name).fa -o $(name).fasta
+
+
+name=380
+$(name).fasta:
+	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin 372--- '\n\n'
+	bwa mem -t $(CPU) index $($(name)_read1) 2> bwa.log | samtools view -@ $(CPU) -1 - | samtools sort -m 20G - $(name)
+	samtools mpileup -uvf $(REF) $(name).bam | bcftools view -cgIS - | vcfutils.pl vcf2fq > $(name).fq
+	python $(CONVERT) $(name).fq $(name).fa
+	sed -i "s_>.*_&-${name}_g" $(name).fa
+	fasta_formatter -i $(name).fa -o $(name).fasta
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
