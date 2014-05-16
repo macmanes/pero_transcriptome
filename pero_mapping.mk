@@ -18,7 +18,7 @@ CONVERT=$(shell locate fq2fa.py)
 
 
 .PHONY: check clean
-all: check test test2 index.bwt 380.fasta 372.fasta
+all: check index.bwt 380.fasta 372.fasta
 
 
 check:
