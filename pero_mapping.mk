@@ -47,34 +47,35 @@ pero368_2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index10.2.fq.gz'
 ###
 pero369_1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index16.1.fq.gz'
 pero369_2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index16.2.fq.gz'
+
 ### DC Aug
-pero305_1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index2.1.fq.gz'
-pero305_2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index2.2.fq.gz'
+305_read1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index2.1.fq.gz'
+305_read2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index2.2.fq.gz'
 ###
-pero308_1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index4.1.fq.gz'
-pero308_2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index4.2.fq.gz'
-pero308_3='/mnt/data3/macmanes/sequence-reads/peromyscus/peer.308.dc.fq.bz2'
+308_read1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index4.1.fq.gz'
+308_read2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index4.2.fq.gz'
+308_read3='/mnt/data3/macmanes/sequence-reads/peromyscus/peer.308.dc.fq.bz2'
 ### DC Oct
-pero352_1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index5.1.fq.gz'
-pero352_2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index5.2.fq.gz'
-pero352_3='/mnt/data3/macmanes/sequence-reads/peromyscus/peer.354.dc.fq.bz2'
+352_read1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index5.1.fq.gz'
+352_read2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index5.2.fq.gz'
+352_read3='/mnt/data3/macmanes/sequence-reads/peromyscus/peer.354.dc.fq.bz2'
 ### 
-pero359_1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index6.1.fq.gz'
-pero359_2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index6.2.fq.gz'
+359_read1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index6.1.fq.gz'
+359_read2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index6.2.fq.gz'
 ###
-pero360_1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index7.1.fq.gz'
-pero360_2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index7.2.fq.gz'
-pero360_3='/mnt/data3/macmanes/peromyscus/peer.360.dc.fq.bz2'
+360_read1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index7.1.fq.gz'
+360_read2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index7.2.fq.gz'
+360_read3='/mnt/data3/macmanes/peromyscus/peer.360.dc.fq.bz2'
 ##
 ##
-pero368b_1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index11.1.fq.gz'
-pero368b_2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index11.2.fq.gz'
+368_read1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index11.1.fq.gz'
+368_read2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index11.2.fq.gz'
 ##
-pero365b_1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index12.1.fq.gz'
-pero365b_2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index12.2.fq.gz'
+365_read1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index12.1.fq.gz'
+365_read2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index12.2.fq.gz'
 ##
-pero366b_1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index14.1.fq.gz'
-pero366b_2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index14.2.fq.gz'
+366_read1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index14.1.fq.gz'
+366_read2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index14.2.fq.gz'
 ##
 19_read1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index19.1.fq.gz'
 19_read2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index19.2.fq.gz'
@@ -96,6 +97,107 @@ pero366b_2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index14.2.fq.gz'
 index.bwt:
 	@echo ---Quantitiating Transcripts---
 	bwa index -p index $(REF)
+
+
+
+.PHONY: 305.fasta
+305.fasta: name := 305
+305.fasta:
+	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
+	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
+	samtools mpileup -AIuf $(REF) $(name).bam | bcftools view - | vcfutils.pl vcf2fq > $(name).fq
+	python $(CONVERT) $(name).fq $(name).fa
+	sed -i "s_>.*_&-${name}_g" $(name).fa
+	sed ':begin;$!N;/[ACTGNn-]\n[ACTGNn-]/s/\n//;tbegin;P;D' $(name).fa > $(name).fasta
+
+
+
+.PHONY: 308.fasta
+308.fasta: name := 308
+308.fasta:
+	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
+	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
+	samtools mpileup -AIuf $(REF) $(name).bam | bcftools view - | vcfutils.pl vcf2fq > $(name).fq
+	python $(CONVERT) $(name).fq $(name).fa
+	sed -i "s_>.*_&-${name}_g" $(name).fa
+	sed ':begin;$!N;/[ACTGNn-]\n[ACTGNn-]/s/\n//;tbegin;P;D' $(name).fa > $(name).fasta
+
+
+
+.PHONY: 352.fasta
+352.fasta: name := 352
+352.fasta:
+	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
+	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
+	samtools mpileup -AIuf $(REF) $(name).bam | bcftools view - | vcfutils.pl vcf2fq > $(name).fq
+	python $(CONVERT) $(name).fq $(name).fa
+	sed -i "s_>.*_&-${name}_g" $(name).fa
+	sed ':begin;$!N;/[ACTGNn-]\n[ACTGNn-]/s/\n//;tbegin;P;D' $(name).fa > $(name).fasta
+
+
+.PHONY: 359.fasta
+359.fasta: name := 359
+359.fasta:
+	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
+	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
+	samtools mpileup -AIuf $(REF) $(name).bam | bcftools view - | vcfutils.pl vcf2fq > $(name).fq
+	python $(CONVERT) $(name).fq $(name).fa
+	sed -i "s_>.*_&-${name}_g" $(name).fa
+	sed ':begin;$!N;/[ACTGNn-]\n[ACTGNn-]/s/\n//;tbegin;P;D' $(name).fa > $(name).fasta
+
+
+.PHONY: 360.fasta
+360.fasta: name := 360
+360.fasta:
+	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
+	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
+	samtools mpileup -AIuf $(REF) $(name).bam | bcftools view - | vcfutils.pl vcf2fq > $(name).fq
+	python $(CONVERT) $(name).fq $(name).fa
+	sed -i "s_>.*_&-${name}_g" $(name).fa
+	sed ':begin;$!N;/[ACTGNn-]\n[ACTGNn-]/s/\n//;tbegin;P;D' $(name).fa > $(name).fasta
+
+
+
+
+
+
+.PHONY: 368.fasta
+368.fasta: name := 368
+368.fasta:
+	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
+	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
+	samtools mpileup -AIuf $(REF) $(name).bam | bcftools view - | vcfutils.pl vcf2fq > $(name).fq
+	python $(CONVERT) $(name).fq $(name).fa
+	sed -i "s_>.*_&-${name}_g" $(name).fa
+	sed ':begin;$!N;/[ACTGNn-]\n[ACTGNn-]/s/\n//;tbegin;P;D' $(name).fa > $(name).fasta
+
+
+
+
+
+
+.PHONY: 365.fasta
+365.fasta: name := 365
+365.fasta:
+	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
+	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
+	samtools mpileup -AIuf $(REF) $(name).bam | bcftools view - | vcfutils.pl vcf2fq > $(name).fq
+	python $(CONVERT) $(name).fq $(name).fa
+	sed -i "s_>.*_&-${name}_g" $(name).fa
+	sed ':begin;$!N;/[ACTGNn-]\n[ACTGNn-]/s/\n//;tbegin;P;D' $(name).fa > $(name).fasta
+
+
+
+
+.PHONY: 366.fasta
+366.fasta: name := 366
+366.fasta:
+	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
+	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
+	samtools mpileup -AIuf $(REF) $(name).bam | bcftools view - | vcfutils.pl vcf2fq > $(name).fq
+	python $(CONVERT) $(name).fq $(name).fa
+	sed -i "s_>.*_&-${name}_g" $(name).fa
+	sed ':begin;$!N;/[ACTGNn-]\n[ACTGNn-]/s/\n//;tbegin;P;D' $(name).fa > $(name).fasta
 
 
 
