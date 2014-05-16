@@ -1,13 +1,6 @@
 #!/usr/bin/make -rRsf
 
 ###########################################
-###        -usage 'assembly.mk RUN=run CPU=2 MEM=15 READ1=/location/of/read1.fastq READ2=/location/of/read2.fastq'
-###         -RUN= name of run
-###
-###
-###         -Make sure your samTools, BWA and Trinity are installed and in
-###          your path
-###
 ###
 ############################################
 
@@ -24,13 +17,19 @@ WD=$(DIR)/`date +%d%b%Y`
 CONVERT=$(shell locate fq2fa.py)
 
 
-
-
-
 .PHONY: check clean
-all: check index.bwt 380.fasta 372.fasta
+all: check test test2 index.bwt 380.fasta 372.fasta
 
 
+yyy := 222
+xxx := $(yyy)
+test:
+	@echo $(yyy)
+
+
+yyy := 333
+test2:
+	@echo $(xxx)
 
 check:
 	@echo TIMESTAMP: `date +'%a %d%b%Y  %H:%M:%S'` ---Begin--- '\n\n'
@@ -111,8 +110,10 @@ index.bwt:
 	@echo ---Quantitiating Transcripts---
 	bwa index -p index $(REF)
 
-name=372
-$(name).fasta:
+
+.PHONY: 372.fasta
+372.fasta: name := 372
+372.fasta:
 	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin 372--- '\n\n'
 	bwa mem -t $(CPU) index $($(name)_read1) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort -m20G - $(name)
 	samtools mpileup -AIuf $(REF) $(name).bam | bcftools view - | vcfutils.pl vcf2fq > $(name).fq
@@ -120,8 +121,11 @@ $(name).fasta:
 	sed -i "s_>.*_&-${name}_g" $(name).fa
 	sed ':begin;$!N;/[ACTGNn-]\n[ACTGNn-]/s/\n//;tbegin;P;D' $(name).fa > $(name).fasta
 
-name=380
-$(name).fasta:
+
+
+.PHONY: 380.fasta
+380.fasta: name := 380
+380.fasta:
 	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
 	bwa mem -t $(CPU) index $($(name)_read1) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort -m20G - $(name)
 	samtools mpileup -AIuf $(REF) $(name).bam | bcftools view - | vcfutils.pl vcf2fq > $(name).fq
