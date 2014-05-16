@@ -20,7 +20,6 @@ DIR := ${CURDIR}
 CPU=2
 RUN=test
 REF=
-INDEX=/media/macmanes/hd3/pero
 WD=$(DIR)/`date +%d%b%Y`
 CONVERT=$(shell locate fq2fa.py)
 
@@ -29,7 +28,7 @@ CONVERT=$(shell locate fq2fa.py)
 
 
 .PHONY: check clean
-all: check index.bwt $(name).fasta
+all: check index.bwt 380.fasta 372.fasta
 
 
 
@@ -112,11 +111,10 @@ index.bwt:
 	@echo ---Quantitiating Transcripts---
 	bwa index -p index $(REF)
 
-
 name=380
 $(name).fasta:
-	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin 372--- '\n\n'
-	bwa mem -t $(CPU) index $($(name)_read1) 2> bwa.log | samtools view -@ $(CPU) -1 - | samtools sort -m 20G - $(name)
+	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
+	bwa mem -t $(CPU) index $($(name)_read1) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort -m 20G - $(name)
 	samtools mpileup -uvf $(REF) $(name).bam | bcftools view -cgIS - | vcfutils.pl vcf2fq > $(name).fq
 	python $(CONVERT) $(name).fq $(name).fa
 	sed -i "s_>.*_&-${name}_g" $(name).fa
@@ -126,12 +124,11 @@ $(name).fasta:
 name=372
 $(name).fasta:
 	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin 372--- '\n\n'
-	bwa mem -t $(CPU) index $($(name)_read1) 2> bwa.log | samtools view -@ $(CPU) -1 - | samtools sort -m 20G - $(name)
+	bwa mem -t $(CPU) index $($(name)_read1) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort -m 20G - $(name)
 	samtools mpileup -uvf $(REF) $(name).bam | bcftools view -cgIS - | vcfutils.pl vcf2fq > $(name).fq
 	python $(CONVERT) $(name).fq $(name).fa
 	sed -i "s_>.*_&-${name}_g" $(name).fa
 	fasta_formatter -i $(name).fa -o $(name).fasta
-
 
 
 
