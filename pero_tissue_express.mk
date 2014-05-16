@@ -45,7 +45,7 @@ check:
 
 
 
-$(RUN).xprs: $(REF)
+$(RUN).xprs: $(REF) $(READ1) $(READ2)
 	@echo ---Quantitiating Transcripts---
 	bwa index -p index $(REF)
 	bwa mem -t $(CPU) index $(READ1) $(READ2) 2>bwa.log | samtools view -@ $(CPU) -1 - > $(RUN).bam
