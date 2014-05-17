@@ -1,13 +1,6 @@
-	#!/usr/bin/make -rRsf
+#!/usr/bin/make -rRsf
 
 ###########################################
-###        -usage 'assembly.mk RUN=run CPU=2 MEM=15 READ1=/location/of/read1.fastq READ2=/location/of/read2.fastq'
-###         -RUN= name of run
-###
-###
-###         -Make sure your samTools, BWA and Trinity are installed and in
-###          your path
-###
 ###
 ############################################
 
@@ -20,17 +13,12 @@ DIR := ${CURDIR}
 CPU=2
 RUN=test
 REF=
-INDEX=/media/macmanes/hd3/pero
 WD=$(DIR)/`date +%d%b%Y`
-
-
-
-
+CONVERT=$(shell locate fq2fa.py)
 
 
 .PHONY: check clean
-all: check $(RUN)_left.$(TRIM).fastq $(RUN)_right.$(TRIM).fastq $(RUN).Trinity.fasta $(RUN).xprs
-
+all: check index.bwt 369.fasta 340.fasta 365.fasta 366.fasta 368.fasta 360.fasta 359.fasta 352.fasta 308.fasta 305.fasta 19.fasta 321.fasta 354.fasta 382.fasta 373.fasta 380.fasta 372.fasta
 
 
 check:
@@ -40,78 +28,77 @@ check:
 	@echo BWA is Installed
 	command -v samtools >/dev/null 2>&1 || { echo >&2 "I require samTools but it's not installed.  Aborting."; exit 1; }
 	@echo samTools is Installed
-	if [ -f $(READ1) ]; then echo 'left fastQ exists'; else echo 'Im having trouble finding your left fastQ file, check PATH \n'; exit 1; fi;
-	if [ -f $(READ2) ]; then echo 'right fastQ exists \n'; else echo 'Im having trouble finding your right fastQ file, check PATH \n'; fi;
-	chmod -w $(READ1) 2>/dev/null; true
-	chmod -w $(READ2) 2>/dev/null; true
+
 
 
 
 #DC April
-pero365_1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index3.1.fq.gz'
-pero365_2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index3.2.fq.gz'
+365_read1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index3.1.fq.gz'
+365_read2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index3.2.fq.gz'
 ###
-pero340_1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index1.1.fq.gz'
-pero340_2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index1.2.fq.gz'
+340_read1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index1.1.fq.gz'
+340_read2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index1.2.fq.gz'
 ###
-pero366_1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index8.1.fq.gz'
-pero366_2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index8.2.fq.gz'
+366_read1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index8.1.fq.gz'
+366_read2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index8.2.fq.gz'
 ###
-pero368_1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index10.1.fq.gz'
-pero368_2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index10.2.fq.gz'
+368_read3='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index10.1.fq.gz'
+368_read4='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index10.2.fq.gz'
 ###
-pero369_1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index16.1.fq.gz'
-pero369_2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index16.2.fq.gz'
+369_read1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index16.1.fq.gz'
+369_read2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index16.2.fq.gz'
+
 ### DC Aug
-pero305_1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index2.1.fq.gz'
-pero305_2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index2.2.fq.gz'
+305_read1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index2.1.fq.gz'
+305_read2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index2.2.fq.gz'
 ###
-pero308_1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index4.1.fq.gz'
-pero308_2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index4.2.fq.gz'
-pero308_3='/mnt/data3/macmanes/sequence-reads/peromyscus/peer.308.dc.fq.bz2'
+308_read1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index4.1.fq.gz'
+308_read2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index4.2.fq.gz'
+308_read3='/mnt/data3/macmanes/sequence-reads/peromyscus/peer.308.dc.fq.bz2'
 ### DC Oct
-pero352_1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index5.1.fq.gz'
-pero352_2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index5.2.fq.gz'
-pero352_3='/mnt/data3/macmanes/sequence-reads/peromyscus/peer.354.dc.fq.bz2'
+352_read1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index5.1.fq.gz'
+352_read2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index5.2.fq.gz'
+352_read3='/mnt/data3/macmanes/sequence-reads/peromyscus/peer.354.dc.fq.bz2'
 ### 
-pero359_1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index6.1.fq.gz'
-pero359_2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index6.2.fq.gz'
+359_read1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index6.1.fq.gz'
+359_read2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index6.2.fq.gz'
 ###
-pero360_1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index7.1.fq.gz'
-pero360_2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index7.2.fq.gz'
-pero360_3='/mnt/data3/macmanes/peromyscus/peer.360.dc.fq.bz2'
+360_read1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index7.1.fq.gz'
+360_read2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index7.2.fq.gz'
+360_read3='/mnt/data3/macmanes/peromyscus/peer.360.dc.fq.bz2'
 ##
 ##
-pero368b_1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index11.1.fq.gz'
-pero368b_2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index11.2.fq.gz'
+368_read1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index11.1.fq.gz'
+368_read2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index11.2.fq.gz'
 ##
-pero365b_1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index12.1.fq.gz'
-pero365b_2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index12.2.fq.gz'
+365_read1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index12.1.fq.gz'
+365_read2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index12.2.fq.gz'
 ##
-pero366b_1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index14.1.fq.gz'
-pero366b_2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index14.2.fq.gz'
+366_read1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index14.1.fq.gz'
+366_read2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index14.2.fq.gz'
 ##
-pero19_1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index19.1.fq.gz'
-pero19_2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index19.2.fq.gz'
+19_read1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index19.1.fq.gz'
+19_read2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index19.2.fq.gz'
 ##
-pero321='/mnt/data3/macmanes/peromyscus/peer.321.dc.fq'
+321_read1='/mnt/data3/macmanes/peromyscus/peer.321.dc.fq'
 ##
-pero354='/mnt/data3/macmanes/peromyscus/peer.354.dc.fq'
+354_read1='/mnt/data3/macmanes/peromyscus/peer.354.dc.fq'
 ##
-pero382k='/mnt/data3/macmanes/121027_HS3A_pero/raw_reads/382k_notx_peer_index15.fastq.gz'
+382_read1='/mnt/data3/macmanes/121027_HS3A_pero/raw_reads/382k_notx_peer_index15.fastq.gz'
 ##
-pero373k='/mnt/data3/macmanes/121027_HS3A_pero/raw_reads/373k_wet_peer_index3.fastq.gz'
+373_read1='/mnt/data3/macmanes/121027_HS3A_pero/raw_reads/373k_wet_peer_index3.fastq.gz'
 ##
-pero380k='/mnt/data3/macmanes/121027_HS3A_pero/raw_reads/380k_dry_peer_index1.fastq.gz'
+380_read1=/mnt/data3/macmanes/121027_HS3A_pero/raw_reads/380k_dry_peer_index1.fastq.gz
 ##
-372_read1='/mnt/data3/macmanes/121027_HS3A_pero/raw_reads/372k_wet_peer_index2.fastq.gz'
+372_read1=/mnt/data3/macmanes/121027_HS3A_pero/raw_reads/372k_wet_peer_index2.fastq.gz
 ###
 
 
-index.bwt: $(REF)
+index.bwt:
 	@echo ---Quantitiating Transcripts---
 	bwa index -p index $(REF)
 
+<<<<<<< HEAD
 
 name=372
 @echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
@@ -119,47 +106,216 @@ $(name).fasta:$($(name)_read1)
 	bwa mem -t $(CPU) index $($(name)_read1) 2>bwa.log | samtools view -@ $(CPU) -1 - | samtools sort -@ 6 -m 1G - $(name) > $(name).bam
 	samtools mpileup -uvf $(REF) $(name).bam | bcftools view -cgIS - | vcfutils.pl vcf2fq > $(name).fq
 	python ~/Desktop/python/fq2fa.py $(name).fq $(name).fa
+=======
+.PHONY: 340.fasta
+340.fasta: name := 340
+340.fasta:
+	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
+	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
+	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
+	python $(CONVERT) $(name).fq $(name).fa
 	sed -i "s_>.*_&-${name}_g" $(name).fa
-	fasta_formatter -i $(name).fa -o $(name).fasta
+	sed ':begin;$!N;/[ACTGNn-]\n[ACTGNn-]/s/\n//;tbegin;P;D' $(name).fa > $(name).fasta
+
+
+.PHONY: 369.fasta
+369.fasta: name := 369
+369.fasta:
+	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
+	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
+	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
+	python $(CONVERT) $(name).fq $(name).fa
+	sed -i "s_>.*_&-${name}_g" $(name).fa
+	sed ':begin;$!N;/[ACTGNn-]\n[ACTGNn-]/s/\n//;tbegin;P;D' $(name).fa > $(name).fasta
+
+
+.PHONY: 305.fasta
+305.fasta: name := 305
+305.fasta:
+	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
+	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
+	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
+	python $(CONVERT) $(name).fq $(name).fa
+	sed -i "s_>.*_&-${name}_g" $(name).fa
+	sed ':begin;$!N;/[ACTGNn-]\n[ACTGNn-]/s/\n//;tbegin;P;D' $(name).fa > $(name).fasta
+
+
+
+.PHONY: 308.fasta
+308.fasta: name := 308
+308.fasta:
+	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
+	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
+	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
+	python $(CONVERT) $(name).fq $(name).fa
+>>>>>>> FETCH_HEAD
+	sed -i "s_>.*_&-${name}_g" $(name).fa
+	sed ':begin;$!N;/[ACTGNn-]\n[ACTGNn-]/s/\n//;tbegin;P;D' $(name).fa > $(name).fasta
+
+
+
+.PHONY: 352.fasta
+352.fasta: name := 352
+352.fasta:
+	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
+	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
+	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
+	python $(CONVERT) $(name).fq $(name).fa
+	sed -i "s_>.*_&-${name}_g" $(name).fa
+	sed ':begin;$!N;/[ACTGNn-]\n[ACTGNn-]/s/\n//;tbegin;P;D' $(name).fa > $(name).fasta
+
+
+.PHONY: 359.fasta
+359.fasta: name := 359
+359.fasta:
+	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
+	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
+	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
+	python $(CONVERT) $(name).fq $(name).fa
+	sed -i "s_>.*_&-${name}_g" $(name).fa
+	sed ':begin;$!N;/[ACTGNn-]\n[ACTGNn-]/s/\n//;tbegin;P;D' $(name).fa > $(name).fasta
+
+
+.PHONY: 360.fasta
+360.fasta: name := 360
+360.fasta:
+	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
+	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
+	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
+	python $(CONVERT) $(name).fq $(name).fa
+	sed -i "s_>.*_&-${name}_g" $(name).fa
+	sed ':begin;$!N;/[ACTGNn-]\n[ACTGNn-]/s/\n//;tbegin;P;D' $(name).fa > $(name).fasta
 
 
 
 
 
 
+.PHONY: 368.fasta
+368.fasta: name := 368
+368.fasta:
+	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
+	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) 2> bwa.log | samtools view -o $(name)1.bam -@ $(CPU) -b - 
+	bwa mem -t $(CPU) index $($(name)_read3) $($(name)_read4) 2> bwa.log | samtools view -o $(name)2.bam -@ $(CPU) -b - 
+	samtools merge -n $(name).bam $(name)1.bam $(name)2.bam
+	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
+	python $(CONVERT) $(name).fq $(name).fa
+	sed -i "s_>.*_&-${name}_g" $(name).fa
+	sed ':begin;$!N;/[ACTGNn-]\n[ACTGNn-]/s/\n//;tbegin;P;D' $(name).fa > $(name).fasta
 
 
 
 
 
 
+.PHONY: 365.fasta
+365.fasta: name := 365
+365.fasta:
+	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
+	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
+	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
+	python $(CONVERT) $(name).fq $(name).fa
+	sed -i "s_>.*_&-${name}_g" $(name).fa
+	sed ':begin;$!N;/[ACTGNn-]\n[ACTGNn-]/s/\n//;tbegin;P;D' $(name).fa > $(name).fasta
+
+
+
+
+.PHONY: 366.fasta
+366.fasta: name := 366
+366.fasta:
+	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
+	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
+	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
+	python $(CONVERT) $(name).fq $(name).fa
+	sed -i "s_>.*_&-${name}_g" $(name).fa
+	sed ':begin;$!N;/[ACTGNn-]\n[ACTGNn-]/s/\n//;tbegin;P;D' $(name).fa > $(name).fasta
+
+
+
+.PHONY: 19.fasta
+19.fasta: name := 19
+19.fasta:
+	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
+	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
+	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
+	python $(CONVERT) $(name).fq $(name).fa
+	sed -i "s_>.*_&-${name}_g" $(name).fa
+	sed ':begin;$!N;/[ACTGNn-]\n[ACTGNn-]/s/\n//;tbegin;P;D' $(name).fa > $(name).fasta
 
 
 
 
 
+.PHONY: 321.fasta
+321.fasta: name := 321
+321.fasta:
+	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
+	bwa mem -t $(CPU) index $($(name)_read1) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
+	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
+	python $(CONVERT) $(name).fq $(name).fa
+	sed -i "s_>.*_&-${name}_g" $(name).fa
+	sed ':begin;$!N;/[ACTGNn-]\n[ACTGNn-]/s/\n//;tbegin;P;D' $(name).fa > $(name).fasta
+
+
+
+.PHONY: 354.fasta
+354.fasta: name := 354
+354.fasta:
+	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
+	bwa mem -t $(CPU) index $($(name)_read1) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
+	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
+	python $(CONVERT) $(name).fq $(name).fa
+	sed -i "s_>.*_&-${name}_g" $(name).fa
+	sed ':begin;$!N;/[ACTGNn-]\n[ACTGNn-]/s/\n//;tbegin;P;D' $(name).fa > $(name).fasta
 
 
 
 
+.PHONY: 382.fasta
+382.fasta: name := 382
+382.fasta:
+	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
+	bwa mem -t $(CPU) index $($(name)_read1) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
+	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
+	python $(CONVERT) $(name).fq $(name).fa
+	sed -i "s_>.*_&-${name}_g" $(name).fa
+	sed ':begin;$!N;/[ACTGNn-]\n[ACTGNn-]/s/\n//;tbegin;P;D' $(name).fa > $(name).fasta
 
 
 
+.PHONY: 373.fasta
+373.fasta: name := 373
+373.fasta:
+	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
+	bwa mem -t $(CPU) index $($(name)_read1) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
+	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
+	python $(CONVERT) $(name).fq $(name).fa
+	sed -i "s_>.*_&-${name}_g" $(name).fa
+	sed ':begin;$!N;/[ACTGNn-]\n[ACTGNn-]/s/\n//;tbegin;P;D' $(name).fa > $(name).fasta
+
+
+.PHONY: 372.fasta
+372.fasta: name := 372
+372.fasta:
+	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin 372--- '\n\n'
+	bwa mem -t $(CPU) index $($(name)_read1) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
+	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
+	python $(CONVERT) $(name).fq $(name).fa
+	sed -i "s_>.*_&-${name}_g" $(name).fa
+	sed ':begin;$!N;/[ACTGNn-]\n[ACTGNn-]/s/\n//;tbegin;P;D' $(name).fa > $(name).fasta
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+.PHONY: 380.fasta
+380.fasta: name := 380
+380.fasta:
+	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
+	bwa mem -t $(CPU) index $($(name)_read1) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
+	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
+	python $(CONVERT) $(name).fq $(name).fa
+	sed -i "s_>.*_&-${name}_g" $(name).fa
+	sed ':begin;$!N;/[ACTGNn-]\n[ACTGNn-]/s/\n//;tbegin;P;D' $(name).fa > $(name).fasta
 
 
 
