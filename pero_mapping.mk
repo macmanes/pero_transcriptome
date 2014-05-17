@@ -103,7 +103,7 @@ index.bwt:
 340.fasta: name := 340
 340.bam 340.fasta:
 	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
-	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
+	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) | tee bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
 	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
 	python $(CONVERT) $(name).fq $(name).fa
 	cat $(name).fa | sed -e 's_>.*_&-${name}_g' -e 's/\(.*\)/\U\1/' -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' > $(name).fasta
@@ -112,7 +112,7 @@ index.bwt:
 369.fasta: name := 369
 369.bam 369.fasta:
 	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
-	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
+	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) | tee bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
 	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
 	python $(CONVERT) $(name).fq $(name).fa
 	cat $(name).fa | sed -e 's_>.*_&-${name}_g' -e 's/\(.*\)/\U\1/' -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' > $(name).fasta
@@ -121,7 +121,7 @@ index.bwt:
 305.fasta: name := 305
 305.bam 305.fasta:
 	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
-	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
+	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) | tee bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
 	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
 	python $(CONVERT) $(name).fq $(name).fa
 	cat $(name).fa | sed -e 's_>.*_&-${name}_g' -e 's/\(.*\)/\U\1/' -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' > $(name).fasta
@@ -131,8 +131,8 @@ index.bwt:
 308.fasta: name := 308
 308.bam 308.fasta:
 	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
-	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) 2> bwa.log | samtools view -o $(name)1.bam -@ $(CPU) -b -
-	bwa mem -t $(CPU) index $($(name)_read3) 2> bwa.log | samtools view -o $(name)2.bam -o $(name)2.bam -@ $(CPU) -b - 
+	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) | tee bwa.log | samtools view -o $(name)1.bam -@ $(CPU) -b -
+	bwa mem -t $(CPU) index $($(name)_read3) | tee bwa.log | samtools view -o $(name)2.bam -o $(name)2.bam -@ $(CPU) -b - 
 	samtools merge $(name).bam $(name)1.bam $(name)2.bam
 	samtools sort $(name).bam $(name).sort
 	samtools mpileup -AIuf $(REF) $(name).sort.bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
@@ -144,8 +144,8 @@ index.bwt:
 352.fasta: name := 352
 352.bam 352.fasta:
 	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
-	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) 2> bwa.log | samtools view -o $(name)1.bam -@ $(CPU) -b -
-	bwa mem -t $(CPU) index $($(name)_read3) 2> bwa.log | samtools view -o $(name)2.bam -o $(name)2.bam -@ $(CPU) -b - 
+	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) | tee bwa.log | samtools view -o $(name)1.bam -@ $(CPU) -b -
+	bwa mem -t $(CPU) index $($(name)_read3) | tee bwa.log | samtools view -o $(name)2.bam -o $(name)2.bam -@ $(CPU) -b - 
 	samtools merge $(name).bam $(name)1.bam $(name)2.bam
 	samtools sort $(name).bam $(name).sort
 	samtools mpileup -AIuf $(REF) $(name).sort.bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
@@ -156,7 +156,7 @@ index.bwt:
 359.fasta: name := 359
 359.fasta:
 	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
-	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
+	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) | tee bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
 	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
 	python $(CONVERT) $(name).fq $(name).fa
 	cat $(name).fa | sed -e 's_>.*_&-${name}_g' -e 's/\(.*\)/\U\1/' -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' > $(name).fasta
@@ -165,8 +165,8 @@ index.bwt:
 360.fasta: name := 360
 360.fasta:
 	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
-	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) 2> bwa.log | samtools view -o $(name)1.bam -@ $(CPU) -b - 
-	bwa mem -t $(CPU) index $($(name)_read3) 2> bwa.log | samtools view -o $(name)2.bam -@ $(CPU) -b - 
+	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) | tee bwa.log | samtools view -o $(name)1.bam -@ $(CPU) -b - 
+	bwa mem -t $(CPU) index $($(name)_read3) | tee bwa.log | samtools view -o $(name)2.bam -@ $(CPU) -b - 
 	samtools merge $(name).bam $(name)1.bam $(name)2.bam
 	samtools sort $(name).bam $(name).sort
 	samtools mpileup -AIuf $(REF) $(name).sort.bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
@@ -177,8 +177,8 @@ index.bwt:
 368.fasta: name := 368
 368.fasta:
 	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
-	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) 2> bwa.log | samtools view -o $(name)1.bam -@ $(CPU) -b - 
-	bwa mem -t $(CPU) index $($(name)_read3) $($(name)_read4) 2> bwa.log | samtools view -o $(name)2.bam -@ $(CPU) -b - 
+	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) | tee bwa.log | samtools view -o $(name)1.bam -@ $(CPU) -b - 
+	bwa mem -t $(CPU) index $($(name)_read3) $($(name)_read4) | tee bwa.log | samtools view -o $(name)2.bam -@ $(CPU) -b - 
 	samtools merge $(name).bam $(name)1.bam $(name)2.bam
 	samtools sort $(name).bam $(name).sort
 	samtools mpileup -AIuf $(REF) $(name).sort.bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
@@ -193,8 +193,8 @@ index.bwt:
 365.fasta: name := 365
 365.fasta:
 	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
-	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) 2> bwa.log | samtools view -o $(name)1.bam -@ $(CPU) -b - 
-	bwa mem -t $(CPU) index $($(name)_read3) $($(name)_read4) 2> bwa.log | samtools view -o $(name)2.bam -@ $(CPU) -b - 
+	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) | tee bwa.log | samtools view -o $(name)1.bam -@ $(CPU) -b - 
+	bwa mem -t $(CPU) index $($(name)_read3) $($(name)_read4) | tee bwa.log | samtools view -o $(name)2.bam -@ $(CPU) -b - 
 	samtools merge $(name).bam $(name)1.bam $(name)2.bam
 	samtools sort $(name).bam $(name).sort
 	samtools mpileup -AIuf $(REF) $(name).sort.bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
@@ -207,8 +207,8 @@ index.bwt:
 366.fasta: name := 366
 366.fasta:
 	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
-	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) 2> bwa.log | samtools view -o $(name)1.bam -@ $(CPU) -b -
-	bwa mem -t $(CPU) index $($(name)_read3) $($(name)_read4) 2> bwa.log | samtools view -o $(name)2.bam -@ $(CPU) -b - 
+	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) | tee bwa.log | samtools view -o $(name)1.bam -@ $(CPU) -b -
+	bwa mem -t $(CPU) index $($(name)_read3) $($(name)_read4) | tee bwa.log | samtools view -o $(name)2.bam -@ $(CPU) -b - 
 	samtools merge $(name).bam $(name)1.bam $(name)2.bam
 	samtools sort $(name).bam $(name).sort
 	samtools mpileup -AIuf $(REF) $(name).sort.bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
@@ -222,7 +222,7 @@ index.bwt:
 321.fasta: name := 321
 321.fasta:
 	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
-	bwa mem -t $(CPU) index $($(name)_read1) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
+	bwa mem -t $(CPU) index $($(name)_read1) | tee bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
 	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
 	python $(CONVERT) $(name).fq $(name).fa
 	cat $(name).fa | sed -e 's_>.*_&-${name}_g' -e 's/\(.*\)/\U\1/' -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' > $(name).fasta
@@ -232,7 +232,7 @@ index.bwt:
 354.fasta: name := 354
 354.fasta:
 	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
-	bwa mem -t $(CPU) index $($(name)_read1) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
+	bwa mem -t $(CPU) index $($(name)_read1) | tee bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
 	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
 	python $(CONVERT) $(name).fq $(name).fa
 	cat $(name).fa | sed -e 's_>.*_&-${name}_g' -e 's/\(.*\)/\U\1/' -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' > $(name).fasta
@@ -243,7 +243,7 @@ index.bwt:
 382.fasta: name := 382
 382.fasta:
 	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
-	bwa mem -t $(CPU) index $($(name)_read1) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
+	bwa mem -t $(CPU) index $($(name)_read1) | tee bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
 	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
 	python $(CONVERT) $(name).fq $(name).fa
 	cat $(name).fa | sed -e 's_>.*_&-${name}_g' -e 's/\(.*\)/\U\1/' -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' > $(name).fasta
@@ -253,7 +253,7 @@ index.bwt:
 373.fasta: name := 373
 373.fasta:
 	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
-	bwa mem -t $(CPU) index $($(name)_read1) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
+	bwa mem -t $(CPU) index $($(name)_read1) | tee bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
 	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
 	python $(CONVERT) $(name).fq $(name).fa
 	cat $(name).fa | sed -e 's_>.*_&-${name}_g' -e 's/\(.*\)/\U\1/' -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' > $(name).fasta
@@ -262,7 +262,7 @@ index.bwt:
 372.fasta: name := 372
 372.fasta:
 	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin 372--- '\n\n'
-	bwa mem -t $(CPU) index $($(name)_read1) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
+	bwa mem -t $(CPU) index $($(name)_read1) | tee bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
 	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
 	python $(CONVERT) $(name).fq $(name).fa
 	cat $(name).fa | sed -e 's_>.*_&-${name}_g' -e 's/\(.*\)/\U\1/' -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' > $(name).fasta
@@ -272,7 +272,7 @@ index.bwt:
 380.fasta: name := 380
 380.fasta:
 	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
-	bwa mem -t $(CPU) index $($(name)_read1) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
+	bwa mem -t $(CPU) index $($(name)_read1) | tee bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
 	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
 	python $(CONVERT) $(name).fq $(name).fa
 	cat $(name).fa | sed -e 's_>.*_&-${name}_g' -e 's/\(.*\)/\U\1/' -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' > $(name).fasta
