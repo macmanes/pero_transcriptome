@@ -20,6 +20,7 @@ CONVERT=$(shell locate fq2fa.py)
 .PHONY: check clean
 all: check index.bwt 321.fasta 354.fasta 382.fasta 373.fasta 380.fasta 372.fasta 369.fasta 340.fasta 365.fasta 366.fasta 368.fasta 360.fasta 359.fasta 352.fasta 308.fasta 305.fasta 19.fasta
 
+#Need 368 305 308 
 
 check:
 	@echo TIMESTAMP: `date +'%a %d%b%Y  %H:%M:%S'` ---Begin--- '\n\n'
@@ -188,7 +189,8 @@ index.bwt:
 	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) 2> bwa.log | samtools view -o $(name)1.bam -@ $(CPU) -b - 
 	bwa mem -t $(CPU) index $($(name)_read3) $($(name)_read4) 2> bwa.log | samtools view -o $(name)2.bam -@ $(CPU) -b - 
 	samtools merge $(name).bam $(name)1.bam $(name)2.bam
-	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
+	samtools sort $(name).bam $(name).sort
+	samtools mpileup -AIuf $(REF) $(name).sort.bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
 	python $(CONVERT) $(name).fq $(name).fa
 	sed -i "s_>.*_&-${name}_g" $(name).fa
 	sed ':begin;$!N;/[ACTGNn-]\n[ACTGNn-]/s/\n//;tbegin;P;D' $(name).fa > $(name).fasta
