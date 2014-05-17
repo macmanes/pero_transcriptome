@@ -98,15 +98,6 @@ index.bwt:
 	@echo ---Quantitiating Transcripts---
 	bwa index -p index $(REF)
 
-<<<<<<< HEAD
-
-name=372
-@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
-$(name).fasta:$($(name)_read1)
-	bwa mem -t $(CPU) index $($(name)_read1) 2>bwa.log | samtools view -@ $(CPU) -1 - | samtools sort -@ 6 -m 1G - $(name) > $(name).bam
-	samtools mpileup -uvf $(REF) $(name).bam | bcftools view -cgIS - | vcfutils.pl vcf2fq > $(name).fq
-	python ~/Desktop/python/fq2fa.py $(name).fq $(name).fa
-=======
 .PHONY: 340.fasta
 340.fasta: name := 340
 340.fasta:
@@ -148,7 +139,6 @@ $(name).fasta:$($(name)_read1)
 	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
 	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
 	python $(CONVERT) $(name).fq $(name).fa
->>>>>>> FETCH_HEAD
 	sed -i "s_>.*_&-${name}_g" $(name).fa
 	sed ':begin;$!N;/[ACTGNn-]\n[ACTGNn-]/s/\n//;tbegin;P;D' $(name).fa > $(name).fasta
 
