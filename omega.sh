@@ -24,19 +24,20 @@ EOF
 
 while getopts f:b:o:t: option
 do
-        case "${option}"
-        in
-                f) FA=${OPTARG};;
-                b) BF=${OPTARG};;
-		o) CF=${OPTARG};;
-		t) TC=${OPTARG};;
-        esac
+    case "${option}"
+    in
+    f) FA=${OPTARG};;
+    b) BF=${OPTARG};;
+	o) CF=${OPTARG};;
+	t) TC=${OPTARG};;
+    esac
 done
 
+MACSE = which macse_v1.01b.jar
 
 ##cluster seqs
 grep '>'  $FA | awk '{print $1}' | sed 's_>__g' > list ##Change this to $fasta when I know how--DONE
-for i in `cat list`; do grep -h --no-group-separator -wA1 $i 3*fasta > om.$i.fa; done 
+for i in `cat list`; do grep --max-count=1 --no-group-separator -wA1 $i 3*fasta > om.$i.fa; done 
 for i in `ls om*fa`; do sed -i 's_R_A_g;s_Y_G_g;s_W_A_g;s_S_C_g;s_M_A_g;s_K_C_g' $i; done
 #rm list
 
@@ -54,7 +55,7 @@ while [ $n -lt $total ]; do
 			if [ ! -f om.$n.aln ] ; #have I already done the analyses elsewhere?
 			then
 				echo 'I need to do the analysis'
-				java -Xmx2000m -jar ~/software/macse_v0.9b1.jar -o_dna -i om.$n.fa -o om.$n.aln & #just do it!        
+				java -Xmx5000m -jar $MACSE -prog alignSequences -seq om.$n.fa -out_NT om.$n.aln & #just do it!        
 				let n=n+1
 			else
 				echo "Sweet! I already made om.$n.aln!"
