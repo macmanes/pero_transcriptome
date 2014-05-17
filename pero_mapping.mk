@@ -106,7 +106,7 @@ index.bwt:
 	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
 	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
 	python $(CONVERT) $(name).fq $(name).fa
-	cat $(name).fa | sed -e "s_>.*_&-${name}_g" -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' -e 's/\(.*\)/\U\1/' > $(name).fasta
+	cat $(name).fa | sed -e 's_>.*_&-${name}_g' -e 's/\(.*\)/\U\1/' -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' > $(name).fasta
 
 .PHONY: 369.fasta
 369.fasta: name := 369
@@ -115,7 +115,7 @@ index.bwt:
 	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
 	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
 	python $(CONVERT) $(name).fq $(name).fa
-	cat $(name).fa | sed -e "s_>.*_&-${name}_g" -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' -e 's/\(.*\)/\U\1/' > $(name).fasta
+	cat $(name).fa | sed -e 's_>.*_&-${name}_g' -e 's/\(.*\)/\U\1/' -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' > $(name).fasta
 
 .PHONY: 305.fasta
 305.fasta: name := 305
@@ -124,7 +124,7 @@ index.bwt:
 	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
 	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
 	python $(CONVERT) $(name).fq $(name).fa
-	cat $(name).fa | sed -e "s_>.*_&-${name}_g" -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' -e 's/\(.*\)/\U\1/' > $(name).fasta
+	cat $(name).fa | sed -e 's_>.*_&-${name}_g' -e 's/\(.*\)/\U\1/' -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' > $(name).fasta
 
 
 .PHONY: 308.fasta
@@ -137,7 +137,7 @@ index.bwt:
 	samtools sort $(name).bam $(name).sort
 	samtools mpileup -AIuf $(REF) $(name).sort.bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
 	python $(CONVERT) $(name).fq $(name).fa
-	cat $(name).fa | sed -e "s_>.*_&-${name}_g" -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' -e 's/\(.*\)/\U\1/' > $(name).fasta
+	cat $(name).fa | sed -e 's_>.*_&-${name}_g' -e 's/\(.*\)/\U\1/' -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' > $(name).fasta
 
 
 .PHONY: 352.fasta
@@ -150,7 +150,7 @@ index.bwt:
 	samtools sort $(name).bam $(name).sort
 	samtools mpileup -AIuf $(REF) $(name).sort.bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
 	python $(CONVERT) $(name).fq $(name).fa
-	cat $(name).fa | sed -e "s_>.*_&-${name}_g" -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' -e 's/\(.*\)/\U\1/' > $(name).fasta
+	cat $(name).fa | sed -e 's_>.*_&-${name}_g' -e 's/\(.*\)/\U\1/' -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' > $(name).fasta
 
 .PHONY: 359.fasta
 359.fasta: name := 359
@@ -159,7 +159,7 @@ index.bwt:
 	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
 	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
 	python $(CONVERT) $(name).fq $(name).fa
-	cat $(name).fa | sed -e "s_>.*_&-${name}_g" -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' -e 's/\(.*\)/\U\1/' > $(name).fasta
+	cat $(name).fa | sed -e 's_>.*_&-${name}_g' -e 's/\(.*\)/\U\1/' -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' > $(name).fasta
 
 .PHONY: 360.fasta
 360.fasta: name := 360
@@ -171,7 +171,7 @@ index.bwt:
 	samtools sort $(name).bam $(name).sort
 	samtools mpileup -AIuf $(REF) $(name).sort.bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
 	python $(CONVERT) $(name).fq $(name).fa
-	cat $(name).fa | sed -e "s_>.*_&-${name}_g" -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' -e 's/\(.*\)/\U\1/' > $(name).fasta
+	cat $(name).fa | sed -e 's_>.*_&-${name}_g' -e 's/\(.*\)/\U\1/' -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' > $(name).fasta
 
 .PHONY: 368.fasta
 368.fasta: name := 368
@@ -183,7 +183,7 @@ index.bwt:
 	samtools sort $(name).bam $(name).sort
 	samtools mpileup -AIuf $(REF) $(name).sort.bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
 	python $(CONVERT) $(name).fq $(name).fa
-	cat $(name).fa | sed -e "s_>.*_&-${name}_g" -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' -e 's/\(.*\)/\U\1/' > $(name).fasta
+	cat $(name).fa | sed -e 's_>.*_&-${name}_g' -e 's/\(.*\)/\U\1/' -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' > $(name).fasta
 
 
 
@@ -199,7 +199,7 @@ index.bwt:
 	samtools sort $(name).bam $(name).sort
 	samtools mpileup -AIuf $(REF) $(name).sort.bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
 	python $(CONVERT) $(name).fq $(name).fa
-	cat $(name).fa | sed -e "s_>.*_&-${name}_g" -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' -e 's/\(.*\)/\U\1/' > $(name).fasta
+	cat $(name).fa | sed -e 's_>.*_&-${name}_g' -e 's/\(.*\)/\U\1/' -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' > $(name).fasta
 
 
 
@@ -213,7 +213,7 @@ index.bwt:
 	samtools sort $(name).bam $(name).sort
 	samtools mpileup -AIuf $(REF) $(name).sort.bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
 	python $(CONVERT) $(name).fq $(name).fa
-	cat $(name).fa | sed -e "s_>.*_&-${name}_g" -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' -e 's/\(.*\)/\U\1/' > $(name).fasta
+	cat $(name).fa | sed -e 's_>.*_&-${name}_g' -e 's/\(.*\)/\U\1/' -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' > $(name).fasta
 
 
 
@@ -225,7 +225,7 @@ index.bwt:
 	bwa mem -t $(CPU) index $($(name)_read1) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
 	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
 	python $(CONVERT) $(name).fq $(name).fa
-	cat $(name).fa | sed -e "s_>.*_&-${name}_g" -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' -e 's/\(.*\)/\U\1/' > $(name).fasta
+	cat $(name).fa | sed -e 's_>.*_&-${name}_g' -e 's/\(.*\)/\U\1/' -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' > $(name).fasta
 
 
 .PHONY: 354.fasta
@@ -235,7 +235,7 @@ index.bwt:
 	bwa mem -t $(CPU) index $($(name)_read1) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
 	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
 	python $(CONVERT) $(name).fq $(name).fa
-	cat $(name).fa | sed -e "s_>.*_&-${name}_g" -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' -e 's/\(.*\)/\U\1/' > $(name).fasta
+	cat $(name).fa | sed -e 's_>.*_&-${name}_g' -e 's/\(.*\)/\U\1/' -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' > $(name).fasta
 
 
 
@@ -246,7 +246,7 @@ index.bwt:
 	bwa mem -t $(CPU) index $($(name)_read1) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
 	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
 	python $(CONVERT) $(name).fq $(name).fa
-	cat $(name).fa | sed -e "s_>.*_&-${name}_g" -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' -e 's/\(.*\)/\U\1/' > $(name).fasta
+	cat $(name).fa | sed -e 's_>.*_&-${name}_g' -e 's/\(.*\)/\U\1/' -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' > $(name).fasta
 
 
 .PHONY: 373.fasta
@@ -256,7 +256,7 @@ index.bwt:
 	bwa mem -t $(CPU) index $($(name)_read1) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
 	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
 	python $(CONVERT) $(name).fq $(name).fa
-	cat $(name).fa | sed -e "s_>.*_&-${name}_g" -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' -e 's/\(.*\)/\U\1/' > $(name).fasta
+	cat $(name).fa | sed -e 's_>.*_&-${name}_g' -e 's/\(.*\)/\U\1/' -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' > $(name).fasta
 
 .PHONY: 372.fasta
 372.fasta: name := 372
@@ -265,7 +265,7 @@ index.bwt:
 	bwa mem -t $(CPU) index $($(name)_read1) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
 	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
 	python $(CONVERT) $(name).fq $(name).fa
-	cat $(name).fa | sed -e "s_>.*_&-${name}_g" -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' -e 's/\(.*\)/\U\1/' > $(name).fasta
+	cat $(name).fa | sed -e 's_>.*_&-${name}_g' -e 's/\(.*\)/\U\1/' -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' > $(name).fasta
 
 
 .PHONY: 380.fasta
@@ -275,4 +275,4 @@ index.bwt:
 	bwa mem -t $(CPU) index $($(name)_read1) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
 	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
 	python $(CONVERT) $(name).fq $(name).fa
-	cat $(name).fa | sed -e "s_>.*_&-${name}_g" -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' -e 's/\(.*\)/\U\1/' > $(name).fasta
+	cat $(name).fa | sed -e 's_>.*_&-${name}_g' -e 's/\(.*\)/\U\1/' -e ':begin;$!N;/[actgn-]\n[actgn-]/s/\n//;tbegin;P;D' > $(name).fasta
