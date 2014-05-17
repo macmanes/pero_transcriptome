@@ -31,7 +31,7 @@ do
     esac
 done
 
-MACSE = which macse_v1.01b.jar
+#MACSE = which macse_v1.01b.jar
 
 ##cluster seqs
 mkdir unalign
@@ -55,7 +55,7 @@ while [ $n -lt $total ]; do
 			if [ ! -f aligned/om.$n.aln ] ; #have I already done the analyses elsewhere?
 			then
 				echo 'I need to do the analysis'
-				java -Xmx5000m -jar $MACSE -prog alignSequences -seq unalign/om.$n.fa -out_NT aligned/om.$n.aln & #just do it!        
+				java -Xmx5000m -jar macse_v1.01b.jar -prog alignSequences -seq unalign/om.$n.fa -out_NT aligned/om.$n.aln & #just do it!        
 				let n=n+1
 			else
 				echo "Sweet! I already made om.$n.aln!"
