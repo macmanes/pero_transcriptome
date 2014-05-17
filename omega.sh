@@ -42,7 +42,7 @@ for i in `ls unalign/om*fa`; do sed -i 's_R_A_g;s_Y_G_g;s_W_A_g;s_S_C_g;s_M_A_g;
 #rm list
 
 ##Align
-total=10000
+total=10000000
 n=1
 while [ $n -lt $total ]; do
 	i=`ps -all | grep java | wc -l`
@@ -80,7 +80,7 @@ for i in `ls aligned/om*aln`; do sed -i 's_TAG$_GGG_g;s_TGA$_GGG_g;s_TAA$_GGG_g;
 
 ##Do omegaMap
 mkdir omega
-total=10000
+total=10000000
 n=1
 while [ $n -lt $total ]; do
 	i=`ps -all | grep omegaMap | wc -l`
