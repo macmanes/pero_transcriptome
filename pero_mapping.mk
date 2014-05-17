@@ -18,7 +18,7 @@ CONVERT=$(shell locate fq2fa.py)
 
 
 .PHONY: check clean
-all: check index.bwt 369.fasta 340.fasta 365.fasta 366.fasta 368.fasta 360.fasta 359.fasta 352.fasta 308.fasta 305.fasta 19.fasta 321.fasta 354.fasta 382.fasta 373.fasta 380.fasta 372.fasta
+all: check index.bwt 321.fasta 354.fasta 382.fasta 373.fasta 380.fasta 372.fasta 369.fasta 340.fasta 365.fasta 366.fasta 368.fasta 360.fasta 359.fasta 352.fasta 308.fasta 305.fasta 19.fasta
 
 
 check:
@@ -100,7 +100,7 @@ index.bwt:
 
 .PHONY: 340.fasta
 340.fasta: name := 340
-340.fasta:
+340.bam 340.fasta:
 	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
 	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
 	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
@@ -111,7 +111,7 @@ index.bwt:
 
 .PHONY: 369.fasta
 369.fasta: name := 369
-369.fasta:
+369.bam 369.fasta:
 	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
 	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
 	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
@@ -122,7 +122,7 @@ index.bwt:
 
 .PHONY: 305.fasta
 305.fasta: name := 305
-305.fasta:
+305.bam 305.fasta:
 	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
 	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
 	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
@@ -134,7 +134,7 @@ index.bwt:
 
 .PHONY: 308.fasta
 308.fasta: name := 308
-308.fasta:
+308.bam 308.fasta:
 	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
 	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
 	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
@@ -146,7 +146,7 @@ index.bwt:
 
 .PHONY: 352.fasta
 352.fasta: name := 352
-352.fasta:
+352.bam 352.fasta:
 	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
 	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2) 2> bwa.log | samtools view -@ $(CPU) -b - | samtools sort - $(name)
 	samtools mpileup -AIuf $(REF) $(name).bam | bcftools call -c | vcfutils.pl vcf2fq > $(name).fq
