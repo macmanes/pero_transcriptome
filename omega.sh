@@ -15,7 +15,6 @@ usage=$(cat << EOF
 
    Options:
       -f <v> : *required* specify the FASTA file.
-      -b <v> : *required* specify the folder where the BAM files are.
       -o <v> : *required* omegaMap control file.
       -t <v> : *required* Numberof threads to use.
 EOF
@@ -27,7 +26,6 @@ do
     case "${option}"
     in
     f) FA=${OPTARG};;
-    b) BF=${OPTARG};;
 	o) CF=${OPTARG};;
 	t) TC=${OPTARG};;
     esac
