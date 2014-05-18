@@ -76,7 +76,7 @@ for i in `ls aligned/om*aln`; do sed -i ':begin;$!N;/[ACTG]\n[ACTG]/s/\n//;tbegi
 rm commands.txt
 
 ##Format fastas in prep for omega map
-for i in `ls aligned/om*aln`; do sed -i 's_TAG$_GGG_g;s_TGA$_GGG_g;s_TAA$_GGG_g;s_N_C_g;s_!_C_g;s_-_C_g' $i; done
+for i in `ls aligned/om*aln`; do sed -i 's_TAG$_GGG_g;s_TGA$_GGG_g;s_TAA$_GGG_g;s_N_-_g;s_!_-_g' $i; done
 
 ##Do omegaMap
 mkdir omega
