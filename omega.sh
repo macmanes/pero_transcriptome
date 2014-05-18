@@ -1,7 +1,7 @@
 #! /bin/bash
 
 ######Requirements
-#samtools, gnu parallel, MACse, omegaMap, fasTool
+#MACse, omegaMap
 
 #Need to specify bam folder
 #Need to give trinity.fasta file
