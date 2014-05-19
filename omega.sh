@@ -36,6 +36,7 @@ done
 ##cluster seqs
 #mkdir unalign
 #mkdir aligned
+mkdir omega
 #grep '>'  $FA | awk '{print $1}' | sed 's_>__g' > list ##Change this to $fasta when I know how--DONE
 #for i in `cat list`; do grep -h --max-count=1 --no-group-separator -wA1 $i 3*fasta > unalign/om.$i.fa; done 
 #for i in `ls unalign/om*fa`; do sed -i 's_R_A_g;s_Y_G_g;s_W_A_g;s_S_C_g;s_M_A_g;s_K_C_g' $i; done
@@ -45,7 +46,7 @@ done
 total=50000
 n=1
 while [ $n -lt $total ]; do
-	i=`ps -all | grep java | wc -l`
+	i=`ps -all | grep 'java.*omegaMap' | wc -l`
 	if [ $i -lt $TC ] ; #are there less than $TC jobs currently running?
 	then
 		echo 'I have a core to use'
@@ -55,10 +56,21 @@ while [ $n -lt $total ]; do
 			if [ ! -f aligned/om.$n.aln ] ; #have I already done the analyses elsewhere?
 			then
 				echo 'I need to do the analysis'
-				java -Xmx1000m -jar /share/bin/macse_v1.01b.jar -prog alignSequences -seq unalign/om.$n.fa -out_NT aligned/om.$n.aln & #just do it!        
+				java -Xmx1000m -jar /share/bin/macse_v1.01b.jar -prog alignSequences -seq unalign/om.$n.fa -out_NT aligned/om.$n.aln #just do it!   	
+				sed -i ':begin;$!N;/[ACTG]\n[ACTG]/s/\n//;tbegin;P;D' aligned/om.$n.aln
+				sed -i 's_TAG$_GGG_g;s_TGA$_GGG_g;s_TAA$_GGG_g;s_N_-_g;s_!_-_g' aligned/om.$n.aln
+				omegaMap $CF -outfile omega/om.$n.aln.out -fasta aligned/om.$n.aln &
 				let n=n+1
 			else
-				echo "Sweet! I already made om.$n.aln!"
+				if [ ! -f omega/om.$n.aln.out ] ; #have I already done the analyses elsewhere?
+				then
+					echo 'I need to do the analysis'
+					sed -i ':begin;$!N;/[ACTG]\n[ACTG]/s/\n//;tbegin;P;D' aligned/om.$n.aln
+					sed -i 's_TAG$_GGG_g;s_TGA$_GGG_g;s_TAA$_GGG_g;s_N_-_g;s_!_-_g' aligned/om.$n.aln
+					omegaMap $CF -outfile omega/om.$n.aln.out -fasta aligned/om.$n.aln & #just do it!        
+					let n=n+1
+			else
+				echo "Sweet! I already made om.m.$n.aln.out!"
 				let n=n+1
 			fi
 		else
@@ -72,42 +84,42 @@ while [ $n -lt $total ]; do
 done
 wait
 #for i in `ls om*fa`; do rm $i; done
-for i in `ls aligned/om*aln`; do sed -i ':begin;$!N;/[ACTG]\n[ACTG]/s/\n//;tbegin;P;D' $i;done
-rm commands.txt
+#for i in `ls aligned/om*aln`; do sed -i ':begin;$!N;/[ACTG]\n[ACTG]/s/\n//;tbegin;P;D' $i;done
+#rm commands.txt
 
 ##Format fastas in prep for omega map
-for i in `ls aligned/om*aln`; do sed -i 's_TAG$_GGG_g;s_TGA$_GGG_g;s_TAA$_GGG_g;s_N_-_g;s_!_-_g' $i; done
+#for i in `ls aligned/om*aln`; do sed -i 's_TAG$_GGG_g;s_TGA$_GGG_g;s_TAA$_GGG_g;s_N_-_g;s_!_-_g' $i; done
 
 ##Do omegaMap
-mkdir omega
-total=50000
-n=1
-while [ $n -lt $total ]; do
-	i=`ps -all | grep omegaMap | wc -l`
-	if [ $i -lt $TC ] ; #are there less than 16 jobs currently running?
-	then
-		echo 'I have a core to use'
-		if [ -f aligned/om.$n.aln ] ; #does the file exist?
-		then
-			echo "The input file om.m$n.aln seems to exist"
-			if [ ! -f omega/om.$n.aln.out ] ; #have I already done the analyses elsewhere?
-			then
-				echo 'I need to do the analysis'
-				omegaMap $CF -outfile omega/om.$n.aln.out -fasta aligned/om.$n.aln & #just do it!        
-				let n=n+1
-			else
-				echo "Sweet! I already made om.m.$n.aln.out!"
-				let n=n+1
-			fi
-		else
-			let n=n+1
-		fi
-	else
-		echo 'Dont wake me up until there is something else to do'
-		sleep 30s #there are already 16 jobs-- you can take a rest now...
-	fi
-done
-wait
+# mkdir omega
+# total=50000
+# n=1
+# while [ $n -lt $total ]; do
+# 	i=`ps -all | grep omegaMap | wc -l`
+# 	if [ $i -lt $TC ] ; #are there less than 16 jobs currently running?
+# 	then
+# 		echo 'I have a core to use'
+# 		if [ -f aligned/om.$n.aln ] ; #does the file exist?
+# 		then
+# 			echo "The input file om.m$n.aln seems to exist"
+# 			if [ ! -f omega/om.$n.aln.out ] ; #have I already done the analyses elsewhere?
+# 			then
+# 				echo 'I need to do the analysis'
+# 				omegaMap $CF -outfile omega/om.$n.aln.out -fasta aligned/om.$n.aln & #just do it!        
+# 				let n=n+1
+# 			else
+# 				echo "Sweet! I already made om.m.$n.aln.out!"
+# 				let n=n+1
+# 			fi
+# 		else
+# 			let n=n+1
+# 		fi
+# 	else
+# 		echo 'Dont wake me up until there is something else to do'
+# 		sleep 30s #there are already 16 jobs-- you can take a rest now...
+# 	fi
+# done
+# wait
 for i in `ls omega/om*out`; do summarize 2000 $i > omega/$i.results; done
 
 ##Process Results
