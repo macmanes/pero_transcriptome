@@ -72,6 +72,7 @@ while [ $n -lt $total ]; do
 			else
 				echo "Sweet! I already made om.m.$n.aln.out!"
 				let n=n+1
+				fi
 			fi
 		else
 			let n=n+1
