@@ -59,7 +59,8 @@ while [ $n -lt $total ]; do
 				var1=$(grep -o 'N' unalign/om.$n.fa | wc -l)
 				var2=$(wc -m unalign/om.$n.fa | awk '{print $1}')
 				var3=$(awk -v VAR1=$var1 -v VAR2=$var2 'BEGIN {print VAR1/VAR2}')
-				if [ $var3 -lt .1 ] ;
+				var4=$(awk -v VAR3=$var3 'BEGIN {if (VAR3<.1) print "smaller"; else print "bigger";}')
+				if [ $var4 = smalller ] ;
 				then
 					java -Xmx1000m -jar /share/bin/macse_v1.01b.jar -prog alignSequences -seq unalign/om.$n.fa -out_NT aligned/om.$n.aln #just do it!   	
 					sed -i ':begin;$!N;/[ACTG]\n[ACTG]/s/\n//;tbegin;P;D' aligned/om.$n.aln
