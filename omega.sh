@@ -69,6 +69,7 @@ while [ $n -lt $total ]; do
 				else
 					echo "TOO MANY NNNNNNNNNNNNN"
 					let n=n+1
+				fi
 			else
 				if [ ! -f omega/om.$n.aln.out ] ; #have I already done the analyses elsewhere?
 				then
