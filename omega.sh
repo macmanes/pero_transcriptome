@@ -61,7 +61,6 @@ while [ $n -lt $total ]; do
 				var3=$(awk -v VAR1=$var1 -v VAR2=$var2 'BEGIN {print VAR1/VAR2}')
 				if [ $var3 -lt .1 ] ;
 				then
-					
 					java -Xmx1000m -jar /share/bin/macse_v1.01b.jar -prog alignSequences -seq unalign/om.$n.fa -out_NT aligned/om.$n.aln #just do it!   	
 					sed -i ':begin;$!N;/[ACTG]\n[ACTG]/s/\n//;tbegin;P;D' aligned/om.$n.aln
 					sed -i 's_TAG$_GGG_g;s_TGA$_GGG_g;s_TAA$_GGG_g;s_N_C_g;s_!_C_g;s_-_C_g' aligned/om.$n.aln
