@@ -60,11 +60,11 @@ while [ $n -lt $total ]; do
 				var2=$(wc -m unalign/om.$n.fa | awk '{print $1}')
 				var3=$(awk -v VAR1=$var1 -v VAR2=$var2 'BEGIN {print VAR1/VAR2}')
 				var4=$(awk -v VAR3=$var3 'BEGIN {if (VAR3<.1) print "smaller"; else print "bigger";}')
-				if [ $var4 = smalller ] ;
+				if [ $var4 = smaller ] ;
 				then
 					java -Xmx1000m -jar /share/bin/macse_v1.01b.jar -prog alignSequences -seq unalign/om.$n.fa -out_NT aligned/om.$n.aln #just do it!   	
 					sed -i ':begin;$!N;/[ACTG]\n[ACTG]/s/\n//;tbegin;P;D' aligned/om.$n.aln
-					sed -i 's_TAG$_GGG_g;s_TGA$_GGG_g;s_TAA$_GGG_g;s_N_C_g;s_!_C_g;s_-_C_g' aligned/om.$n.aln
+					sed -i 's_TAG$_GGG_g;s_TGA$_GGG_g;s_TAA$_GGG_g;s_N_-_g;s_!_-_g' aligned/om.$n.aln
 					omegaMap $CF -outfile omega/om.$n.aln.out -fasta aligned/om.$n.aln &
 					let n=n+1
 				else
