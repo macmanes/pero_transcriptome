@@ -49,13 +49,13 @@ while [ $n -lt $total ]; do
 	i=`ps -all | grep 'java\|omegaMap' | wc -l`
 	if [ $i -lt $TC ] ; #are there less than $TC jobs currently running?
 	then
-		echo 'I have a core to use'
+		#echo 'I have a core to use'
 		if [ -f unalign/om.$n.fa ] ; #does the file exist?
 		then
-			echo "The input file om.$i.fa seems to exist"
+			#echo "The input file om.$i.fa seems to exist"
 			if [ ! -f aligned/om.$n.aln ] ; #have I already done the analyses elsewhere?
 			then
-				echo 'I need to do the analysis'
+				#echo 'I need to do the analysis'
 				var1=$(grep -o 'N' unalign/om.$n.fa | wc -l)
 				var2=$(wc -m unalign/om.$n.fa | awk '{print $1}')
 				var3=$(awk -v VAR1=$var1 -v VAR2=$var2 'BEGIN {print VAR1/VAR2}')
@@ -84,7 +84,7 @@ while [ $n -lt $total ]; do
 			else
 				if [ ! -f omega/om.$n.aln.out ] ; #have I already done the analyses elsewhere?
 				then
-					echo 'I need to do the analysis'
+					#echo 'I need to do the analysis'
 					sed -i ':begin;$!N;/[ACTG]\n[ACTG]/s/\n//;tbegin;P;D' aligned/om.$n.aln
 					sed -i 's_TAG$_GGG_g;s_TGA$_GGG_g;s_TAA$_GGG_g;s_N_C_g;s_!_C_g;s_-_C_g' aligned/om.$n.aln
 					export var8=$(sed -n '2p' aligned/om.$n.aln)
@@ -100,7 +100,7 @@ while [ $n -lt $total ]; do
 						let n=n+1
 					fi
 			else
-				echo "Sweet! I already made om.m.$n.aln.out!"
+				#echo "Sweet! I already made om.m.$n.aln.out!"
 				let n=n+1
 				fi
 			fi
@@ -114,43 +114,7 @@ while [ $n -lt $total ]; do
 	fi
 done
 wait
-#for i in `ls om*fa`; do rm $i; done
-#for i in `ls aligned/om*aln`; do sed -i ':begin;$!N;/[ACTG]\n[ACTG]/s/\n//;tbegin;P;D' $i;done
-#rm commands.txt
 
-##Format fastas in prep for omega map
-#for i in `ls aligned/om*aln`; do sed -i 's_TAG$_GGG_g;s_TGA$_GGG_g;s_TAA$_GGG_g;s_N_-_g;s_!_-_g' $i; done
-
-##Do omegaMap
-# mkdir omega
-# total=50000
-# n=1
-# while [ $n -lt $total ]; do
-# 	i=`ps -all | grep omegaMap | wc -l`
-# 	if [ $i -lt $TC ] ; #are there less than 16 jobs currently running?
-# 	then
-# 		echo 'I have a core to use'
-# 		if [ -f aligned/om.$n.aln ] ; #does the file exist?
-# 		then
-# 			echo "The input file om.m$n.aln seems to exist"
-# 			if [ ! -f omega/om.$n.aln.out ] ; #have I already done the analyses elsewhere?
-# 			then
-# 				echo 'I need to do the analysis'
-# 				omegaMap $CF -outfile omega/om.$n.aln.out -fasta aligned/om.$n.aln & #just do it!        
-# 				let n=n+1
-# 			else
-# 				echo "Sweet! I already made om.m.$n.aln.out!"
-# 				let n=n+1
-# 			fi
-# 		else
-# 			let n=n+1
-# 		fi
-# 	else
-# 		echo 'Dont wake me up until there is something else to do'
-# 		sleep 30s #there are already 16 jobs-- you can take a rest now...
-# 	fi
-# done
-# wait
 for i in `ls omega/om*out`; do summarize 2000 $i > omega/$i.results; done
 
 ##Process Results
