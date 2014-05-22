@@ -65,9 +65,9 @@ while [ $n -lt $total ]; do
 					java -Xmx1000m -jar /share/bin/macse_v1.01b.jar -prog alignSequences -seq unalign/om.$n.fa -out_NT aligned/om.$n.aln #just do it!   	
 					sed -i ':begin;$!N;/[ACTG]\n[ACTG]/s/\n//;tbegin;P;D' aligned/om.$n.aln
 					sed -i 's_TAG$_GGG_g;s_TGA$_GGG_g;s_TAA$_GGG_g;s_N_-_g;s_!_-_g' aligned/om.$n.aln
-					var5=$(sed -n '2p' aligned/om.$n.aln)
-					var6=$(sed -n '4p' aligned/om.$n.aln)
-					var7=$(python $HOME/pero_transcriptome/hamming.py $var5 $var6)
+					export var5=$(sed -n '2p' aligned/om.$n.aln)
+					export var6=$(sed -n '4p' aligned/om.$n.aln)
+					var7=$(python $HOME/pero_transcriptome/hamming1.py)
 					if [ $var7 -ne 0 ];
 					then
 						omegaMap $CF -outfile omega/om.$n.aln.out -fasta aligned/om.$n.aln &
@@ -86,9 +86,9 @@ while [ $n -lt $total ]; do
 					echo 'I need to do the analysis'
 					sed -i ':begin;$!N;/[ACTG]\n[ACTG]/s/\n//;tbegin;P;D' aligned/om.$n.aln
 					sed -i 's_TAG$_GGG_g;s_TGA$_GGG_g;s_TAA$_GGG_g;s_N_C_g;s_!_C_g;s_-_C_g' aligned/om.$n.aln
-					var8=$(sed -n '2p' aligned/om.$n.aln)
-					var9=$(sed -n '4p' aligned/om.$n.aln)
-					var10=$(python $HOME/pero_transcriptome/hamming.py $var5 $var6)
+					export var8=$(sed -n '2p' aligned/om.$n.aln)
+					export var9=$(sed -n '4p' aligned/om.$n.aln)
+					var10=$(python $HOME/pero_transcriptome/hamming2.py)
 					if [ $var10 -gt 0 ];
 						then
 						omegaMap $CF -outfile omega/om.$n.aln.out -fasta aligned/om.$n.aln & #just do it!
