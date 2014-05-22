@@ -68,7 +68,7 @@ while [ $n -lt $total ]; do
 					var5=$(sed -n '2p' aligned/om.$n.aln)
 					var6=$(sed -n '4p' aligned/om.$n.aln)
 					var7=$(python $HOME/pero_transcriptome/hamming.py $var5 $var6)
-					if [ $var7 -gt 0 ];
+					if [ $var7 -ne 0 ];
 					then
 						omegaMap $CF -outfile omega/om.$n.aln.out -fasta aligned/om.$n.aln &
 						let n=n+1
