@@ -67,11 +67,15 @@ while [ $n -lt $total ]; do
 					sed -i 's_TAG$_GGG_g;s_TGA$_GGG_g;s_TAA$_GGG_g;s_N_-_g;s_!_-_g' aligned/om.$n.aln
 					var5=$(sed -n '2p' aligned/om.$n.aln)
 					var6=$(sed -n '4p' aligned/om.$n.aln)
-					python $HOME/
-
-
-					omegaMap $CF -outfile omega/om.$n.aln.out -fasta aligned/om.$n.aln &
-					let n=n+1
+					var7=$(python $HOME/pero_transcriptome/hamming.py $var5 $var6)
+					if [ $var7 -gt 0 ];
+					then
+						omegaMap $CF -outfile omega/om.$n.aln.out -fasta aligned/om.$n.aln &
+						let n=n+1
+					else
+						echo "Hamming distanse is ZERO"
+						let n=n+1
+					fi
 				else
 					echo "TOO MANY N's $var3"
 					let n=n+1
