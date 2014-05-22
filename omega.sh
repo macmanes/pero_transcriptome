@@ -68,7 +68,7 @@ while [ $n -lt $total ]; do
 					export var5=$(sed -n '2p' aligned/om.$n.aln)
 					export var6=$(sed -n '4p' aligned/om.$n.aln)
 					var7=$(python $HOME/pero_transcriptome/hamming1.py)
-					if [ $var7 -gt 0 ] || [ $var7 -lt 50 ] ;
+					if [ $var7 -gt 0 ] && [ $var7 -lt 50 ] ;
 					then
 						echo "HAMMING distanse is $var7"
 						omegaMap $CF -outfile omega/om.$n.aln.out -fasta aligned/om.$n.aln &
@@ -90,7 +90,7 @@ while [ $n -lt $total ]; do
 					export var8=$(sed -n '2p' aligned/om.$n.aln)
 					export var9=$(sed -n '4p' aligned/om.$n.aln)
 					var10=$(python $HOME/pero_transcriptome/hamming2.py)
-					if [ $var10 -gt 0 ] || [ $var7 -lt 50 ];
+					if [ $var10 -gt 0 ] && [ $var7 -lt 50 ];
 						then
 						echo "HAMMING distanse is $var10"
 						omegaMap $CF -outfile omega/om.$n.aln.out -fasta aligned/om.$n.aln & #just do it!
