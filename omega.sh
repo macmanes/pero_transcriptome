@@ -86,8 +86,17 @@ while [ $n -lt $total ]; do
 					echo 'I need to do the analysis'
 					sed -i ':begin;$!N;/[ACTG]\n[ACTG]/s/\n//;tbegin;P;D' aligned/om.$n.aln
 					sed -i 's_TAG$_GGG_g;s_TGA$_GGG_g;s_TAA$_GGG_g;s_N_C_g;s_!_C_g;s_-_C_g' aligned/om.$n.aln
-					omegaMap $CF -outfile omega/om.$n.aln.out -fasta aligned/om.$n.aln & #just do it!        
-					let n=n+1
+					var8=$(sed -n '2p' aligned/om.$n.aln)
+					var9=$(sed -n '4p' aligned/om.$n.aln)
+					var10=$(python $HOME/pero_transcriptome/hamming.py $var5 $var6)
+					if [ $var10 -gt 0 ];
+						then
+						omegaMap $CF -outfile omega/om.$n.aln.out -fasta aligned/om.$n.aln & #just do it!
+						let n=n+1
+					else
+						echo "Hamming distanse is ZERO"        
+						let n=n+1
+					fi
 			else
 				echo "Sweet! I already made om.m.$n.aln.out!"
 				let n=n+1
