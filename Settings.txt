@@ -16,7 +16,7 @@
 ### (t) indicates that the distribution can be truncated through the following two (lowest highest) values.
 
 
-*NameOfPhylipFile=RealData_sequences16.phy
+*NameOfPhylipFile=/mnt/data0/macmanes/pero_mapping_omega/om.428.phy
 *NumberOfSimulations=1000
 NumberOfProcessors=16
 *PopulationSize=fix 1000
