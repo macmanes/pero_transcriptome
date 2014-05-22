@@ -65,10 +65,15 @@ while [ $n -lt $total ]; do
 					java -Xmx1000m -jar /share/bin/macse_v1.01b.jar -prog alignSequences -seq unalign/om.$n.fa -out_NT aligned/om.$n.aln #just do it!   	
 					sed -i ':begin;$!N;/[ACTG]\n[ACTG]/s/\n//;tbegin;P;D' aligned/om.$n.aln
 					sed -i 's_TAG$_GGG_g;s_TGA$_GGG_g;s_TAA$_GGG_g;s_N_-_g;s_!_-_g' aligned/om.$n.aln
+					var5=$(sed -n '2p' aligned/om.$n.aln)
+					var6=$(sed -n '4p' aligned/om.$n.aln)
+					python $HOME/
+
+
 					omegaMap $CF -outfile omega/om.$n.aln.out -fasta aligned/om.$n.aln &
 					let n=n+1
 				else
-					echo "TOO MANY NNNNNNNNNNNNN"
+					echo "TOO MANY N's $var3"
 					let n=n+1
 				fi
 			else
