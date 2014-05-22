@@ -70,6 +70,7 @@ while [ $n -lt $total ]; do
 					var7=$(python $HOME/pero_transcriptome/hamming1.py)
 					if [ $var7 -ne 0 ];
 					then
+						echo "Hamming distanse is $var7"
 						omegaMap $CF -outfile omega/om.$n.aln.out -fasta aligned/om.$n.aln &
 						let n=n+1
 					else
@@ -89,8 +90,9 @@ while [ $n -lt $total ]; do
 					export var8=$(sed -n '2p' aligned/om.$n.aln)
 					export var9=$(sed -n '4p' aligned/om.$n.aln)
 					var10=$(python $HOME/pero_transcriptome/hamming2.py)
-					if [ $var10 -gt 0 ];
+					if [ $var10 -ne 0 ];
 						then
+						echo "Hamming distanse is $var10"
 						omegaMap $CF -outfile omega/om.$n.aln.out -fasta aligned/om.$n.aln & #just do it!
 						let n=n+1
 					else
