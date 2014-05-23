@@ -86,7 +86,7 @@ while [ $n -lt $total ]; do
 				then
 					#echo 'I need to do the analysis'
 					sed -i ':begin;$!N;/[ACTG]\n[ACTG]/s/\n//;tbegin;P;D' aligned/om.$n.aln
-					sed -i 's_TAG$_GGG_g;s_TGA$_GGG_g;s_TAA$_GGG_g;s_N_C_g;s_!_C_g;s_-_C_g' aligned/om.$n.aln
+					sed -i 's_TAG$_GGG_g;s_TGA$_GGG_g;s_TAA$_GGG_g;s_N_-_g;s_!_-_g' aligned/om.$n.aln
 					export var8=$(sed -n '2p' aligned/om.$n.aln)
 					export var9=$(sed -n '4p' aligned/om.$n.aln)
 					var10=$(python $HOME/pero_transcriptome/hamming2.py)
