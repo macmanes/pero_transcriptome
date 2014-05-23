@@ -62,7 +62,7 @@ while [ $n -lt $total ]; do
 				var4=$(awk -v VAR3=$var3 'BEGIN {if (VAR3<.01) print "smaller"; else print "bigger";}')
 				if [ $var4 = smaller ] ;
 				then
-					java -Xmx1000m -jar /share/bin/macse_v1.01b.jar -prog alignSequences -seq unalign/om.$n.fa -out_NT aligned/om.$n.aln & #just do it!   	
+					java -Xmx1000m -jar /share/bin/macse_v1.01b.jar -prog alignSequences -seq unalign/om.$n.fa -out_NT aligned/om.$n.aln #just do it!   	
 					sed -i ':begin;$!N;/[ACTG]\n[ACTG]/s/\n//;tbegin;P;D' aligned/om.$n.aln
 					sed -i 's_TAG$_GGG_g;s_TGA$_GGG_g;s_TAA$_GGG_g;s_N_-_g;s_!_-_g' aligned/om.$n.aln
 					export var5=$(sed -n '2p' aligned/om.$n.aln)
