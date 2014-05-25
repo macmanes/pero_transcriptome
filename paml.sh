@@ -39,7 +39,7 @@ mkdir paml
 total=11000
 n=1
 while [ $n -lt $total ]; do
-	i=`ps -all | grep 'java\|paml' | wc -l`
+	i=`ps -all | grep 'java\|codeml' | wc -l`
 	if [ $i -lt $TC ] ; #are there less than $TC jobs currently running?
 	then
 		#echo 'I have a core to use'
