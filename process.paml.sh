@@ -1,7 +1,7 @@
 #! /bin/bash
 
 
-for i in `ls paml/*out` do
+for i in `ls paml/*out`; do
 	grep lnL $i | awk '{print $5}' > tmp
 	var1=$(sed -n '2p' tmp)
 	var2=$(sed -n '3p' tmp)
@@ -12,5 +12,5 @@ for i in `ls paml/*out` do
 	echo -e $i '\t' M1a vs M2a '\t' $var5 >> M2.txt
 	echo -e $i '\t' M7 vs M8 '\t' $var6 >> M8.txt
 	var7=$(grep omega $i)
-	echo -e $i '\t' $var7 >> M1.txt
+	echo -e $i '\t' $var7 >> M1.txt;
 done
