@@ -56,7 +56,7 @@ while [ $n -lt $total ]; do
 			if [ ! -f aligned/om.$n.aln ] ; #have I already done the analyses elsewhere?
 			then
 				#echo 'I need to do the analysis'
-				var1=$(grep -o 'N' unalign/om.$n.fa | wc -l)
+				var1=$(grep -o 'N\|-' unalign/om.$n.fa | wc -l)
 				var2=$(wc -m unalign/om.$n.fa | awk '{print $1}')
 				var3=$(awk -v VAR1=$var1 -v VAR2=$var2 'BEGIN {print VAR1/VAR2}')
 				var4=$(awk -v VAR3=$var3 'BEGIN {if (VAR3<.01) print "smaller"; else print "bigger";}')
