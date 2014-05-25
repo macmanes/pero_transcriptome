@@ -56,7 +56,7 @@ while [ $n -lt $total ]; do
 				python $HOME/pero_transcriptome/fa2phy.py aligned/$n.hits.aln aligned/$n.hits.phy
 				sed -i "s_seqfile =.*_seqfile = aligned/${n}.hits.phy_g" codeml.ctl
 				sed -i "s_outfile =.*_outfile = paml/${n}.hits.out_g" codeml.ctl
-				# codeml
+				yes "\n" | codeml &
 				let n=n+1
 			else
 				if [ ! -f omega/om.$n.aln.out ] ; #have I already done the analyses elsewhere?
@@ -64,7 +64,7 @@ while [ $n -lt $total ]; do
 					#echo 'I need to run PAML'
 					sed -i "s_seqfile =.*_seqfile = aligned/${n}.hits.phy" codeml.ctl
 					sed -i "s_outfile =.*_outfile = aligned/${n}.hits.out" codeml.ctl
-					#codeml
+					yes "\n" | codeml &
 					let n=n+1
 				else
 					#echo "Sweet! I already ran PAML"
