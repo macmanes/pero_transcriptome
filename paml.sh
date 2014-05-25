@@ -14,8 +14,7 @@ usage=$(cat << EOF
    omegav3.sh [options]
 
    Options:
-      -o <v> : *required* paml control file.
-      -t <v> : *required* Numberof threads to use.
+      -t <v> : *required* Number of threads to use.
 EOF
 );
 
@@ -24,14 +23,11 @@ while getopts f:b:o:t: option
 do
     case "${option}"
     in
-	o) CF=${OPTARG};;
 	t) TC=${OPTARG};;
     esac
 done
 
-#MACSE = which macse_v1.01b.jar
 
-##cluster seqs
 mkdir aligned
 mkdir paml
 
@@ -49,6 +45,7 @@ while [ $n -lt $total ]; do
 			if [ ! -f aligned/$n.hits.aln ] ; #have I already done the analyses elsewhere?
 			then
 				java -Xmx1000m -jar /share/bin/macse_v1.01b.jar -prog alignSequences -seq ortholog/$n.hits.fa -out_NT aligned/$n.hits.aln & #just do it!   	
+				wait %%
 				sed -i 's_!_-_g' aligned/$n.hits.aln
 				sed -i "s/ENS.*/mus/g" aligned/$n.hits.aln
 				sed -i "s/gi.*/pema/g" aligned/$n.hits.aln
