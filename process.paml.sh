@@ -11,4 +11,6 @@ for i in `ls paml/*out` do;
 	var6=$(awk -v VAR1=$var3 -v VAR2=$var4 'BEGIN {print 2*(VAR3-VAR4) <0 ? -2*(VAR3-VAR4) : 2*(VAR3-VAR4)}')
 	echo -e $i '\t' M1a vs M2a '\t' $var5 >> M2.txt
 	echo -e $i '\t' M7 vs M8 '\t' $var6 >> M8.txt
+	var7=$(grep omega $i)
+	echo -e $i '\t' $var7 >> M1.txt
 done
