@@ -1,6 +1,6 @@
 #!/bin/bash
 
-total=1700
+total=11000
 n=1
 while [ $n -lt $total ]; do
 	var1=$(grep lnL paml/${n}.hits.out | awk '{print $5}')
