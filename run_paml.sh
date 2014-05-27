@@ -9,6 +9,7 @@ usage=$(cat << EOF
 
    Options:
       -t <v> : *required* Number of threads to use.
+      -o <v> : *required* output directory.
 EOF
 );
 
