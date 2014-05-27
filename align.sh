@@ -26,7 +26,7 @@ mkdir aligned
 mkdir paml
 
 ##Align
-total=11000
+total=10000
 n=1
 while [ $n -lt $total ]; do
 	i=`ps -all | grep 'java\|codeml' | wc -l`
