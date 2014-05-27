@@ -18,12 +18,13 @@ do
     case "${option}"
     in
 	t) TC=${OPTARG};;
+	o) OD=${OPTARG};;
     esac
 done
 
 
 mkdir aligned
-mkdir paml
+mkdir $OD
 
 
 total=11000
@@ -35,7 +36,7 @@ while [ $n -lt $total ]; do
 		#echo 'I have a core to use'
 		if [ -f aligned/$n.hits.aln ] ; #does the file exist?
 		then
-			if [ ! -f paml/$n.hits.out ] ; #have I done PAML?
+			if [ ! -f $OD/$n.hits.out ] ; #have I done PAML?
 			then
 				sed -i 's_!_-_g' aligned/$n.hits.aln
 				sed -i "s/ENS.*/mus/g" aligned/$n.hits.aln
@@ -43,7 +44,7 @@ while [ $n -lt $total ]; do
 				sed -i "s/[0-9].*/peer/g" aligned/$n.hits.aln
 				python $HOME/pero_transcriptome/fa2phy.py aligned/$n.hits.aln aligned/$n.hits.phy
 				sed -i "s_seqfile =.*_seqfile = aligned/${n}.hits.phy_g" codeml.ctl
-				sed -i "s_outfile =.*_outfile = paml/${n}.hits.out_g" codeml.ctl
+				sed -i "s_outfile =.*_outfile = ${OD}/${n}.hits.out_g" codeml.ctl
 				yes "\n" | codeml &
 				let n=n+1	
 			else
