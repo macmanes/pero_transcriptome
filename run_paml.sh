@@ -14,7 +14,7 @@ EOF
 );
 
 
-while getopts t: option
+while getopts t:o: option
 do
     case "${option}"
     in
