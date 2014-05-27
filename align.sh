@@ -13,17 +13,17 @@ EOF
 );
 
 
-while getopts t: option
+while getopts o:t: option
 do
     case "${option}"
     in
 	t) TC=${OPTARG};;
+	o) OD=${OPTARG};;
     esac
 done
 
 
-mkdir aligned
-mkdir paml
+mkdir $OD
 
 ##Align
 total=10000
@@ -33,11 +33,11 @@ while [ $n -lt $total ]; do
 	if [ $i -lt $TC ] ; #are there less than $TC jobs currently running?
 	then
 		#echo 'I have a core to use'
-		if [ -f 4species/$n.hits.fa ] ; #does the file exist?
+		if [ -f $OD/$n.hits.fa ] ; #does the file exist?
 		then
-			if [ ! -f 4species/$n.hits.aln ] ; #have I done alignment?
+			if [ ! -f $OD/$n.hits.aln ] ; #have I done alignment?
 			then
-				java -Xmx1000m -jar /share/bin/macse_v1.01b.jar -prog alignSequences -seq 4species/$n.hits.fa -out_NT 4species/$n.hits.aln & #just do it!   	
+				java -Xmx1000m -jar /share/bin/macse_v1.01b.jar -prog alignSequences -seq $OD/$n.hits.fa -out_NT $OD/$n.hits.aln & #just do it!   	
 				let n=n+1	
 			else
 				let n=n+1
