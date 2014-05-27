@@ -14,17 +14,18 @@ EOF
 );
 
 
-while getopts t:o: option
+while getopts i:t:o: option
 do
     case "${option}"
     in
+	i) ID=${OPTARG};;
 	t) TC=${OPTARG};;
 	o) OD=${OPTARG};;
     esac
 done
 
 
-mkdir aligned
+mkdir $ID
 mkdir $OD
 
 
@@ -35,17 +36,17 @@ while [ $n -lt $total ]; do
 	if [ $i -lt $TC ] ; #are there less than $TC jobs currently running?
 	then
 		#echo 'I have a core to use'
-		if [ -f aligned/$n.hits.aln ] ; #does the file exist?
+		if [ -f $ID/$n.hits.aln ] ; #does the file exist?
 		then
 			if [ ! -f $OD/$n.hits.out ] ; #have I done PAML?
 			then
-				sed -i 's_!_-_g' aligned/$n.hits.aln
-				sed -i "s/ENSM.*/mus/g" aligned/$n.hits.aln
-				sed -i "s/gi.*/pema/g" aligned/$n.hits.aln
-				sed -i "s/[0-9].*/peer/g" aligned/$n.hits.aln
-				sed -i "s/ENSR.*/rat/g" aligned/$n.hits.aln
-				python $HOME/pero_transcriptome/fa2phy.py aligned/$n.hits.aln aligned/$n.hits.phy
-				sed -i "s_seqfile =.*_seqfile = aligned/${n}.hits.phy_g" codeml.ctl
+				sed -i 's_!_-_g' $ID/$n.hits.aln
+				sed -i "s/ENSM.*/mus/g" $ID/$n.hits.aln
+				sed -i "s/gi.*/pema/g" $ID/$n.hits.aln
+				sed -i "s/[0-9].*/peer/g" $ID/$n.hits.aln
+				sed -i "s/ENSR.*/rat/g" $ID/$n.hits.aln
+				python $HOME/pero_transcriptome/fa2phy.py $ID/$n.hits.aln $ID/$n.hits.phy
+				sed -i "s_seqfile =.*_seqfile = ${ID}/${n}.hits.phy_g" codeml.ctl
 				sed -i "s_outfile =.*_outfile = ${OD}/${n}.hits.out_g" codeml.ctl
 				yes "\n" | codeml &
 				let n=n+1	
