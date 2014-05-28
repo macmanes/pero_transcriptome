@@ -41,10 +41,10 @@ while [ $n -lt $total ]; do
 			if [ ! -f $OD/$n.hits.out ] ; #have I done PAML?
 			then
 				sed -i 's_!_-_g' $ID/$n.hits.aln
-				sed -i "s/ENSM.*/mus/g" $ID/$n.hits.aln
-				sed -i "s/gi.*/pema/g" $ID/$n.hits.aln
+				sed -i "s/cds.ENSM.*/mus/g" $ID/$n.hits.aln
+				sed -i "s/pema.gi.*/pema/g" $ID/$n.hits.aln
 				sed -i "s/[0-9].*/peer/g" $ID/$n.hits.aln
-				sed -i "s/ENSR.*/rat/g" $ID/$n.hits.aln
+				sed -i "s/cds.ENSR.*/rat/g" $ID/$n.hits.aln
 				python $HOME/pero_transcriptome/fa2phy.py $ID/$n.hits.aln $ID/$n.hits.phy
 				sed -i "s_seqfile =.*_seqfile = ${ID}/${n}.hits.phy_g" codeml.ctl
 				sed -i "s_outfile =.*_outfile = ${OD}/${n}.hits.out_g" codeml.ctl
