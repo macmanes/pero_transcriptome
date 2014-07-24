@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.5.30)  25 MAR 2014 16:32
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.5.30)  23 JUL 2014 10:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -259,7 +259,7 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 )
 \c@ContinuedFloat=\count119
 Package caption Info: hyperref package is loaded.
-) (/Users/macmanes/Documents/pero_transcriptome/.texpadtmp/Pero_Transcriptome.aux)
+) (/Users/macmanes/Dropbox/pero_transcriptome/.texpadtmp/Pero_Transcriptome.aux)
 \openout1 = `Pero_Transcriptome.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
@@ -290,7 +290,7 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 66.
 LaTeX Info: Redefining \pageref on input line 66.
 LaTeX Info: Redefining \nameref on input line 66.
- (/Users/macmanes/Documents/pero_transcriptome/.texpadtmp/Pero_Transcriptome.out) (/Users/macmanes/Documents/pero_transcriptome/.texpadtmp/Pero_Transcriptome.out)
+ (/Users/macmanes/Dropbox/pero_transcriptome/.texpadtmp/Pero_Transcriptome.out) (/Users/macmanes/Dropbox/pero_transcriptome/.texpadtmp/Pero_Transcriptome.out)
 \@outlinefile=\write3
 \openout3 = `Pero_Transcriptome.out'.
 
@@ -304,23 +304,53 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 75.
  (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
 
-LaTeX Warning: Citation `Walsberg:2000uu' on page 1 undefined on input line 98.
+LaTeX Warning: Citation `Tatum:2009kp' on page 1 undefined on input line 98.
+
+
+LaTeX Warning: Citation `Romero:2007fs' on page 1 undefined on input line 98.
+
+
+LaTeX Warning: Citation `Rojek:2006dg' on page 1 undefined on input line 98.
+
+
+LaTeX Warning: Citation `NIELSEN:1995uq' on page 1 undefined on input line 98.
+
+
+LaTeX Warning: Citation `Mobasheri:2007tt' on page 1 undefined on input line 98.
+
+
+LaTeX Warning: Citation `Bedford:2003wa' on page 1 undefined on input line 98.
+
+
+LaTeX Warning: Citation `NIELSEN:1999vg' on page 1 undefined on input line 98.
+
+
+LaTeX Warning: Citation `Gallardo:2005fm' on page 1 undefined on input line 98.
+
+
+LaTeX Warning: Citation `Kaissling:1975uu' on page 1 undefined on input line 98.
+
+
+LaTeX Warning: Citation `Altschuler:1979du' on page 1 undefined on input line 98.
+
+
+LaTeX Warning: Citation `Marra:2014de' on page 1 undefined on input line 98.
+
+
+LaTeX Warning: Citation `Giorello:2014iv' on page 1 undefined on input line 98.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 98--99
-
- []
-
-
-LaTeX Warning: Citation `Veal:2001vp' on page 1 undefined on input line 100.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
@@ -330,64 +360,70 @@ File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 
 ]
 
-LaTeX Warning: Citation `Sikes:2011dz' on page 2 undefined on input line 108.
+LaTeX Warning: Citation `Veal:2001vp' on page 2 undefined on input line 100.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
+
+ []
 
 [2]
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 123.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 124.
  (/usr/local/texlive/2013/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 123.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 124.
 
-Underfull \hbox (badness 10000) in paragraph at lines 123--124
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 127--128
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--130
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 133--134
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 141--142
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
 
  []
 
-(/Users/macmanes/Documents/pero_transcriptome/.texpadtmp/Pero_Transcriptome.bbl [4]) [5]
-Underfull \hbox (badness 10000) in paragraph at lines 180--181
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 217.
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
+
+ []
+
+[4] (/Users/macmanes/Dropbox/pero_transcriptome/.texpadtmp/Pero_Transcriptome.bbl [5])
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
+
+ []
+
 [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 217.
- (/Users/macmanes/Documents/pero_transcriptome/.texpadtmp/Pero_Transcriptome.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 217.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 217.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 218.
+ [7]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 218.
+ (/Users/macmanes/Dropbox/pero_transcriptome/.texpadtmp/Pero_Transcriptome.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 218.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 218.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 217.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 218.
  ) 
 Here is how much of TeX's memory you used:
- 10287 strings out of 493938
- 147168 string characters out of 6148857
- 217908 words of memory out of 5000000
- 13513 multiletter control sequences out of 15000+600000
+ 10301 strings out of 493938
+ 147363 string characters out of 6148857
+ 218908 words of memory out of 5000000
+ 13525 multiletter control sequences out of 15000+600000
  11993 words of font info for 44 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 36i,6n,38p,1055b,455s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,6n,38p,1167b,455s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/macmanes/Documents/pero_transcriptome/.texpadtmp/Pero_Transcriptome.pdf (6 pages).
+Output written on /Users/macmanes/Dropbox/pero_transcriptome/.texpadtmp/Pero_Transcriptome.pdf (7 pages).
