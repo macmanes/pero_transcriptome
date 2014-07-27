@@ -75,11 +75,7 @@
 Matthew D. MacManes$^{1}$, 
 Michael B. Eisen $^{2}$, 
 \\
-<<<<<<< HEAD
 $^{1}$ Department of Molecular, Cellular and Biomedical Sciences, University of New Hampshire, Durham NH, USA
-=======
-\bf{1} Department of Molecular, Cellular and Biomedical Sciences, University of New Hampshire, Durham NH, USA
->>>>>>> FETCH_HEAD
 \\
 $^{2}$ HHMI and University of California, Berkeley, Berkeley, CA, USA
 \\
@@ -95,19 +91,10 @@ $\ast$ E-mail: macmanes@gmail.com, @PeroMHC
 
 \section*{Introduction}
 
-<<<<<<< HEAD
 Deserts are widely considered one of Earth's harshest environments. Animals living in desert environments are forced to endure intense heat and drought, and in turn, species having evolved in these environments are likely ton have evolved specialised mechanisms that may enhance fitness. While living in deserts likely involves a large number of adaptive phenotypes, the ability to osmoregulate -- to maintain the proper water and electrolyte balance -- appears to be paramount \cite{Walsberg:2000uu}. Indeed, the maintenance of water balance in animals is one of the most important physiologic processes, and is critical to desert survival. Mammals are exquisitely sensitive to changes in osmolality, with slight derangement eliciting physiologic compromise.  When the loss of water exceeds dietary intake, dehydration - and in extreme cases, death - can occur. Understanding these mechanismsm will significantly enhance our understanding of the physiologic processes underlying osmoregulation in extreme environments, having implications for studies of human health, conservation, and climate change. \\
 
 The genes and structures responsible for the maintinance of water and electrolyte balance are well characterized in model organisms such as mice \cite{Tatum:2009kp}, rats \cite{Romero:2007fs,Rojek:2006dg,NIELSEN:1995uq}, and humans \cite{Mobasheri:2007tt,Bedford:2003wa,NIELSEN:1999vg}. These studies, many of which have been enabled by newer sequencing technologies, serve as a foundation for studies of renal genomics in non-model organisms. In particular, because researchers have long been interested in desert adaptation, a number of studies have looked at the morphology or expression of single genes in the renal tissues of desert adapted rodents \textit{Phyllotis darwini} \cite{Gallardo:2005fm}, \textit{Psammomys obesus} \cite{Kaissling:1975uu}, and \textit{Perognathus penicillatus} \cite{Altschuler:1979du}. More recently, full renal transcriptomes have been generated for \textit{Dipodomys spectabilis} and \textit{Chaetodipus baileyi} \cite{Marra:2014de} as well as \textit{Abrothrix olivacea} \cite{Giorello:2014iv}. \\
 
-=======
-For biologists interested in understanding the relationship between fitness, genotype, and phenotype, modern sequencing technologies provide for an unprecedented opportunity to gain a deep understanding of genome level processes that together, underlie adaptation. Unlike more traditional approaches (e.g. QTL mapping), second generation sequencing allow researchers to access genome wide patterns of gene expression, nucleotide variation and ulitimately pattens of natural selection in non-model organisms lacking an extensive set of genomic tools. This approach has been used widely in recent years in characterizing X, Y and Z. \\
-
-One interesting example of adaptation lies in animal's ability to survive desert conditions. Here, heat \emph{and} drought provide for powerful selective forces, testing animals' ability to osmoregulate and thus to survive \cite{Walsberg:2000uu}. Indeed, the maintenance of water balance in animals is one of the most important physiologic processes, and is critical to desert survival. Mammals are exquisitely sensitive to changes in osmolality, with slight derangement eliciting physiologic compromise.  When the loss of water exceeds dietary intake, dehydration - and in extreme cases, death - can occur.  Unlike most mammals, animals living in desert habitats are subjected to long periods of extreme heat and intense drought.  As a result, desert animals have evolved mechanisms through which physiologic homeostasis is maintained despite severe and prolonged dehydration. Understanding these mechanismsm will significantly enhance our understanding of the physiologic processes underlying osmoregulation in extreme environments, having implications for studies of human health, conservation, and climate change. \\
-
-Genes responsible for the maintinance of water balance are well characterized in model organisms such as mice \cite{Tatum:2009kp}, rats \cite{Romero:2007fs,Rojek:2006dg,NIELSEN:1995uq}, and humans \cite{Mobasheri:2007tt,Bedford:2003wa,NIELSEN:1999vg}. In addition to these studies, a ong standing interest in deserts adaptation has resulted in a number of studies that looked at the morphology or expression of single genes in the renal tissues of desert adapted rodents \textit{Phyllotis darwini} \cite{Gallardo:2005fm}, \textit{Psammomys obesus} \cite{Kaissling:1975uu}, and \textit{Perognathus penicillatus} \cite{Altschuler:1979du}. More recently, full renal transcriptomes have been generated for \textit{Dipodomys spectabilis} and \textit{Chaetodipus baileyi} \cite{Marra:2014de} as well as \textit{Abrothrix olivacea} \cite{Giorello:2014iv}. \\
-
->>>>>>> FETCH_HEAD
 These studies provide a rich context for the current and future work, aimed at developing a synthetic understanding of the the genetic and genomic underpinnings of desert adaptation in rodents. As a first step, we have sequenced, assembled, and characterized the transcriptome (using four tissue types - liver, kidney, testes, brain), of a desert adapted cricetid rodent endemic to the Southwest United States \cite{Veal:2001vp}, \textit{Peromyscus eremicus}. These animals have a lifespan typical of small mammals, and therefore an individual may live it's entire life without ever drinking water. These rodents have distinct advantage over other desert animals (e.g. \textit{Dipodomys}) in that they breed readily in captivity, which enables future laboratory studies of the phenotype of interest. In addition the focal species is positioned in a clade of well known animals (e.g. \textit{P. californicus}, \textit{P. maniculatus} and \textit{P. polionotus}) \cite{Bradley:2007jo} with growing genetic and genomic resources \cite{Shorter:2014kw,Panhuis:2011co,Shorter:2012ib} which together suggest that future comparative studies are possible. \\
 
 
@@ -132,7 +119,9 @@ submitted for Illumina sequencing using two lanes of 150nt paired end sequencing
 
 \subsection*{Sequence Data Preprocessing and Assembly}
 
-The raw sequence reads were error corrected using the software bless \cite{Heo:2014cb}, using kmer=25, based on the developers recommendations. The error corrected adapter and quality trimmed following recommendations from MacManes \cite{MacManes:2014io} and Mbandi \cite{Christoffels:2014bg}. Specifically, adapter sequence contamination was removed, and low quality nucleotides (defined as \textsc{Phred} \textless 2) were removed using the program Trimmomatic version 0.32  \cite{Lohse:2012fg}. We concatenated sequence data from each reference tissue type and assembled them jointly using Trinity version released 17 July 2014 \cite{Haas:2013jq}. We used flags indicating the stranded nature of sequencing reads and set maximum allowable physical distance between read pairs to 999nt. The assembly was conducted on a lunix workstation with 64 cores and 512Gb RAM. To filter the raw sequence assembly, I estimated TPM for each assembled sequence using bwa-mem version 0.75 \cite{Li:2013wn} and eXpress version 1.51 \cite{Roberts:2012dh}, removing all contigs whose expression was less than TPM=1 \cite{Haas:2013jq}. \\
+The raw sequence reads were error corrected using the software bless \cite{Heo:2014cb}, using kmer=25, based on the developers recommendations. The error corrected adapter and quality trimmed following recommendations from MacManes \cite{MacManes:2014io} and Mbandi \cite{Christoffels:2014bg}. Specifically, adapter sequence contamination was removed, and low quality nucleotides (defined as \textsc{Phred} \textless 2) were removed using the program Trimmomatic version 0.32  \cite{Lohse:2012fg}. We concatenated sequence data from each reference tissue type and assembled them jointly using Trinity version released 17 July 2014 \cite{Haas:2013jq}. We used flags indicating the stranded nature of sequencing reads and set maximum allowable physical distance between read pairs to 999nt. The assembly was conducted on a lunix workstation with 64 cores and 512Gb RAM. To filter the raw sequence assembly, I estimated TPM for each assembled sequence using bwa-mem version 0.75 \cite{Li:2013wn} and eXpress version 1.51 \cite{Roberts:2012dh}, removing all contigs whose expression was less than TPM=1 \cite{Haas:2013jq}. The resulting assembly was characterized using the software package transrate (\url{https://github.com/Blahah/transrate}) 
+
+\\
 
 \subsection*{Assembled Sequence Annotation}
 
@@ -143,6 +132,11 @@ To identify sequences unique to each tissue type, I mapped sequence reads from e
 \subsection*{Population Genomics}
 
 In addition to the reference individual sequenced at four different tissue types, we sequenced 15 other conspecific individuals from the same population, located in Palm Desert, California. Sequence data were mapped to the reference transcriptome using bwa-mem. The alignments were sorted and converted to BAM format, then passed to the program \textsc{Angsd}, which was used for calculating the folded site frequency spectrum (SFS) and Tajima's D \cite{Korneliussen:2013uz}. \\
+
+
+\subsection*{Natural Selection}
+
+To characterize natural selection on several genes related to water and ion homeostasis, we identified several of the transcripts identified as experiencing positive selection in a resent work on desert-adapter \textit{Dipodomys} rodents. The coding sequence corresponding to these genes, Solute Carrier family 2 member 9  (Slc2a9) and the Vitamin D3 receptor (Vdr), were extracted from the dataset, aligned using the software MACSE \cite{Ranwez:2011kj} to homologous sequences identified by the conditional reciprocal best blast procedure (CRBB, \cite{Aubry:2014en}) implemented in transrate. These alignments were inputted into the software codeABC version 1.6.0 \cite{Lopes:2013fd}.    
 
 
 % Results and Discussion can be combined.
@@ -170,7 +164,7 @@ Transcriptome assembly was accomplished using the program Trinity. The raw assem
 
 %\section*{References}
 % The bibtex filename
-\bibliography{formatted1.bib}
+\bibliography{formatted.bib}
 
 \section*{Figure Legends}
 %\begin{figure}[!ht]

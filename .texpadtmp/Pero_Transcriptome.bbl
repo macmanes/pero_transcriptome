@@ -19,6 +19,91 @@ Walsberg G (2000) {Small mammals in hot deserts: Some generalizations
 \newblock Bioscience 50: 109--120.
 \bibAnnoteFile{Walsberg:2000uu}
 
+\bibitem{Tatum:2009kp}
+Tatum R, Zhang Y, Salleng K, Lu Z, Lin JJ, et~al. (2009) {Renal salt wasting
+  and chronic dehydration in claudin-7-deficient mice}.
+\newblock AJP: Renal Physiology 298: F24--F34.
+\bibAnnoteFile{Tatum:2009kp}
+
+\bibitem{Romero:2007fs}
+Romero DG, Plonczynski MW, Welsh BL, Gomez-Sanchez CE, Zhou MY, et~al. (2007)
+  {Gene expression profile in rat adrenal zona glomerulosa cells stimulated
+  with aldosterone secretagogues}.
+\newblock Physiological Genomics 32: 117--127.
+\bibAnnoteFile{Romero:2007fs}
+
+\bibitem{Rojek:2006dg}
+Rojek A, Rojek A, Fuchtbauer E, Fuchtbauer E, Kwon T, et~al. (2006) {Severe
+  urinary concentrating defect in renal collecting duct-selective AQP2
+  conditional-knockout mice}.
+\newblock Proceedings of The National Academy of Sciences of The United States
+  of America 103: 6037--6042.
+\bibAnnoteFile{Rojek:2006dg}
+
+\bibitem{NIELSEN:1995uq}
+Nielsen S, CHOU C, MARPLES D, CHRISTENSEN E, KISHORE B, et~al. (1995)
+  {Vasopressin Increases Water Permeability of Kidney Collecting Duct by
+  Inducing Translocation of Aquaporin-Cd Water Channels to Plasma-Membrane}.
+\newblock Proceedings of The National Academy of Sciences of The United States
+  of America 92: 1013--1017.
+\bibAnnoteFile{NIELSEN:1995uq}
+
+\bibitem{Mobasheri:2007tt}
+Mobasheri A, Marples D, Young IS, Floyd RV, Moskaluk CA, et~al. (2007)
+  {Distribution of the AQP4 Water Channel in Normal Human Tissues: Protein and
+  Tissue Microarrays Reveal Expression in Several New Anatomical Locations,
+  including the Prostate Gland Seminal Vesicles}.
+\newblock Channels 1: 30--39.
+\bibAnnoteFile{Mobasheri:2007tt}
+
+\bibitem{Bedford:2003wa}
+Bedford JJ, Bedford JJ, Leader JP, Leader JP, Walker RJ, et~al. (2003)
+  {Aquaporin expression in normal human kidney and in renal disease.}
+\newblock Journal of the American Society of Nephrology : JASN 14: 2581--2587.
+\bibAnnoteFile{Bedford:2003wa}
+
+\bibitem{NIELSEN:1999vg}
+Nielsen S, KWON T (1999) {Physiology and Pathophysiology of Renal Aquaporins}.
+\newblock Journal of the {\ldots} .
+\bibAnnoteFile{NIELSEN:1999vg}
+
+\bibitem{Gallardo:2005fm}
+Gallardo PA, Cort{\'e}s A, Bozinovic F (2005) {Phenotypic flexibility at the
+  molecular and organismal level allows desert-dwelling rodents to cope with
+  seasonal water availability.}
+\newblock Physiological and Biochemical Zoology 78: 145--152.
+\bibAnnoteFile{Gallardo:2005fm}
+
+\bibitem{Kaissling:1975uu}
+Kaissling B, De~Rouffignac C, Barrett JM, Kriz W (1975) {The structural
+  organization of the kidney of the desert rodent Psammomys obesus.}
+\newblock Anatomy and embryology 148: 121--143.
+\bibAnnoteFile{Kaissling:1975uu}
+
+\bibitem{Altschuler:1979du}
+Altschuler EM, Altschuler EM, Nagle RB, Nagle RB, Braun EJ, et~al. (1979)
+  {Morphological study of the desert heteromyid kidney with emphasis on the
+  genus Perognathus.}
+\newblock The Anatomical record 194: 461--468.
+\bibAnnoteFile{Altschuler:1979du}
+
+\bibitem{Marra:2014de}
+Marra NJ, Romero a, DeWoody Ja (2014) {Natural selection and the genetic basis
+  of osmoregulation in heteromyid rodents as revealed by RNA-seq}.
+\newblock Molecular Ecology 23: 2699--2711.
+\bibAnnoteFile{Marra:2014de}
+
+\bibitem{Giorello:2014iv}
+Giorello FM, Feijoo M, a GD, Valdez L, Opazo JC, et~al. (2014)
+  {Characterization of the kidney transcriptome of the South American olive
+  mouse Abrothrix olivacea} 15: 1--10.
+\bibAnnoteFile{Giorello:2014iv}
+
+\bibitem{Veal:2001vp}
+Veal R, Caire W (2001) {\textit{Peromyscus} \textit{eremicus}}.
+\newblock Mammalian Species 118: 1--6.
+\bibAnnoteFile{Veal:2001vp}
+
 \bibitem{Bradley:2007jo}
 Feng BJ, Sun LD, Soltani-Arabshahi R, Bowcock AM, Nair RP, et~al. (2007)
   {Toward a Molecular Phylogeny for \textit{Peromyscus}: Evidence from
@@ -52,6 +137,12 @@ Sikes RS, Gannon WL, {Animal Care and Use Committee of the American Society of
   the use of wild mammals in research}.
 \newblock Journal of Mammalogy 92: 235--253.
 \bibAnnoteFile{Sikes:2011dz}
+
+\bibitem{Heo:2014cb}
+Heo Y, Wu XL, Chen D, Ma J, Hwu WM (2014) {BLESS: bloom filter-based error
+  correction solution for high-throughput sequencing reads.}
+\newblock Bioinformatics (Oxford, England) 30: 1354--1362.
+\bibAnnoteFile{Heo:2014cb}
 
 \bibitem{MacManes:2014io}
 MacManes MD (2014) {On the optimal trimming of high-throughput mRNA sequence
