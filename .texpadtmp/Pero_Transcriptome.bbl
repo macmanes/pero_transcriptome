@@ -205,4 +205,23 @@ Korneliussen TS, Moltke I, Albrechtsen A (2013) {Calculation of Tajima's D and
 \newblock BMC {\ldots} .
 \bibAnnoteFile{Korneliussen:2013uz}
 
+\bibitem{Ranwez:2011kj}
+Ranwez V, Harispe S, Delsuc F, Douzery EJP (2011) {MACSE: Multiple Alignment of
+  Coding SEquences Accounting for Frameshifts and Stop Codons}.
+\newblock PLOS ONE 6: e22594.
+\bibAnnoteFile{Ranwez:2011kj}
+
+\bibitem{Aubry:2014en}
+Aubry S, Kelly S, K{\"u}mpers BMC, Smith-Unna RD, Hibberd JM (2014) {Deep
+  Evolutionary Comparison of Gene Expression Identifies Parallel Recruitment of
+  Trans-Factors in Two Independent Origins of C4 Photosynthesis}.
+\newblock PLOS Genetics 10: e1004365.
+\bibAnnoteFile{Aubry:2014en}
+
+\bibitem{Lopes:2013fd}
+Lopes JS, Arenas M, Posada D, Beaumont MA (2013) {Coestimation of
+  recombination, substitution and molecular adaptation rates by approximate
+  Bayesian computation} 112: 255--264.
+\bibAnnoteFile{Lopes:2013fd}
+
 \end{thebibliography}

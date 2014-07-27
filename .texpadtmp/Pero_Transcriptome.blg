@@ -7,12 +7,12 @@ Repeated entry---line 1418 of file formatted.bib.bib
  : @article{Nielsen:1995uq
  :                        ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 25972 of file formatted.bib.bib
+I was expecting a `,' or a `}'---line 25983 of file formatted.bib.bib
  : 
  : @article{Chesh:2012jd,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 43536 of file formatted.bib.bib
+I was expecting a `,' or a `}'---line 43558 of file formatted.bib.bib
  : 
  : @article{Flatz:2010io,
 (Error may have been on previous line)
@@ -27,45 +27,48 @@ Warning--empty journal in Christoffels:2014bg
 `journal' is a missing field, not a string, for entry Li:2013wn
 while executing---line 2643 of file ../plos2009.bst
 Warning--empty journal in Li:2013wn
-You've used 30 entries,
+`journal' is a missing field, not a string, for entry Lopes:2013fd
+while executing---line 2643 of file ../plos2009.bst
+Warning--empty journal in Lopes:2013fd
+You've used 33 entries,
             2441 wiz_defined-function locations,
-            742 strings with 12227 characters,
-and the built_in function-call counts, 29609 in all, are:
-= -- 2771
-> -- 524
+            762 strings with 12958 characters,
+and the built_in function-call counts, 32137 in all, are:
+= -- 2998
+> -- 576
 < -- 0
-+ -- 262
-- -- 131
-* -- 2640
-:= -- 3557
-add.period$ -- 57
-call.type$ -- 30
-change.case$ -- 30
++ -- 288
+- -- 144
+* -- 2859
+:= -- 3860
+add.period$ -- 62
+call.type$ -- 33
+change.case$ -- 33
 chr.to.int$ -- 0
-cite$ -- 63
-duplicate$ -- 2931
-empty$ -- 3044
-format.name$ -- 157
-if$ -- 6557
+cite$ -- 70
+duplicate$ -- 3176
+empty$ -- 3302
+format.name$ -- 173
+if$ -- 7114
 int.to.chr$ -- 0
-int.to.str$ -- 30
-missing$ -- 331
-newline$ -- 162
-num.names$ -- 30
-pop$ -- 336
+int.to.str$ -- 33
+missing$ -- 365
+newline$ -- 176
+num.names$ -- 33
+pop$ -- 378
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 254
+skip$ -- 273
 stack$ -- 0
-substring$ -- 4475
-swap$ -- 652
+substring$ -- 4829
+swap$ -- 720
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 3
-while$ -- 216
-width$ -- 32
-write$ -- 333
-(There were 6 error messages)
+warning$ -- 4
+while$ -- 238
+width$ -- 35
+write$ -- 364
+(There were 7 error messages)

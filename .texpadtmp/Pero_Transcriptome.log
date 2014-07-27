@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.5.30)  27 JUL 2014 11:32
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.5.30)  27 JUL 2014 11:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -407,48 +407,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--135
  []
 
 
-LaTeX Warning: Citation `Ranwez:2011kj' on page 4 undefined on input line 139.
-
-
-LaTeX Warning: Citation `Aubry:2014en' on page 4 undefined on input line 139.
-
-
-LaTeX Warning: Citation `Lopes:2013fd' on page 4 undefined on input line 139.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
  []
 
 [4]
 (/Users/macmanes/Documents/pero_transcriptome/.texpadtmp/Pero_Transcriptome.bbl
-[5] [6]) [7]
+[5] [6] [7])
 Underfull \hbox (badness 10000) in paragraph at lines 186--187
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 223.
 [8]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 223.
+ [9]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 223.
 
 (/Users/macmanes/Documents/pero_transcriptome/.texpadtmp/Pero_Transcriptome.aux
 )
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 223.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 223.
-
-
-LaTeX Warning: There were undefined references.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 223.
  ) 
 Here is how much of TeX's memory you used:
- 10320 strings out of 493938
- 147643 string characters out of 6148857
+ 10324 strings out of 493938
+ 147688 string characters out of 6148857
  218908 words of memory out of 5000000
- 13530 multiletter control sequences out of 15000+600000
+ 13531 multiletter control sequences out of 15000+600000
  11993 words of font info for 44 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 36i,6n,38p,1353b,455s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,6n,38p,1353b,495s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on /Users/macmanes/Documents/pero_transcriptome/.texpadtmp/Pero_
-Transcriptome.pdf (8 pages).
+Transcriptome.pdf (9 pages).
