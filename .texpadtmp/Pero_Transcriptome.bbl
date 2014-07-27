@@ -13,6 +13,12 @@
   \textsc{Annotation:}\ #2\end{quotation}}
 \providecommand{\eprint}[2][]{\url{#2}}
 
+\bibitem{Walsberg:2000uu}
+Walsberg G (2000) {Small mammals in hot deserts: Some generalizations
+  revisited}.
+\newblock Bioscience 50: 109--120.
+\bibAnnoteFile{Walsberg:2000uu}
+
 \bibitem{Bradley:2007jo}
 Feng BJ, Sun LD, Soltani-Arabshahi R, Bowcock AM, Nair RP, et~al. (2007)
   {Toward a Molecular Phylogeny for \textit{Peromyscus}: Evidence from
@@ -39,6 +45,13 @@ Shorter KR, Crossland JP, Webb D, Szalai G, Felder MR, et~al. (2012)
   {\textit{Peromyscus} as a Mammalian Epigenetic Model}.
 \newblock Genetics Research International 2012: 1--11.
 \bibAnnoteFile{Shorter:2012ib}
+
+\bibitem{Sikes:2011dz}
+Sikes RS, Gannon WL, {Animal Care and Use Committee of the American Society of
+  Mammalogists} (2011) {Guidelines of the American Society of Mammalogists for
+  the use of wild mammals in research}.
+\newblock Journal of Mammalogy 92: 235--253.
+\bibAnnoteFile{Sikes:2011dz}
 
 \bibitem{MacManes:2014io}
 MacManes MD (2014) {On the optimal trimming of high-throughput mRNA sequence
