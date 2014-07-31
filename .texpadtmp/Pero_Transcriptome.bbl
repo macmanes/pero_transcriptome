@@ -180,6 +180,12 @@ Roberts A, Pachter L (2013) {Streaming fragment assignment for real-time
 \newblock Nature Methods 10: 71--73.
 \bibAnnoteFile{Roberts:2012dh}
 
+\bibitem{Li:2006hr}
+Li W, Li W, Godzik A, Godzik A (2006) {Cd-hit: a fast program for clustering
+  and comparing large sets of protein or nucleotide sequences.}
+\newblock Bioinformatics (Oxford, England) 22: 1658--1659.
+\bibAnnoteFile{Li:2006hr}
+
 \bibitem{Camacho:2009fc}
 Camacho C, Coulouris G, Avagyan V, Ma N, Papadopoulos J, et~al. (2009) {BLAST+:
   architecture and applications}.

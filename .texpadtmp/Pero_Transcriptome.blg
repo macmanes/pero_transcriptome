@@ -7,12 +7,12 @@ Repeated entry---line 1418 of file formatted.bib.bib
  : @article{Nielsen:1995uq
  :                        ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 25983 of file formatted.bib.bib
+I was expecting a `,' or a `}'---line 25981 of file formatted.bib.bib
  : 
  : @article{Chesh:2012jd,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 43558 of file formatted.bib.bib
+I was expecting a `,' or a `}'---line 43556 of file formatted.bib.bib
  : 
  : @article{Flatz:2010io,
 (Error may have been on previous line)
@@ -30,45 +30,45 @@ Warning--empty journal in Li:2013wn
 `journal' is a missing field, not a string, for entry Lopes:2013fd
 while executing---line 2643 of file ../plos2009.bst
 Warning--empty journal in Lopes:2013fd
-You've used 33 entries,
+You've used 34 entries,
             2441 wiz_defined-function locations,
-            762 strings with 12958 characters,
-and the built_in function-call counts, 32137 in all, are:
-= -- 2998
-> -- 576
+            769 strings with 13153 characters,
+and the built_in function-call counts, 33070 in all, are:
+= -- 3086
+> -- 592
 < -- 0
-+ -- 288
-- -- 144
-* -- 2859
-:= -- 3860
-add.period$ -- 62
-call.type$ -- 33
-change.case$ -- 33
++ -- 296
+- -- 148
+* -- 2941
+:= -- 3971
+add.period$ -- 64
+call.type$ -- 34
+change.case$ -- 34
 chr.to.int$ -- 0
-cite$ -- 70
-duplicate$ -- 3176
-empty$ -- 3302
-format.name$ -- 173
-if$ -- 7114
+cite$ -- 72
+duplicate$ -- 3265
+empty$ -- 3398
+format.name$ -- 178
+if$ -- 7322
 int.to.chr$ -- 0
-int.to.str$ -- 33
-missing$ -- 365
-newline$ -- 176
-num.names$ -- 33
-pop$ -- 378
+int.to.str$ -- 34
+missing$ -- 376
+newline$ -- 181
+num.names$ -- 34
+pop$ -- 391
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 273
+skip$ -- 279
 stack$ -- 0
-substring$ -- 4829
-swap$ -- 720
+substring$ -- 4971
+swap$ -- 742
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 4
-while$ -- 238
-width$ -- 35
-write$ -- 364
+while$ -- 245
+width$ -- 36
+write$ -- 375
 (There were 7 error messages)
