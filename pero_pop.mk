@@ -101,120 +101,120 @@ index.bwt:
 
 .PHONY: 340.fasta
 340.fasta: name := 340
-340.bam 340.fasta:
+340.bam:
 	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
 	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2)  | /share/samtools/samtools view -@ $(CPU) -b - | /share/samtools/samtools sort -@ 8 -O bam -T $(name) -o $(name).bam -
 
 .PHONY: 369.fasta
 369.fasta: name := 369
-369.bam 369.fasta:
+369.bam:
 	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
 	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2)  | /share/samtools/samtools view -@ $(CPU) -b - | /share/samtools/samtools sort -@ 8 -O bam -T $(name) -o $(name).bam -
 
 .PHONY: 305.fasta
 305.fasta: name := 305
-305.bam 305.fasta:
+305.bam:
 	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
 	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2)  | /share/samtools/samtools view -@ $(CPU) -b - | /share/samtools/samtools sort -@ 8 -O bam -T $(name) -o $(name).bam -
 
 
 .PHONY: 308.fasta
 308.fasta: name := 308
-308.bam 308.fasta:
+308.bam:
 	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
 	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2)  | /share/samtools/samtools view -o $(name)1.bam -@ $(CPU) -b -
 	bwa mem -t $(CPU) index $($(name)_read3)  | /share/samtools/samtools view -o $(name)2.bam -o $(name)2.bam -@ $(CPU) -b - 
 	/share/samtools/samtools merge -@ 24 $(name).bam $(name)1.bam $(name)2.bam
-	/share/samtools/samtools sort -@ 24 -O bam -o $(name).sort.bam -T $(name) $(name).bam - 
+	/share/samtools/samtools sort -@ 24 -O bam -o $(name).sort.bam -T $(name) $(name).bam 
 
 
 .PHONY: 352.fasta
 352.fasta: name := 352
-352.bam 352.fasta:
+352.bam:
 	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
 	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2)  | /share/samtools/samtools view -o $(name)1.bam -@ $(CPU) -b -
 	bwa mem -t $(CPU) index $($(name)_read3)  | /share/samtools/samtools view -o $(name)2.bam -o $(name)2.bam -@ $(CPU) -b - 
 	/share/samtools/samtools merge -@ 24 $(name).bam $(name)1.bam $(name)2.bam
-	/share/samtools/samtools sort -@ 24 -O bam -o $(name).sort.bam -T $(name) $(name).bam - 
+	/share/samtools/samtools sort -@ 24 -O bam -o $(name).sort.bam -T $(name) $(name).bam 
 
 .PHONY: 359.fasta
 359.fasta: name := 359
-359.fasta:
+359.bam:
 	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
 	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2)  | /share/samtools/samtools view -@ $(CPU) -b - | /share/samtools/samtools sort -@ 8 -O bam -T $(name) -o $(name).bam -
 
 
 .PHONY: 368.fasta
 368.fasta: name := 368
-368.fasta:
+368.bam:
 	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
 	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2)  | /share/samtools/samtools view -o $(name)1.bam -@ $(CPU) -b - 
 	bwa mem -t $(CPU) index $($(name)_read3) $($(name)_read4)  | /share/samtools/samtools view -o $(name)2.bam -@ $(CPU) -b - 
 	/share/samtools/samtools merge -@ 24 $(name).bam $(name)1.bam $(name)2.bam
-	/share/samtools/samtools sort -@ 24 -O bam -o $(name).sort.bam -T $(name) $(name).bam - 
+	/share/samtools/samtools sort -@ 24 -O bam -o $(name).sort.bam -T $(name) $(name).bam 
 
 
 
 
 .PHONY: 365.fasta
 365.fasta: name := 365
-365.fasta:
+365.bam:
 	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
 	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2)  | /share/samtools/samtools view -o $(name)1.bam -@ $(CPU) -b - 
 	bwa mem -t $(CPU) index $($(name)_read3) $($(name)_read4)  | /share/samtools/samtools view -o $(name)2.bam -@ $(CPU) -b - 
 	/share/samtools/samtools merge -@ 24 $(name).bam $(name)1.bam $(name)2.bam
-	/share/samtools/samtools sort -@ 24 -O bam -o $(name).sort.bam -T $(name) $(name).bam - 
+	/share/samtools/samtools sort -@ 24 -O bam -o $(name).sort.bam -T $(name) $(name).bam
 
 
 
 .PHONY: 366.fasta
 366.fasta: name := 366
-366.fasta:
+366.bam:
 	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
 	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2)  | /share/samtools/samtools view -o $(name)1.bam -@ $(CPU) -b -
 	bwa mem -t $(CPU) index $($(name)_read3) $($(name)_read4)  | /share/samtools/samtools view -o $(name)2.bam -@ $(CPU) -b - 
 	/share/samtools/samtools merge -@ 24 $(name).bam $(name)1.bam $(name)2.bam
-	/share/samtools/samtools sort -@ 24 -O bam -o $(name).sort.bam -T $(name) $(name).bam - 
+	/share/samtools/samtools sort -@ 24 -O bam -o $(name).sort.bam -T $(name) $(name).bam 
 
 
 
 
 .PHONY: 321.fasta
 321.fasta: name := 321
-321.fasta:
+321.bam:
 	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
 	bwa mem -t $(CPU) index $($(name)_read1)  | /share/samtools/samtools view -@ $(CPU) -b - | /share/samtools/samtools sort -@ 8 -O bam -T $(name) -o $(name).bam -
 
 
 .PHONY: 354.fasta
 354.fasta: name := 354
-354.fasta:
+354.bam:
 	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
 	bwa mem -t $(CPU) index $($(name)_read1)  | /share/samtools/samtools view -@ $(CPU) -b - | /share/samtools/samtools sort -@ 8 -O bam -T $(name) -o $(name).bam -
 
 
 .PHONY: 382.fasta
 382.fasta: name := 382
-382.fasta:
+382.bam:
 	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
 	bwa mem -t $(CPU) index $($(name)_read1)  | /share/samtools/samtools view -@ $(CPU) -b - | /share/samtools/samtools sort -@ 8 -O bam -T $(name) -o $(name).bam -
 
 
 .PHONY: 373.fasta
 373.fasta: name := 373
-373.fasta:
+373.bam:
 	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
 	bwa mem -t $(CPU) index $($(name)_read1)  | /share/samtools/samtools view -@ $(CPU) -b - | /share/samtools/samtools sort -@ 8 -O bam -T $(name) -o $(name).bam -
 
 .PHONY: 372.fasta
 372.fasta: name := 372
-372.fasta:
+372.bam:
 	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin 372--- '\n\n'
 	bwa mem -t $(CPU) index $($(name)_read1)  | /share/samtools/samtools view -@ $(CPU) -b - | /share/samtools/samtools sort -@ 8 -O bam -T $(name) -o $(name).bam -
 
 
 .PHONY: 380.fasta
 380.fasta: name := 380
-380.fasta:
+380.bam:
 	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
 	bwa mem -t $(CPU) index $($(name)_read1)  | /share/samtools/samtools view -@ $(CPU) -b - | /share/samtools/samtools sort -@ 8 -O bam -T $(name) -o $(name).bam -
