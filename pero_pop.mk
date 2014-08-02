@@ -130,7 +130,7 @@ index.bwt:
 	/share/samtools/samtools merge -@ 24 $(name).bam $(name)1.bam $(name)2.bam
 	/share/samtools/samtools sort -@ 24 -O bam -o $(name).sort.bam -T $(name) $(name).bam 
 
-359.sort.bam: name := 359
+359.bam: name := 359
 359.bam:
 	@echo TIMESTAMP: '\n\n' `date +'%a %d%b%Y  %H:%M:%S'` ---Begin $(name)--- '\n\n'
 	bwa mem -t $(CPU) index $($(name)_read1) $($(name)_read2)  | /share/samtools/samtools view -@ $(CPU) -b - | /share/samtools/samtools sort -@ 8 -O bam -T $(name) -o $(name).bam -
