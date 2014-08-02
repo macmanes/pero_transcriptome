@@ -24,51 +24,48 @@ Warning--empty journal in Giorello:2014iv
 `journal' is a missing field, not a string, for entry Christoffels:2014bg
 while executing---line 2643 of file ../plos2009.bst
 Warning--empty journal in Christoffels:2014bg
-`journal' is a missing field, not a string, for entry Li:2013wn
-while executing---line 2643 of file ../plos2009.bst
-Warning--empty journal in Li:2013wn
 `journal' is a missing field, not a string, for entry Lopes:2013fd
 while executing---line 2643 of file ../plos2009.bst
 Warning--empty journal in Lopes:2013fd
-You've used 34 entries,
+You've used 32 entries,
             2441 wiz_defined-function locations,
-            769 strings with 13153 characters,
-and the built_in function-call counts, 33070 in all, are:
-= -- 3086
-> -- 592
+            758 strings with 12882 characters,
+and the built_in function-call counts, 32232 in all, are:
+= -- 3014
+> -- 580
 < -- 0
-+ -- 296
-- -- 148
-* -- 2941
-:= -- 3971
-add.period$ -- 64
-call.type$ -- 34
-change.case$ -- 34
++ -- 290
+- -- 145
+* -- 2877
+:= -- 3864
+add.period$ -- 61
+call.type$ -- 32
+change.case$ -- 32
 chr.to.int$ -- 0
-cite$ -- 72
-duplicate$ -- 3265
-empty$ -- 3398
-format.name$ -- 178
-if$ -- 7322
+cite$ -- 67
+duplicate$ -- 3179
+empty$ -- 3310
+format.name$ -- 174
+if$ -- 7138
 int.to.chr$ -- 0
-int.to.str$ -- 34
-missing$ -- 376
-newline$ -- 181
-num.names$ -- 34
-pop$ -- 391
+int.to.str$ -- 32
+missing$ -- 361
+newline$ -- 172
+num.names$ -- 32
+pop$ -- 374
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 279
+skip$ -- 272
 stack$ -- 0
-substring$ -- 4971
-swap$ -- 742
+substring$ -- 4881
+swap$ -- 714
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 4
-while$ -- 245
-width$ -- 36
-write$ -- 375
-(There were 7 error messages)
+warning$ -- 3
+while$ -- 237
+width$ -- 34
+write$ -- 356
+(There were 6 error messages)

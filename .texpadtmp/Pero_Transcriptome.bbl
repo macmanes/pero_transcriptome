@@ -169,17 +169,6 @@ Haas BJ, Papanicolaou A, Yassour M, Grabherr M, Blood PD, et~al. (2013)
 \newblock Nature protocols 8: 1494--1512.
 \bibAnnoteFile{Haas:2013jq}
 
-\bibitem{Li:2013wn}
-Li H (2013) {Aligning sequence reads, clone sequences and assembly contigs with
-  BWA-MEM} .
-\bibAnnoteFile{Li:2013wn}
-
-\bibitem{Roberts:2012dh}
-Roberts A, Pachter L (2013) {Streaming fragment assignment for real-time
-  analysis of sequencing experiments.}
-\newblock Nature Methods 10: 71--73.
-\bibAnnoteFile{Roberts:2012dh}
-
 \bibitem{Li:2006hr}
 Li W, Li W, Godzik A, Godzik A (2006) {Cd-hit: a fast program for clustering
   and comparing large sets of protein or nucleotide sequences.}
