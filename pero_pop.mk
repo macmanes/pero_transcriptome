@@ -55,11 +55,11 @@ check:
 ###
 308_read1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index4.1.fq.gz'
 308_read2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index4.2.fq.gz'
-308_read3='/mnt/data3/macmanes/sequence-reads/peromyscus/peer.308.dc.fq.bz2'
+308_read3='/mnt/data3/macmanes/peromyscus/peer.308.dc.fq.bz2'
 ### DC Oct
 352_read1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index5.1.fq.gz'
 352_read2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index5.2.fq.gz'
-352_read3='/mnt/data3/macmanes/sequence-reads/peromyscus/peer.354.dc.fq.bz2'
+352_read3='/mnt/data3/macmanes/peromyscus/peer.354.dc.fq'
 ### 
 359_read1='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index6.1.fq.gz'
 359_read2='/mnt/data3/macmanes/peromyscus/raw.reads/MBE_MDM_41_index6.2.fq.gz'
