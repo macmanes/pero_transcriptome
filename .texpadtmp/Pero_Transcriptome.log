@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.5.30)  2 AUG 2014 16:20
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.5.30)  3 AUG 2014 09:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -403,31 +403,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 145--146
  []
 
 [4]
-(/Users/macmanes/Documents/pero_transcriptome/.texpadtmp/Pero_Transcriptome.bbl
-[5] [6] [7])
-Underfull \hbox (badness 10000) in paragraph at lines 191--192
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
  []
 
-[8]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 228.
- [9]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 228.
+File: /Users/macmanes/Documents/pero_transcriptome/venn.jpeg Graphic file (type
+ QTm)
+<use  "/Users/macmanes/Documents/pero_transcriptome/venn.jpeg" > [5]
+(/Users/macmanes/Documents/pero_transcriptome/.texpadtmp/Pero_Transcriptome.bbl
+[6] [7] [8])
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
+
+ []
+
+[9]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 235.
+ [10]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 235.
 
 (/Users/macmanes/Documents/pero_transcriptome/.texpadtmp/Pero_Transcriptome.aux
 )
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 228.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 228.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 228.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 235.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 235.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 235.
  ) 
 Here is how much of TeX's memory you used:
- 10321 strings out of 493938
- 147643 string characters out of 6148857
- 219908 words of memory out of 5000000
- 13529 multiletter control sequences out of 15000+600000
+ 10327 strings out of 493938
+ 147772 string characters out of 6148857
+ 218908 words of memory out of 5000000
+ 13531 multiletter control sequences out of 15000+600000
  11993 words of font info for 44 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 36i,6n,38p,1784b,455s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,6n,38p,1784b,495s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on /Users/macmanes/Documents/pero_transcriptome/.texpadtmp/Pero_
-Transcriptome.pdf (9 pages).
+Transcriptome.pdf (10 pages).
