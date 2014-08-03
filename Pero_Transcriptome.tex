@@ -146,8 +146,6 @@ RNA was extracted from the hypothalamus, renal medulla, testes, or liver from ea
 
 Transcriptome assembly for each tissue type was accomplished using the program Trinity. The raw assembly for brain, liver, testes and kidney contained 185425, 222096, 180233, and 514091 assembled sequences respectively. This assembly was filtered using a blast procedure with resulted in a final dataset containing 68331 brain-specific transcripts, 71041 liver-specific transcripts, 67340 testes-specific transcripts, and 113050 kidney-specific transcripts. Mapping the error-corrected adapter/quality trimmed reads to these datasets resulted in mapping 94.98\% (87.01\% properly paired) of brain-derived reads to the brain transcriptome, 96.07\% (88.13\% properly paired) of liver-derived reads to the liver transcriptome, 96.81\% (85.10\% properly paired) of testes-derived reads to the testes transcriptome, and 91.87\% (83.77\% properly paired) of kidney-derived reads to the kidney transcriptome. Together, these statistics suggest that the tissue-specific transcriptomes are of extremely high quality.  \\
 
-I then estimated gene expression on each of these tissue-specific datasets, which allowed me to understand expression patterns in the multiple tissues {\hypertarget{Figure 1}{Figure 1}}.
-
 %\vspace{5mm}
 %\textbf{\hypertarget{Figure 1}{Figure 1}} \\
 \centerline{\includegraphics[width=20.0\baselineskip]{/Users/macmanes/Documents/pero_transcriptome/venn.jpeg}}
@@ -155,7 +153,7 @@ I then estimated gene expression on each of these tissue-specific datasets, whic
 \small{Figure 1. The Venn Diagram.}
 \end{quote}   
 
-After expression estimation, the filtered assemblies were concatenated together, and after removal of redundancy with cd-hit-est, 123,123 putative transcripts remained. From this filtered concatenated dataset, I extracted 64355 putative coding sequences (60Mb). Of these 64355 sequences, 37960 were complete exons (containing both start and stop codons), while other were either truncated at the 5-prime end (16880 sequences), 3-prime end (4203 sequences), or were internal (5312 sequencing having neither stop nor start codon). 
+I then estimated gene expression on each of these tissue-specific datasets, which allowed me to understand expression patterns in the multiple tissues {\hypertarget{Figure 1}{Figure 1}}. After expression estimation, the filtered assemblies were concatenated together, and after removal of redundancy with cd-hit-est, 123,123 putative transcripts remained. From this filtered concatenated dataset, I extracted 64355 putative coding sequences (60Mb). Of these 64355 sequences, 37960 were complete exons (containing both start and stop codons), while other were either truncated at the 5-prime end (16880 sequences), 3-prime end (4203 sequences), or were internal (5312 sequencing having neither stop nor start codon). 
 
 
 
