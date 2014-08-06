@@ -7,16 +7,17 @@ Repeated entry---line 1418 of file formatted.bib.bib
  : @article{Nielsen:1995uq
  :                        ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 25981 of file formatted.bib.bib
+I was expecting a `,' or a `}'---line 25983 of file formatted.bib.bib
  : 
  : @article{Chesh:2012jd,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 43556 of file formatted.bib.bib
+I was expecting a `,' or a `}'---line 43558 of file formatted.bib.bib
  : 
  : @article{Flatz:2010io,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "Mi:2004iv"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 `journal' is a missing field, not a string, for entry Giorello:2014iv
 while executing---line 2643 of file ../plos2009.bst
@@ -24,48 +25,45 @@ Warning--empty journal in Giorello:2014iv
 `journal' is a missing field, not a string, for entry Christoffels:2014bg
 while executing---line 2643 of file ../plos2009.bst
 Warning--empty journal in Christoffels:2014bg
-`journal' is a missing field, not a string, for entry Lopes:2013fd
-while executing---line 2643 of file ../plos2009.bst
-Warning--empty journal in Lopes:2013fd
-You've used 32 entries,
+You've used 34 entries,
             2441 wiz_defined-function locations,
-            758 strings with 12882 characters,
-and the built_in function-call counts, 32232 in all, are:
-= -- 3014
-> -- 580
+            773 strings with 13118 characters,
+and the built_in function-call counts, 33566 in all, are:
+= -- 3150
+> -- 584
 < -- 0
-+ -- 290
-- -- 145
-* -- 2877
-:= -- 3864
-add.period$ -- 61
-call.type$ -- 32
-change.case$ -- 32
++ -- 292
+- -- 146
+* -- 2990
+:= -- 4027
+add.period$ -- 66
+call.type$ -- 34
+change.case$ -- 34
 chr.to.int$ -- 0
-cite$ -- 67
-duplicate$ -- 3179
-empty$ -- 3310
-format.name$ -- 174
-if$ -- 7138
+cite$ -- 70
+duplicate$ -- 3311
+empty$ -- 3455
+format.name$ -- 176
+if$ -- 7439
 int.to.chr$ -- 0
-int.to.str$ -- 32
-missing$ -- 361
-newline$ -- 172
-num.names$ -- 32
-pop$ -- 374
+int.to.str$ -- 34
+missing$ -- 376
+newline$ -- 183
+num.names$ -- 34
+pop$ -- 384
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 272
+skip$ -- 277
 stack$ -- 0
-substring$ -- 4881
-swap$ -- 714
+substring$ -- 5097
+swap$ -- 744
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 3
-while$ -- 237
-width$ -- 34
-write$ -- 356
-(There were 6 error messages)
+warning$ -- 2
+while$ -- 244
+width$ -- 36
+write$ -- 380
+(There were 5 error messages)

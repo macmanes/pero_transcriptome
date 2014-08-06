@@ -193,6 +193,12 @@ Punta M, Coggill PC, Eberhardt RY, Mistry J, Tate J, et~al. (2012) {The Pfam
 \newblock Nucleic Acids Research 40: D290--301.
 \bibAnnoteFile{Punta:2012ko}
 
+\bibitem{Roberts:2012dh}
+Roberts A, Pachter L (2013) {Streaming fragment assignment for real-time
+  analysis of sequencing experiments.}
+\newblock Nature Methods 10: 71--73.
+\bibAnnoteFile{Roberts:2012dh}
+
 \bibitem{Korneliussen:2013uz}
 Korneliussen TS, Moltke I, Albrechtsen A (2013) {Calculation of Tajima's D and
   other neutrality test statistics from low depth next-generation sequencing
@@ -213,10 +219,15 @@ Aubry S, Kelly S, K{\"u}mpers BMC, Smith-Unna RD, Hibberd JM (2014) {Deep
 \newblock PLOS Genetics 10: e1004365.
 \bibAnnoteFile{Aubry:2014en}
 
-\bibitem{Lopes:2013fd}
-Lopes JS, Arenas M, Posada D, Beaumont MA (2013) {Coestimation of
-  recombination, substitution and molecular adaptation rates by approximate
-  Bayesian computation} 112: 255--264.
-\bibAnnoteFile{Lopes:2013fd}
+\bibitem{Yang:2011bm}
+Yang Z, dos Reis M (2011) {Statistical Properties of the Branch-Site Test of
+  Positive Selection}.
+\newblock Molecular Biology and Evolution 28: 1217--1228.
+\bibAnnoteFile{Yang:2011bm}
+
+\bibitem{Yang:2007ki}
+Yang Z (2007) {PAML 4: Phylogenetic Analysis by Maximum Likelihood}.
+\newblock Molecular Biology and Evolution 24: 1586--1591.
+\bibAnnoteFile{Yang:2007ki}
 
 \end{thebibliography}
