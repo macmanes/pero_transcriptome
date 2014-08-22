@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.5.30)  22 AUG 2014 17:17
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.5.30)  22 AUG 2014 17:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -353,14 +353,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 146--148
 
  []
 
-
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 178--179
 
  []
 
-[5]
 File: /Users/macmanes/Documents/pero_transcriptome/venn.jpeg Graphic file (type QTm)
- <use  "/Users/macmanes/Documents/pero_transcriptome/venn.jpeg" >
+<use  "/Users/macmanes/Documents/pero_transcriptome/venn.jpeg" >
 Underfull \hbox (badness 10000) in paragraph at lines 187--188
 
  []
@@ -371,44 +370,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 189--190
  []
 
 [6]
-Overfull \hbox (20.61673pt too wide) in paragraph at lines 192--205
+Underfull \hbox (badness 10000) in paragraph at lines 191--192
+
+ []
+
+
+Overfull \hbox (20.61673pt too wide) in paragraph at lines 194--207
 [][] 
  []
 
 
-./Pero_Transcriptome.tex:205: LaTeX Error: \begin{list} on input line 191 ended by \end{center}.
+./Pero_Transcriptome.tex:207: LaTeX Error: \begin{list} on input line 193 ended by \end{center}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.205 \end{center}
+l.207 \end{center}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./Pero_Transcriptome.tex:209: LaTeX Error: \begin{adjustwidth} on input line 191 ended by \end{list}.
+./Pero_Transcriptome.tex:211: LaTeX Error: \begin{adjustwidth} on input line 193 ended by \end{list}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.209 \end{adjustwidth}
+l.211 \end{adjustwidth}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./Pero_Transcriptome.tex:209: LaTeX Error: \begin{center} on input line 190 ended by \end{adjustwidth}.
+./Pero_Transcriptome.tex:211: LaTeX Error: \begin{center} on input line 192 ended by \end{adjustwidth}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.209 \end{adjustwidth}
+l.211 \end{adjustwidth}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -416,51 +420,51 @@ or  <return>  to continue without it.
 
 File: /Users/macmanes/Documents/pero_transcriptome/tajD.jpeg Graphic file (type QTm)
 <use  "/Users/macmanes/Documents/pero_transcriptome/tajD.jpeg" > [7]
-Underfull \hbox (badness 10000) in paragraph at lines 222--223
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--246
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
 
  []
 
 [8] (/Users/macmanes/Documents/pero_transcriptome/.texpadtmp/Pero_Transcriptome.bbl [9] [10] [11])
 
-./Pero_Transcriptome.tex:306: LaTeX Error: \begin{document} ended by \end{center}.
+./Pero_Transcriptome.tex:308: LaTeX Error: \begin{document} ended by \end{center}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.306 \end{center}
+l.308 \end{center}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./Pero_Transcriptome.tex:306: Extra \endgroup.
+./Pero_Transcriptome.tex:308: Extra \endgroup.
 <recently read> \endgroup 
                           
-l.306 \end{center}
+l.308 \end{center}
                   
 Things are pretty mixed up, but I think the worst is over.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 312.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 314.
 [12] [13]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 312.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 314.
  (/Users/macmanes/Documents/pero_transcriptome/.texpadtmp/Pero_Transcriptome.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 312.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 312.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 312.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 314.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 314.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 314.
  ) 
 Here is how much of TeX's memory you used:
  10382 strings out of 493938
  148598 string characters out of 6148857
- 219643 words of memory out of 5000000
+ 220643 words of memory out of 5000000
  13577 multiletter control sequences out of 15000+600000
  11993 words of font info for 44 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 36i,7n,38p,1996b,455s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,7n,38p,1996b,495s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on /Users/macmanes/Documents/pero_transcriptome/.texpadtmp/Pero_Transcriptome.pdf (13 pages).
