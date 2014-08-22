@@ -2,22 +2,21 @@ This is BibTeX, Version 0.99d (TeX Live 2013)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Pero_Transcriptome.aux
 The style file: ../plos2009.bst
-Database file #1: formatted.bib.bib
-Repeated entry---line 1418 of file formatted.bib.bib
+Database file #1: /Users/macmanes/Documents/pero_transcriptome/biblio.bib.bib
+Repeated entry---line 1429 of file /Users/macmanes/Documents/pero_transcriptome/biblio.bib.bib
  : @article{Nielsen:1995uq
  :                        ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 25981 of file formatted.bib.bib
+I was expecting a `,' or a `}'---line 26018 of file /Users/macmanes/Documents/pero_transcriptome/biblio.bib.bib
  : 
  : @article{Chesh:2012jd,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 43556 of file formatted.bib.bib
+I was expecting a `,' or a `}'---line 43621 of file /Users/macmanes/Documents/pero_transcriptome/biblio.bib.bib
  : 
  : @article{Flatz:2010io,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Mi:2004iv"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 `journal' is a missing field, not a string, for entry Giorello:2014iv
 while executing---line 2643 of file ../plos2009.bst
@@ -25,45 +24,48 @@ Warning--empty journal in Giorello:2014iv
 `journal' is a missing field, not a string, for entry Christoffels:2014bg
 while executing---line 2643 of file ../plos2009.bst
 Warning--empty journal in Christoffels:2014bg
-You've used 34 entries,
+`journal' is a missing field, not a string, for entry Li:2013wn
+while executing---line 2643 of file ../plos2009.bst
+Warning--empty journal in Li:2013wn
+You've used 36 entries,
             2441 wiz_defined-function locations,
-            773 strings with 13118 characters,
-and the built_in function-call counts, 33566 in all, are:
-= -- 3150
-> -- 584
+            784 strings with 13063 characters,
+and the built_in function-call counts, 33334 in all, are:
+= -- 3129
+> -- 556
 < -- 0
-+ -- 292
-- -- 146
-* -- 2990
-:= -- 4027
-add.period$ -- 66
-call.type$ -- 34
-change.case$ -- 34
++ -- 278
+- -- 139
+* -- 2952
+:= -- 4007
+add.period$ -- 69
+call.type$ -- 36
+change.case$ -- 36
 chr.to.int$ -- 0
-cite$ -- 70
-duplicate$ -- 3311
-empty$ -- 3455
-format.name$ -- 176
-if$ -- 7439
+cite$ -- 75
+duplicate$ -- 3291
+empty$ -- 3442
+format.name$ -- 169
+if$ -- 7389
 int.to.chr$ -- 0
-int.to.str$ -- 34
-missing$ -- 376
-newline$ -- 183
-num.names$ -- 34
-pop$ -- 384
+int.to.str$ -- 36
+missing$ -- 381
+newline$ -- 192
+num.names$ -- 36
+pop$ -- 395
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 277
+skip$ -- 262
 stack$ -- 0
-substring$ -- 5097
-swap$ -- 744
+substring$ -- 5029
+swap$ -- 752
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 2
-while$ -- 244
-width$ -- 36
-write$ -- 380
-(There were 5 error messages)
+warning$ -- 3
+while$ -- 242
+width$ -- 38
+write$ -- 399
+(There were 6 error messages)

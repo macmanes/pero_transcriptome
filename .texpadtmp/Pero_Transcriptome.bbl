@@ -41,7 +41,7 @@ Rojek A, Rojek A, Fuchtbauer E, Fuchtbauer E, Kwon T, et~al. (2006) {Severe
 \bibAnnoteFile{Rojek:2006dg}
 
 \bibitem{NIELSEN:1995uq}
-Nielsen S, CHOU C, MARPLES D, CHRISTENSEN E, KISHORE B, et~al. (1995)
+Nielsen S, Chou C, Marples D, Christensen E, Kishore B, et~al. (1995)
   {Vasopressin Increases Water Permeability of Kidney Collecting Duct by
   Inducing Translocation of Aquaporin-Cd Water Channels to Plasma-Membrane}.
 \newblock Proceedings of The National Academy of Sciences of The United States
@@ -57,13 +57,13 @@ Mobasheri A, Marples D, Young IS, Floyd RV, Moskaluk CA, et~al. (2007)
 \bibAnnoteFile{Mobasheri:2007tt}
 
 \bibitem{Bedford:2003wa}
-Bedford JJ, Bedford JJ, Leader JP, Leader JP, Walker RJ, et~al. (2003)
-  {Aquaporin expression in normal human kidney and in renal disease.}
+Bedford JJ, Leader JP, Walker RJ (2003) {Aquaporin expression in normal human
+  kidney and in renal disease.}
 \newblock Journal of the American Society of Nephrology : JASN 14: 2581--2587.
 \bibAnnoteFile{Bedford:2003wa}
 
 \bibitem{NIELSEN:1999vg}
-Nielsen S, KWON T (1999) {Physiology and Pathophysiology of Renal Aquaporins}.
+Nielsen S, Kwon T (1999) {Physiology and Pathophysiology of Renal Aquaporins}.
 \newblock Journal of the {\ldots} .
 \bibAnnoteFile{NIELSEN:1999vg}
 
@@ -81,7 +81,7 @@ Kaissling B, De~Rouffignac C, Barrett JM, Kriz W (1975) {The structural
 \bibAnnoteFile{Kaissling:1975uu}
 
 \bibitem{Altschuler:1979du}
-Altschuler EM, Altschuler EM, Nagle RB, Nagle RB, Braun EJ, et~al. (1979)
+Altschuler EM, Nagle RB, Braun EJ, Lindstedt SL, Krutzsch PH (1979)
   {Morphological study of the desert heteromyid kidney with emphasis on the
   genus Perognathus.}
 \newblock The Anatomical record 194: 461--468.
@@ -119,9 +119,9 @@ Shorter KR, Owen A, anderson V, Hall-South AC, Hayford S, et~al. (2014)
 \bibAnnoteFile{Shorter:2014kw}
 
 \bibitem{Panhuis:2011co}
-Panhuis TM, Panhuis TM, Broitman-Maduro G, Broitman-Maduro G, Uhrig J, et~al.
-  (2011) {Analysis of Expressed Sequence Tags from the Placenta of the
-  Live-Bearing Fish Poeciliopsis (Poeciliidae)}.
+Panhuis TM, Broitman-Maduro G, Uhrig J, Maduro M, Reznick DN (2011) {Analysis
+  of Expressed Sequence Tags from the Placenta of the Live-Bearing Fish
+  Poeciliopsis (Poeciliidae)}.
 \newblock Journal of Heredity 102: 352--361.
 \bibAnnoteFile{Panhuis:2011co}
 
@@ -170,8 +170,8 @@ Haas BJ, Papanicolaou A, Yassour M, Grabherr M, Blood PD, et~al. (2013)
 \bibAnnoteFile{Haas:2013jq}
 
 \bibitem{Li:2006hr}
-Li W, Li W, Godzik A, Godzik A (2006) {Cd-hit: a fast program for clustering
-  and comparing large sets of protein or nucleotide sequences.}
+Li W, Godzik A (2006) {Cd-hit: a fast program for clustering and comparing
+  large sets of protein or nucleotide sequences.}
 \newblock Bioinformatics (Oxford, England) 22: 1658--1659.
 \bibAnnoteFile{Li:2006hr}
 
@@ -181,9 +181,14 @@ Camacho C, Coulouris G, Avagyan V, Ma N, Papadopoulos J, et~al. (2009) {BLAST+:
 \newblock BMC Bioinformatics 10: 421.
 \bibAnnoteFile{Camacho:2009fc}
 
+\bibitem{Mi:2004iv}
+Mi H (2004) {The PANTHER database of protein families, subfamilies, functions
+  and pathways}.
+\newblock Nucleic Acids Research 33: D284--D288.
+\bibAnnoteFile{Mi:2004iv}
+
 \bibitem{Wheeler:2013gj}
-Wheeler TJ, Wheeler TJ, Eddy SR, Eddy SR (2013) {nhmmer: DNA homology search
-  with profile HMMs}.
+Wheeler TJ, Eddy SR (2013) {nhmmer: DNA homology search with profile HMMs}.
 \newblock Bioinformatics (Oxford, England) 29: 2487--2489.
 \bibAnnoteFile{Wheeler:2013gj}
 
@@ -192,6 +197,11 @@ Punta M, Coggill PC, Eberhardt RY, Mistry J, Tate J, et~al. (2012) {The Pfam
   protein families database.}
 \newblock Nucleic Acids Research 40: D290--301.
 \bibAnnoteFile{Punta:2012ko}
+
+\bibitem{Li:2013wn}
+Li H (2013) {Aligning sequence reads, clone sequences and assembly contigs with
+  BWA-MEM} .
+\bibAnnoteFile{Li:2013wn}
 
 \bibitem{Roberts:2012dh}
 Roberts A, Pachter L (2013) {Streaming fragment assignment for real-time
