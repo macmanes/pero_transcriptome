@@ -240,4 +240,10 @@ Yang Z (2007) {PAML 4: Phylogenetic Analysis by Maximum Likelihood}.
 \newblock Molecular Biology and Evolution 24: 1586--1591.
 \bibAnnoteFile{Yang:2007ki}
 
+\bibitem{Chamary:2006db}
+Chamary JV, Parmley JL, Hurst LD (2006) {Hearing silence: non-neutral evolution
+  at synonymous sites in mammals}.
+\newblock Nature Reviews Genetics 7: 98--108.
+\bibAnnoteFile{Chamary:2006db}
+
 \end{thebibliography}
