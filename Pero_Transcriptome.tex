@@ -135,24 +135,24 @@ In addition to the reference individual sequenced at four different tissue types
 
 \subsection*{Natural Selection}
 
-To characterize natural selection on several genes related to water and ion homeostasis, we identified several of the transcripts identified as experiencing positive selection in a resent work on desert-adapter \textit{Dipodomys} rodents. The coding sequence corresponding to these genes, Solute Carrier family 2 member 9  (Slc2a9) and the Vitamin D3 receptor (Vdr), were extracted from the dataset, aligned using the software MACSE \cite{Ranwez:2011kj} to homologous sequences in \textit{Mus musculus}, \textit{Rattus norvegicus}, \textit{Peromyscus maniculatus}, and \textit{Homo sapens} identified by the conditional reciprocal best blast procedure (CRBB, \cite{Aubry:2014en}). An unrooted gene tree was constructed using the online resource Clustal-Omega, and together the tree and alignment were analyzed using the branch-site model (model=2, nsSites=2, fix\_omega=0 versus model=2, nsSites=2, fix\_omega=1, omega=1)  implemented in PAML version 4.8 \cite{Yang:2011bm,Yang:2007ki}.    
+To characterize natural selection on several genes related to water and ion homeostasis, we identified several of the transcripts identified as experiencing positive selection in a resent work on desert-adapter \textit{Dipodomys} rodents. The coding sequence corresponding to these genes, Solute Carrier family 2 member 9  (Slc2a9) and the Vitamin D3 receptor (Vdr), were extracted from the dataset, aligned using the software MACSE \cite{Ranwez:2011kj} to homologous sequences in \textit{Mus musculus}, \textit{Rattus norvegicus}, \textit{Peromyscus maniculatus}, and \textit{Homo sapens} identified by the conditional reciprocal best blast procedure (CRBB, \cite{Aubry:2014en}). An unrooted gene tree was constructed using the online resource Clustal-Omega, and together the tree and alignment were analyzed using the branch-site model (model=2, nsSites=2, fix\_omega=0 versus model=2, nsSites=2, fix\_omega=1, omega=1)  implemented in PAML version 4.8 \cite{Yang:2011bm,Yang:2007ki}. Significance was evaluated via use of the likelihood ratio test. \\   
 
 
 % Results and Discussion can be combined.
-\section*{Results}
+\section*{Results and Discussion}
 
 \subsection*{RNA extraction, Sequencing, Assembly, Mapping}
 
-RNA was extracted from the hypothalamus, renal medulla, testes, or liver from each individual using sterile technique. TRIzol extraction resulted in a large amount of high quality (RIN $\geq$ 8) total RNA, which was used as input. Libraries were constructed as per the standard Illumina protocol, and ere sequenced as described above. The number of reads per library varied from 56 million strand-specific paired-end reads in Peer360 kidney, to 9 million single-end reads in Peer321 (\hypertarget{Table 1}{Table 1}, available on the Short Read Archive accession XXX). Adapter sequence contamination and low-quality nucleotides were eliminated, which resulted in a loss of \textless 2\% of reads. \\
+RNA was extracted from the hypothalamus, renal medulla, testes, or liver from each individual using sterile technique. TRIzol extraction resulted in a large amount of high quality (RIN $\geq$ 8) total RNA, which was used as input. Libraries were constructed as per the standard Illumina protocol, and were sequenced as described above. The number of reads per library varied from 56 million strand-specific paired-end reads in Peer360 kidney, to 9 million single-end reads in Peer321 (\hypertarget{Table 1}{Table 1}, available on the Short Read Archive accession XXX). Adapter sequence contamination and low-quality nucleotides were eliminated, which resulted in a loss of \textless 2\% of reads. These reads served as input for all downstream analyses. \\
 \textbf{\hypertarget{Table 1}{Table 1}} \\
 \begin{center}
 \begin{tabular}{l|c }
 \textsc{Dataset}& \textsc{Num. Raw Reads} \\
 \hline 
-\textsc{Peer360 Testes} & 32M PE  \\
-\textsc{Peer360 Liver} & 53M PE   \\
-\textsc{Peer360 Kidney} & 56M PE   \\
-\textsc{Peer360 Brain}  & 23M PE \\
+\textsc{Peer360 Testes} & 32M PE/SS  \\
+\textsc{Peer360 Liver} & 53M PE /SS  \\
+\textsc{Peer360 Kidney} & 56M PE/SS   \\
+\textsc{Peer360 Brain}  & 23M PE/SS \\
 \textsc{Peer305}  & 19M PE  \\
 \textsc{Peer308}  & 15M PE  \\
 \textsc{Peer319}  & 14M PE  \\
@@ -171,7 +171,7 @@ RNA was extracted from the hypothalamus, renal medulla, testes, or liver from ea
 \textsc{Peer382}  & 14M SE  \\
 \end{tabular}
 \begin{quote}
-\small{Table 1. The number of sequencing reads per sample}
+\small{Table 1. The number of sequencing reads per sample. PE=paired end, SS=strand specific, SE=single end sequencing. }
 \end{quote}
 \end{center}
 
@@ -184,7 +184,9 @@ Transcriptome assembly for each tissue type was accomplished using the program T
 \small{Figure 1. The Venn Diagram.}
 \end{quote}   
 
-I then estimated gene expression on each of these tissue-specific datasets, which allowed me to understand expression patterns in the multiple tissues. Specifically, I constructed a Venn diagram ({\hypertarget{Figure 1}{Figure 1}}), which allowed me to visualize the proportion genes whose expression was limited to a single tissue, and those where expression was ubiquitous. In addition to this, I estimated mean TMP (transcripts per million) for all transcripts. {\hypertarget{Table 2}{Table 2}} consists of the 10 genes whose mean TMP was the highest. \\ 
+I then estimated gene expression on each of these tissue-specific datasets, which allowed me to understand expression patterns in the multiple tissues. Specifically, I constructed a Venn diagram ({\hypertarget{Figure 1}{Figure 1}}), which allowed me to visualize the proportion genes whose expression was limited to a single tissue, and those where expression was ubiquitous. Of the 4 tissues, the kidney appears to an outlier in the number of unique sequences, though this could be the result of the recovery of more lowly expressed transcripts that may be the result of deeper sequencing.  \\
+
+In addition to this, I estimated mean TMP (number of transcripts per million) for all transcripts. {\hypertarget{Table 2}{Table 2}} consists of the 10 genes whose mean TMP was the highest. Several genes in this list are present predominately in a single tissue type. For instance Transcript_126459, Albumin is very highly expressed in the liver, but less so in the other tissues. It should be noted, however, that making inference based on uncorrected values for TPM is not warranted. Statistical testing for differential expression was not implemented due to the fact that no replicates are available.  \\  
 
 After expression estimation, the filtered assemblies were concatenated together, and after removal of redundancy with cd-hit-est, 123,123 putative transcripts remained (To be available on Genbank). From this filtered concatenated dataset, I extracted 71626 putative coding sequences (72Mb, to be available on Dryad). Of these 71626 sequences, 38221 were complete exons (containing both start and stop codons), while other were either truncated at the 5-prime end (20239 sequences), 3-prime end (6445 sequences), or were internal (6721 sequencing having neither stop nor start codon). The results of a Pfam search conducted on the predicted amino acid sequences will be found on Dryad. \\
 
@@ -213,8 +215,10 @@ Transcript\_98376	&	1.98E+00	&	8.66E+03	&	1.02E+00	&	2.68E+00	&	XM\_006970208.1	
 
 \subsection*{Population Genomics}
 
-As detailed above, the RNAseq data from 15 individuals were mapped to the reference transcriptome with the resulting BAM files being used as input to the software package ANGSD. The Tajima's D statistic was calculated for all  transcripts covered by at least 14 of the 15 individuals. The distribution of the results, shown in Figure 2, suggest that the vast majority of the transcriptome is under purifying selection (D \textless 0), with a much smaller fraction being subject to neutral or positive selection.\\
+As detailed above, the RNAseq data from 15 individuals were mapped to the reference transcriptome with the resulting BAM files being used as input to the software package ANGSD. The Tajima's D statistic was calculated for all  transcripts covered by at least 14 of the 15 individuals. The distribution of the results, shown in Figure 2, suggest that the vast majority of the transcriptome is under purifying selection (D \textless 0), with a much smaller fraction being subject to neutral or positive selection. \hyperlink{Table 3}{Table 3} presents the 10 transcripts whose estimate of Tajima's D is greatest, while \hyperlink{Table 4}{Table 4} presents the 10 transcripts whose estimate of Tajima's D is least. While the former list of genes is likely to contain transcripts experiencing positive selection in the studies population, the latter group is likely experiencing purifying selection. \\
+
 \vspace{10mm}
+
 \textbf{\hypertarget{Figure 2}{Figure 2}} \\
 \centerline{\includegraphics[width=18.0\baselineskip]{/Users/macmanes/Documents/pero_transcriptome/tajD.jpeg}}
 \begin{quote}
@@ -272,43 +276,87 @@ Transcript\_33267 & XM\_006975561.1 & pumilio RNA-binding family member 1 (Pum1)
 To test the hypothesis that selection on transcripts related to osmoregulation is enhanced in the desert adapted \peer, I implemented the branch-site test as described above, setting the sequence corresponding to \peer\:for both Slc2a9 and Vdr as the foreground lineages in 2 distinct program executions. The test for Slc2a9 was highly significant (2$\Delta$Lnl=51.4, df=1, p=0), indicating enhanced selection in \peer\: relative to the other lineages. The branch site test for positive selection conducted on the Vdr gene was non-significant (2$\Delta$Lnl=0.68, df=1, p=1). 
 
 
-\section*{Discussion}
+\section*{Conclusions}
 
-% You may title this section "Methods" or "Models". 
-% "Models" is not a valid title for PLoS ONE authors. However, PLoS ONE
-% authors may use "Analysis" 
+As a direct result of intense heat and aridity, deserts are thought to be amongst the most harsh of environments, particularly for it's mammalian inhabitants. Given the osmoregulation can be challenging for these animals, with failure resulting in death, strong selection should be observed on genes related to the maintenance of water and solute balance. This study aims to characterize the transcriptome of a desert-adapted rodent species, \peer. Specifically, we characterize the transcriptome of four tissue types (liver, kidney, brain, testes) from a single individual, and supplement this with population level renal transcriptome sequencing from 15 additional animals. This study aims to provide the foundation for future experimental research. \\
+
+Previous studies of desert adaption in rodents have largely implicated the aquaporins \cite{Gallardo:2005fm,Huang:2001ti} in adaptation to desert environments (but see \cite{Marra:2012ec}), though most of these studies employed a candidate gene approach and therefore are limited in scope. The current study, which characterizes a multi-tissue transcriptome, nucleotide polymorphism, and natural selection 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 % Do NOT remove this, even if you are not including acknowledgments
 \section*{Acknowledgments}
 
+MDM was supported by a NIH Postdoctoral fellowship, then by startup funds provided by the University of New Hampshire. He would like to acknowledge the support of his wife and children. Lastly, this work was significantly improved by comments received based on a version of the manuscript posted on biorxiv. 
 
 %\section*{References}
 % The bibtex filename
 \bibliography{/Users/macmanes/Documents/pero_transcriptome/biblio.bib}
 
-\section*{Figure Legends}
-%\begin{figure}[!ht]
-%\begin{center}
-%%\includegraphics[width=4in]{figure_name.2.eps}
-%\end{center}
-%\caption{
-%{\bf Bold the first sentence.}  Rest of figure 2  caption.  Caption 
-%should be left justified, as specified by the options to the caption 
-%package.
-%}
-%\label{Figure_label}
-%\end{figure}
 
 
-\section*{Tables}
-
-\vspace{10mm}
 
 
-\end{center}  
 
 
-\vspace{5mm}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 \end{document}
