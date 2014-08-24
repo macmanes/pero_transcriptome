@@ -87,7 +87,7 @@ $\ast$ E-mail: macmanes@gmail.com, @PeroMHC
 % Please keep the abstract between 250 and 300 words
 \section*{Abstract}
 
-As a direct result of intense heat and aridity, deserts are thought to be amongst the most harsh of environments, particularly for it's mammalian inhabitants. Given the osmoregulation can be challenging for these animals, with failure resulting in death, strong selection should be observed on genes related to the maintenance of water and solute balance. This study aims to characterize the transcriptome of a desert-adapted rodent species, \textit{Peromyscus eremicus}. Specifically, we characterized the transcriptome of four tissue types (liver, kidney, brain, testes) from a single individual, and supplement this with population level renal transcriptome sequencing from 15 additional animals. We identified a set of transcripts undergoing both purifying and balancing selection based on estimates of Tajima's D. In addition, we used a branch site test to identify a transcript, Slc2a9 likely related to desert osmoregulation, undergoing enhanced selection in \peer\: relative to a set of non-desert rodents.  \\
+As a direct result of intense heat and aridity, deserts are thought to be amongst the most harsh of environments, particularly for it's mammalian inhabitants. Given the osmoregulation can be challenging for these animals, with failure resulting in death, strong selection should be observed on genes related to the maintenance of water and solute balance. One such animal, \textit{Peromyscus eremicus}, is native to the desert regions of the southwest United States, and may live it's entire life without oral fluid intake. As a first step towards understanding the genetics that underlie this phenotype, we present here a characterization of the transcriptome. We assay four tissues (kidney, liver, brain, testes) from a single individual, and supplement this with population level renal transcriptome sequencing from 15 additional animals. We identified a set of transcripts undergoing both purifying and balancing selection based on estimates of Tajima's D. In addition, we used the branch-site test to identify a transcript, Slc2a9 likely related to desert osmoregulation, undergoing enhanced selection in \peer\: relative to a set of related non-desert rodents.  \\
 
 
 \section*{Introduction}
@@ -187,7 +187,7 @@ Transcriptome assembly for each tissue type was accomplished using the program T
 
 I then estimated gene expression on each of these tissue-specific datasets, which allowed me to understand expression patterns in the multiple tissues. Specifically, I constructed a Venn diagram ({\hypertarget{Figure 1}{Figure 1}}), which allowed me to visualize the proportion genes whose expression was limited to a single tissue, and those where expression was ubiquitous. Of the 4 tissues, the kidney appears to an outlier in the number of unique sequences, though this could be the result of the recovery of more lowly expressed transcripts that may be the result of deeper sequencing.  \\
 
-In addition to this, I estimated mean TMP (number of transcripts per million) for all transcripts. {\hypertarget{Table 2}{Table 2}} consists of the 10 genes whose mean TMP was the highest. Several genes in this list are present predominately in a single tissue type. For instance Transcript_126459, Albumin is very highly expressed in the liver, but less so in the other tissues. It should be noted, however, that making inference based on uncorrected values for TPM is not warranted. Statistical testing for differential expression was not implemented due to the fact that no replicates are available.  \\  
+In addition to this, I estimated mean TMP (number of transcripts per million) for all transcripts. {\hypertarget{Table 2}{Table 2}} consists of the 10 genes whose mean TMP was the highest. Several genes in this list are present predominately in a single tissue type. For instance Transcript\_126459, Albumin is very highly expressed in the liver, but less so in the other tissues. It should be noted, however, that making inference based on uncorrected values for TPM is not warranted. Statistical testing for differential expression was not implemented due to the fact that no replicates are available.  \\  
 
 After expression estimation, the filtered assemblies were concatenated together, and after removal of redundancy with cd-hit-est, 123,123 putative transcripts remained (To be available on Genbank). From this filtered concatenated dataset, I extracted 71626 putative coding sequences (72Mb, to be available on Dryad). Of these 71626 sequences, 38221 were complete exons (containing both start and stop codons), while other were either truncated at the 5-prime end (20239 sequences), 3-prime end (6445 sequences), or were internal (6721 sequencing having neither stop nor start codon). The results of a Pfam search conducted on the predicted amino acid sequences will be found on Dryad. \\
 
@@ -206,7 +206,8 @@ Transcript\_119945	&	5.03E+03	&	1.15E+03	&	1.33E+03	&	3.71E+03	&	XM\_008686011.1
 Transcript\_5977	&	4.95E+00	&	1.01E+04	&	3.05E+02	&	3.58E+02	&	XM\_006978668.1	&	Tf	\\
 Transcript\_4057	&	2.62E+01	&	9.32E+03	&	1.34E+02	&	8.38E+01	&	XM\_006994871.1	&	Apoc1	\\
 Transcript\_112523	&	4.07E+02	&	7.36E+03	&	7.78E+02	&	9.54E+02	&	XM\_006994872.1	&	Apoe	\\
-Transcript\_98376	&	1.98E+00	&	8.66E+03	&	1.02E+00	&	2.68E+00	&	XM\_006970208.1	&	Ttr	\\ \end{tabular}
+Transcript\_98376	&	1.98E+00	&	8.66E+03	&	1.02E+00	&	2.68E+00	&	XM\_006970208.1	&	Ttr	\\
+\end{tabular}
 \end{center}
 \begin{quote}
 \small{Table 2. The 10 transcripts with the highest mean TPM (transcripts per million).}
@@ -282,34 +283,7 @@ To begin to test the hypothesis that selection on transcripts related to osmoreg
 
 \section*{Conclusions}
 
-As a direct result of intense heat and aridity, deserts are thought to be amongst the most harsh of environments, particularly for it's mammalian inhabitants. Given the osmoregulation can be challenging for these animals, with failure resulting in death, strong selection should be observed on genes related to the maintenance of water and solute balance. This study aimed to characterize the transcriptome of a desert-adapted rodent species, \peer. Specifically, we characterized the transcriptome of four tissue types (liver, kidney, brain, testes) from a single individual, and supplement this with population level renal transcriptome sequencing from 15 additional animals. We identified a set of transcripts undergoing both purifying and balancing selection based on Tajima's D. In addition, we used a branch site test to identify a transcript, likely related to desert osmoregulation, undergoing enhanced selection in \peer\: relative to a set of non-desert rodents. This study aims to provide the foundation for future experimental research, attempting to understand the genetic underpinnings of extreme osmoregulation in  desert rodents. \\
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+As a direct result of intense heat and aridity, deserts are thought to be amongst the most harsh of environments, particularly for it's mammalian inhabitants. Given the osmoregulation can be challenging for these animals, with failure resulting in death, strong selection should be observed on genes related to the maintenance of water and solute balance. This study aimed to characterize the transcriptome of a desert-adapted rodent species, \peer. Specifically, we characterized the transcriptome of four tissue types (liver, kidney, brain, testes) from a single individual, and supplement this with population level renal transcriptome sequencing from 15 additional animals. We identified a set of transcripts undergoing both purifying and balancing selection based on Tajima's D. In addition, we used a branch site test to identify a transcript, likely related to desert osmoregulation, undergoing enhanced selection in \peer\: relative to a set of non-desert rodents.  \\
 
 
 
@@ -317,7 +291,7 @@ As a direct result of intense heat and aridity, deserts are thought to be amongs
 % Do NOT remove this, even if you are not including acknowledgments
 \section*{Acknowledgments}
 
-MDM would like to acknowledge the support of his wife and children. Lastly, this work was significantly improved by comments received based on a version of the manuscript posted on biorxiv. 
+MDM would like to acknowledge the support of his wife and children. This work was significantly improved by comments received based on a version of the manuscript posted on biorxiv, and more generally by supporters of the Open Access and Science movements. 
 
 %\section*{References}
 % The bibtex filename

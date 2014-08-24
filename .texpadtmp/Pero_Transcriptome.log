@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.5.30)  23 AUG 2014 19:30
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.5.30)  24 AUG 2014 09:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -424,32 +424,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 188--189
 
  []
 
-./Pero_Transcriptome.tex:190: Missing $ inserted.
-<inserted text> 
-                $
-l.190 ...gle tissue type. For instance Transcript_
-                                                  126459, Albumin is very hi...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./Pero_Transcriptome.tex:191: Missing $ inserted.
-<inserted text> 
-                $
-l.191 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Overfull \hbox (1287.28671pt too wide) in paragraph at lines 190--191
-\OT1/cmr/m/n/10.95 list are present pre-dom-i-nately in a sin-gle tis-sue type.
- For in-stance Transcript$[]26459\OML/cmm/m/it/10.95 ; Albuminisveryhighlyexpre
-ssedintheliver; butlesssointheothertissues:Itshouldbenoted; however; thatmaking
-inferencebasedonuncorrectedvaluesforTPMisnotwarranted:Statisticaltestingfordiff
-erentialexpressionwasnotimplementedduetothefactthatnoreplicatesareavailable:[] 
-
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 190--191
 
@@ -460,65 +434,65 @@ Underfull \hbox (badness 10000) in paragraph at lines 192--193
 
  []
 
-
+[7]
 Underfull \hbox (badness 10000) in paragraph at lines 194--195
 
  []
 
-[7]
-Overfull \hbox (20.61673pt too wide) in paragraph at lines 197--210
+
+Overfull \hbox (20.61673pt too wide) in paragraph at lines 197--211
 [][] 
  []
 
 
-./Pero_Transcriptome.tex:210: LaTeX Error: \begin{list} on input line 196 ended
+./Pero_Transcriptome.tex:211: LaTeX Error: \begin{list} on input line 196 ended
  by \end{center}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.210 \end{center}
+l.211 \end{center}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./Pero_Transcriptome.tex:214: LaTeX Error: \begin{adjustwidth} on input line 19
+./Pero_Transcriptome.tex:215: LaTeX Error: \begin{adjustwidth} on input line 19
 6 ended by \end{list}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.214 \end{adjustwidth}
+l.215 \end{adjustwidth}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./Pero_Transcriptome.tex:214: LaTeX Error: \begin{center} on input line 195 end
+./Pero_Transcriptome.tex:215: LaTeX Error: \begin{center} on input line 195 end
 ed by \end{adjustwidth}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.214 \end{adjustwidth}
+l.215 \end{adjustwidth}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 219--220
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 222--223
+Underfull \hbox (badness 10000) in paragraph at lines 223--224
 
  []
 
@@ -526,37 +500,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 222--223
 File: /Users/macmanes/Documents/pero_transcriptome/tajD.jpeg Graphic file (type
  QTm)
  <use  "/Users/macmanes/Documents/pero_transcriptome/tajD.jpeg" >
-Underfull \hbox (badness 10000) in paragraph at lines 232--233
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 255--256
+Underfull \hbox (badness 10000) in paragraph at lines 256--257
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 280--281
+Underfull \hbox (badness 10000) in paragraph at lines 281--282
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 285--286
+Underfull \hbox (badness 10000) in paragraph at lines 286--287
 
  []
 
 
 (/Users/macmanes/Documents/pero_transcriptome/.texpadtmp/Pero_Transcriptome.bbl
 [11] [12] [13])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 365.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 339.
  [14]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 365.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 339.
 
 (/Users/macmanes/Documents/pero_transcriptome/.texpadtmp/Pero_Transcriptome.aux
 )
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 365.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 365.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 365.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 339.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 339.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 339.
  ) 
 Here is how much of TeX's memory you used:
  10384 strings out of 493938
