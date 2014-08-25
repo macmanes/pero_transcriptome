@@ -169,6 +169,13 @@ Haas BJ, Papanicolaou A, Yassour M, Grabherr M, Blood PD, et~al. (2013)
 \newblock Nature protocols 8: 1494--1512.
 \bibAnnoteFile{Haas:2013jq}
 
+\bibitem{MacManes:2012bu}
+\textbf{MacManes} MD, Lacey EA (2012) {The Social Brain: Transcriptome Assembly
+  and Characterization of the Hippocampus from a Social Subterranean Rodent,
+  the Colonial Tuco-Tuco (\textit{Ctenomys} \textit{sociabilis})}.
+\newblock PLOS ONE 7: e45524.
+\bibAnnoteFile{MacManes:2012bu}
+
 \bibitem{Li:2006hr}
 Li W, Godzik A (2006) {Cd-hit: a fast program for clustering and comparing
   large sets of protein or nucleotide sequences.}

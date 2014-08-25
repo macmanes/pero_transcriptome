@@ -27,45 +27,45 @@ Warning--empty journal in Christoffels:2014bg
 `journal' is a missing field, not a string, for entry Li:2013wn
 while executing---line 2643 of file ../plos2009.bst
 Warning--empty journal in Li:2013wn
-You've used 37 entries,
+You've used 38 entries,
             2441 wiz_defined-function locations,
-            791 strings with 13249 characters,
-and the built_in function-call counts, 34162 in all, are:
-= -- 3208
-> -- 568
+            796 strings with 13513 characters,
+and the built_in function-call counts, 34807 in all, are:
+= -- 3268
+> -- 576
 < -- 0
-+ -- 284
-- -- 142
-* -- 3024
-:= -- 4106
-add.period$ -- 71
-call.type$ -- 37
-change.case$ -- 37
++ -- 288
+- -- 144
+* -- 3078
+:= -- 4185
+add.period$ -- 73
+call.type$ -- 38
+change.case$ -- 38
 chr.to.int$ -- 0
-cite$ -- 77
-duplicate$ -- 3373
-empty$ -- 3528
-format.name$ -- 173
-if$ -- 7574
+cite$ -- 79
+duplicate$ -- 3438
+empty$ -- 3596
+format.name$ -- 176
+if$ -- 7716
 int.to.chr$ -- 0
-int.to.str$ -- 37
-missing$ -- 391
-newline$ -- 197
-num.names$ -- 37
-pop$ -- 406
+int.to.str$ -- 38
+missing$ -- 400
+newline$ -- 202
+num.names$ -- 38
+pop$ -- 415
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 267
+skip$ -- 271
 stack$ -- 0
-substring$ -- 5152
-swap$ -- 772
+substring$ -- 5242
+swap$ -- 790
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 3
-while$ -- 248
-width$ -- 39
-write$ -- 410
+while$ -- 253
+width$ -- 40
+write$ -- 421
 (There were 6 error messages)
