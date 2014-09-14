@@ -3,69 +3,63 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Pero_Transcriptome.aux
 The style file: ../plos2009.bst
 Database file #1: /Users/macmanes/Documents/pero_transcriptome/biblio.bib.bib
-Repeated entry---line 1429 of file /Users/macmanes/Documents/pero_transcriptome/biblio.bib.bib
+Repeated entry---line 1418 of file /Users/macmanes/Documents/pero_transcriptome/biblio.bib.bib
  : @article{Nielsen:1995uq
  :                        ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 26016 of file /Users/macmanes/Documents/pero_transcriptome/biblio.bib.bib
+I was expecting a `,' or a `}'---line 26024 of file /Users/macmanes/Documents/pero_transcriptome/biblio.bib.bib
  : 
  : @article{Chesh:2012jd,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 43619 of file /Users/macmanes/Documents/pero_transcriptome/biblio.bib.bib
+I was expecting a `,' or a `}'---line 43666 of file /Users/macmanes/Documents/pero_transcriptome/biblio.bib.bib
  : 
  : @article{Flatz:2010io,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-`journal' is a missing field, not a string, for entry Giorello:2014iv
-while executing---line 2643 of file ../plos2009.bst
-Warning--empty journal in Giorello:2014iv
-`journal' is a missing field, not a string, for entry Christoffels:2014bg
-while executing---line 2643 of file ../plos2009.bst
-Warning--empty journal in Christoffels:2014bg
 `journal' is a missing field, not a string, for entry Li:2013wn
 while executing---line 2643 of file ../plos2009.bst
 Warning--empty journal in Li:2013wn
 You've used 38 entries,
             2441 wiz_defined-function locations,
-            796 strings with 13513 characters,
-and the built_in function-call counts, 34807 in all, are:
-= -- 3268
-> -- 576
+            799 strings with 13663 characters,
+and the built_in function-call counts, 36229 in all, are:
+= -- 3410
+> -- 604
 < -- 0
-+ -- 288
-- -- 144
-* -- 3078
-:= -- 4185
-add.period$ -- 73
++ -- 302
+- -- 151
+* -- 3210
+:= -- 4347
+add.period$ -- 75
 call.type$ -- 38
 change.case$ -- 38
 chr.to.int$ -- 0
-cite$ -- 79
-duplicate$ -- 3438
-empty$ -- 3596
-format.name$ -- 176
-if$ -- 7716
+cite$ -- 77
+duplicate$ -- 3572
+empty$ -- 3740
+format.name$ -- 184
+if$ -- 8037
 int.to.chr$ -- 0
 int.to.str$ -- 38
-missing$ -- 400
-newline$ -- 202
+missing$ -- 414
+newline$ -- 204
 num.names$ -- 38
-pop$ -- 415
+pop$ -- 419
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 271
+skip$ -- 282
 stack$ -- 0
-substring$ -- 5242
-swap$ -- 790
+substring$ -- 5491
+swap$ -- 824
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 3
-while$ -- 253
+warning$ -- 1
+while$ -- 263
 width$ -- 40
-write$ -- 421
-(There were 6 error messages)
+write$ -- 429
+(There were 4 error messages)

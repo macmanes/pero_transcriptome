@@ -42,8 +42,8 @@ Rojek A, Rojek A, Fuchtbauer E, Fuchtbauer E, Kwon T, et~al. (2006) {Severe
 
 \bibitem{NIELSEN:1995uq}
 Nielsen S, Chou C, Marples D, Christensen E, Kishore B, et~al. (1995)
-  {Vasopressin Increases Water Permeability of Kidney Collecting Duct by
-  Inducing Translocation of Aquaporin-Cd Water Channels to Plasma-Membrane}.
+  {Vasopressin increases water permeability of kidney collecting duct by
+  inducing translocation of aquaporin-CD water channels to plasma-membrane}.
 \newblock Proceedings of The National Academy of Sciences of The United States
   of America 92: 1013--1017.
 \bibAnnoteFile{NIELSEN:1995uq}
@@ -59,12 +59,13 @@ Mobasheri A, Marples D, Young IS, Floyd RV, Moskaluk CA, et~al. (2007)
 \bibitem{Bedford:2003wa}
 Bedford JJ, Leader JP, Walker RJ (2003) {Aquaporin expression in normal human
   kidney and in renal disease.}
-\newblock Journal of the American Society of Nephrology : JASN 14: 2581--2587.
+\newblock Journal of the American Society of Nephrology 14: 2581--2587.
 \bibAnnoteFile{Bedford:2003wa}
 
 \bibitem{NIELSEN:1999vg}
-Nielsen S, Kwon T (1999) {Physiology and Pathophysiology of Renal Aquaporins}.
-\newblock Journal of the {\ldots} .
+Nielsen S, Kwon TH, Christensen BM, Promeneur D, Fr{\o}kiaer J, et~al. (1999)
+  {Physiology and pathophysiology of renal aquaporins.}
+\newblock Journal of the American Society of Nephrology 10: 647--663.
 \bibAnnoteFile{NIELSEN:1999vg}
 
 \bibitem{Gallardo:2005fm}
@@ -77,14 +78,14 @@ Gallardo PA, Cort{\'e}s A, Bozinovic F (2005) {Phenotypic flexibility at the
 \bibitem{Kaissling:1975uu}
 Kaissling B, De~Rouffignac C, Barrett JM, Kriz W (1975) {The structural
   organization of the kidney of the desert rodent Psammomys obesus.}
-\newblock Anatomy and embryology 148: 121--143.
+\newblock Anatomy and Embryology 148: 121--143.
 \bibAnnoteFile{Kaissling:1975uu}
 
 \bibitem{Altschuler:1979du}
 Altschuler EM, Nagle RB, Braun EJ, Lindstedt SL, Krutzsch PH (1979)
   {Morphological study of the desert heteromyid kidney with emphasis on the
   genus Perognathus.}
-\newblock The Anatomical record 194: 461--468.
+\newblock The Anatomical Record 194: 461--468.
 \bibAnnoteFile{Altschuler:1979du}
 
 \bibitem{Marra:2014de}
@@ -94,9 +95,10 @@ Marra NJ, Romero a, DeWoody Ja (2014) {Natural selection and the genetic basis
 \bibAnnoteFile{Marra:2014de}
 
 \bibitem{Giorello:2014iv}
-Giorello FM, Feijoo M, a GD, Valdez L, Opazo JC, et~al. (2014)
+Giorello FM, Feijoo M, D'El{\'\i}a G, Valdez L, Opazo JC, et~al. (2014)
   {Characterization of the kidney transcriptome of the South American olive
-  mouse Abrothrix olivacea} 15: 1--10.
+  mouse Abrothrix olivacea.}
+\newblock BMC Genomics 15: 446.
 \bibAnnoteFile{Giorello:2014iv}
 
 \bibitem{Veal:2001vp}
@@ -113,9 +115,9 @@ Feng BJ, Sun LD, Soltani-Arabshahi R, Bowcock AM, Nair RP, et~al. (2007)
 
 \bibitem{Shorter:2014kw}
 Shorter KR, Owen A, anderson V, Hall-South AC, Hayford S, et~al. (2014)
-  {Natural Genetic Variation Underlying Differences in \textit{Peromyscus}
-  Repetitive and Social/Aggressive Behaviors}.
-\newblock Behavior genetics .
+  {Natural genetic variation underlying differences in \textit{Peromyscus}
+  repetitive and social/aggressive behaviors.}
+\newblock Behavior genetics 44: 126--135.
 \bibAnnoteFile{Shorter:2014kw}
 
 \bibitem{Panhuis:2011co}
@@ -139,9 +141,9 @@ Sikes RS, Gannon WL, {Animal Care and Use Committee of the American Society of
 \bibAnnoteFile{Sikes:2011dz}
 
 \bibitem{Heo:2014cb}
-Heo Y, Wu XL, Chen D, Ma J, Hwu WM (2014) {BLESS: bloom filter-based error
+Heo Y, Wu XL, Chen D, Ma J, Hwu WM (2014) {BLESS: Bloom filter-based error
   correction solution for high-throughput sequencing reads.}
-\newblock Bioinformatics (Oxford, England) 30: 1354--1362.
+\newblock Bioinformatics 30: 1354--1362.
 \bibAnnoteFile{Heo:2014cb}
 
 \bibitem{MacManes:2014io}
@@ -151,12 +153,14 @@ MacManes MD (2014) {On the optimal trimming of high-throughput mRNA sequence
 \bibAnnoteFile{MacManes:2014io}
 
 \bibitem{Christoffels:2014bg}
-Christoffels A (2014) {A glance at quality score: implication for \textit{de
-  novo} transcriptome reconstruction of Illumina reads} : 1--5.
+Mbandi SK, Hesse U, Rees DJG, Christoffels A (2014) {A glance at quality score:
+  Implication for \textit{de novo} transcriptome reconstruction of Illumina
+  reads.}
+\newblock Frontiers in Genetics 5: 17.
 \bibAnnoteFile{Christoffels:2014bg}
 
 \bibitem{Lohse:2012fg}
-Lohse M, Bolger AM, Nagel A, Fernie AR, Lunn JE, et~al. (2012) {RobiNA: a
+Lohse M, Bolger AM, Nagel A, Fernie AR, Lunn JE, et~al. (2012) {RobiNA: A
   user-friendly, integrated software solution for RNA-Seq-based
   transcriptomics.}
 \newblock Nucleic Acids Research 40: W622--7.
@@ -166,7 +170,7 @@ Lohse M, Bolger AM, Nagel A, Fernie AR, Lunn JE, et~al. (2012) {RobiNA: a
 Haas BJ, Papanicolaou A, Yassour M, Grabherr M, Blood PD, et~al. (2013)
   {\textit{De novo} transcript sequence reconstruction from RNA-seq using the
   Trinity platform for reference generation and analysis.}
-\newblock Nature protocols 8: 1494--1512.
+\newblock Nature Protocols 8: 1494--1512.
 \bibAnnoteFile{Haas:2013jq}
 
 \bibitem{MacManes:2012bu}
@@ -177,9 +181,9 @@ Haas BJ, Papanicolaou A, Yassour M, Grabherr M, Blood PD, et~al. (2013)
 \bibAnnoteFile{MacManes:2012bu}
 
 \bibitem{Li:2006hr}
-Li W, Godzik A (2006) {Cd-hit: a fast program for clustering and comparing
+Li W, Godzik A (2006) {Cd-hit: A fast program for clustering and comparing
   large sets of protein or nucleotide sequences.}
-\newblock Bioinformatics (Oxford, England) 22: 1658--1659.
+\newblock Bioinformatics 22: 1658--1659.
 \bibAnnoteFile{Li:2006hr}
 
 \bibitem{Camacho:2009fc}
@@ -196,7 +200,7 @@ Mi H (2004) {The PANTHER database of protein families, subfamilies, functions
 
 \bibitem{Wheeler:2013gj}
 Wheeler TJ, Eddy SR (2013) {nhmmer: DNA homology search with profile HMMs}.
-\newblock Bioinformatics (Oxford, England) 29: 2487--2489.
+\newblock Bioinformatics 29: 2487--2489.
 \bibAnnoteFile{Wheeler:2013gj}
 
 \bibitem{Punta:2012ko}
@@ -217,10 +221,10 @@ Roberts A, Pachter L (2013) {Streaming fragment assignment for real-time
 \bibAnnoteFile{Roberts:2012dh}
 
 \bibitem{Korneliussen:2013uz}
-Korneliussen TS, Moltke I, Albrechtsen A (2013) {Calculation of Tajima's D and
-  other neutrality test statistics from low depth next-generation sequencing
-  data}.
-\newblock BMC {\ldots} .
+Korneliussen I Thorfinn Sand~Moltke, Albrechtsen a, Nielsen R (2013)
+  {Calculation of Tajima's D and other neutrality test statistics from low
+  depth next-generation sequencing data.}
+\newblock BMC Bioinformatics 14: 289.
 \bibAnnoteFile{Korneliussen:2013uz}
 
 \bibitem{Ranwez:2011kj}
