@@ -22,7 +22,7 @@ Walsberg G (2000) {Small mammals in hot deserts: Some generalizations
 \bibitem{Tatum:2009kp}
 Tatum R, Zhang Y, Salleng K, Lu Z, Lin JJ, et~al. (2009) {Renal salt wasting
   and chronic dehydration in claudin-7-deficient mice}.
-\newblock AJP: Renal Physiology 298: F24--F34.
+\newblock Renal Physiology 298: F24--F34.
 \bibAnnoteFile{Tatum:2009kp}
 
 \bibitem{Romero:2007fs}
@@ -36,16 +36,14 @@ Romero DG, Plonczynski MW, Welsh BL, Gomez-Sanchez CE, Zhou MY, et~al. (2007)
 Rojek A, Rojek A, Fuchtbauer E, Fuchtbauer E, Kwon T, et~al. (2006) {Severe
   urinary concentrating defect in renal collecting duct-selective AQP2
   conditional-knockout mice}.
-\newblock Proceedings of The National Academy of Sciences of The United States
-  of America 103: 6037--6042.
+\newblock PNAS 103: 6037--6042.
 \bibAnnoteFile{Rojek:2006dg}
 
 \bibitem{NIELSEN:1995uq}
 Nielsen S, Chou C, Marples D, Christensen E, Kishore B, et~al. (1995)
   {Vasopressin increases water permeability of kidney collecting duct by
   inducing translocation of aquaporin-CD water channels to plasma-membrane}.
-\newblock Proceedings of The National Academy of Sciences of The United States
-  of America 92: 1013--1017.
+\newblock PNAS 92: 1013--1017.
 \bibAnnoteFile{NIELSEN:1995uq}
 
 \bibitem{Mobasheri:2007tt}
@@ -77,19 +75,19 @@ Gallardo PA, Cort{\'e}s A, Bozinovic F (2005) {Phenotypic flexibility at the
 
 \bibitem{Kaissling:1975uu}
 Kaissling B, De~Rouffignac C, Barrett JM, Kriz W (1975) {The structural
-  organization of the kidney of the desert rodent Psammomys obesus.}
+  organization of the kidney of the desert rodent \textit{Psammomys obesus}.}
 \newblock Anatomy and Embryology 148: 121--143.
 \bibAnnoteFile{Kaissling:1975uu}
 
 \bibitem{Altschuler:1979du}
 Altschuler EM, Nagle RB, Braun EJ, Lindstedt SL, Krutzsch PH (1979)
   {Morphological study of the desert heteromyid kidney with emphasis on the
-  genus Perognathus.}
+  genus \textit{Perognathus}.}
 \newblock The Anatomical Record 194: 461--468.
 \bibAnnoteFile{Altschuler:1979du}
 
 \bibitem{Marra:2014de}
-Marra NJ, Romero a, DeWoody Ja (2014) {Natural selection and the genetic basis
+Marra NJ, Romero A, DeWoody JA (2014) {Natural selection and the genetic basis
   of osmoregulation in heteromyid rodents as revealed by RNA-seq}.
 \newblock Molecular Ecology 23: 2699--2711.
 \bibAnnoteFile{Marra:2014de}
@@ -97,7 +95,7 @@ Marra NJ, Romero a, DeWoody Ja (2014) {Natural selection and the genetic basis
 \bibitem{Giorello:2014iv}
 Giorello FM, Feijoo M, D'El{\'\i}a G, Valdez L, Opazo JC, et~al. (2014)
   {Characterization of the kidney transcriptome of the South American olive
-  mouse Abrothrix olivacea.}
+  mouse \textit{Abrothrix olivacea}.}
 \newblock BMC Genomics 15: 446.
 \bibAnnoteFile{Giorello:2014iv}
 
@@ -211,7 +209,8 @@ Punta M, Coggill PC, Eberhardt RY, Mistry J, Tate J, et~al. (2012) {The Pfam
 
 \bibitem{Li:2013wn}
 Li H (2013) {Aligning sequence reads, clone sequences and assembly contigs with
-  BWA-MEM} .
+  BWA-MEM}.
+\newblock arXivorg .
 \bibAnnoteFile{Li:2013wn}
 
 \bibitem{Roberts:2012dh}

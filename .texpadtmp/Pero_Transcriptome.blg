@@ -7,44 +7,41 @@ Repeated entry---line 1418 of file /Users/macmanes/Documents/pero_transcriptome/
  : @article{Nielsen:1995uq
  :                        ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 26024 of file /Users/macmanes/Documents/pero_transcriptome/biblio.bib.bib
+I was expecting a `,' or a `}'---line 26022 of file /Users/macmanes/Documents/pero_transcriptome/biblio.bib.bib
  : 
  : @article{Chesh:2012jd,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 43666 of file /Users/macmanes/Documents/pero_transcriptome/biblio.bib.bib
+I was expecting a `,' or a `}'---line 43664 of file /Users/macmanes/Documents/pero_transcriptome/biblio.bib.bib
  : 
  : @article{Flatz:2010io,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-`journal' is a missing field, not a string, for entry Li:2013wn
-while executing---line 2643 of file ../plos2009.bst
-Warning--empty journal in Li:2013wn
 You've used 38 entries,
             2441 wiz_defined-function locations,
-            799 strings with 13663 characters,
-and the built_in function-call counts, 36229 in all, are:
-= -- 3410
+            800 strings with 13646 characters,
+and the built_in function-call counts, 34919 in all, are:
+= -- 3266
 > -- 604
 < -- 0
 + -- 302
 - -- 151
-* -- 3210
-:= -- 4347
-add.period$ -- 75
+* -- 3060
+:= -- 4203
+add.period$ -- 76
 call.type$ -- 38
 change.case$ -- 38
 chr.to.int$ -- 0
-cite$ -- 77
-duplicate$ -- 3572
-empty$ -- 3740
+cite$ -- 76
+duplicate$ -- 3426
+empty$ -- 3594
 format.name$ -- 184
-if$ -- 8037
+if$ -- 7747
 int.to.chr$ -- 0
 int.to.str$ -- 38
 missing$ -- 414
-newline$ -- 204
+newline$ -- 205
 num.names$ -- 38
 pop$ -- 419
 preamble$ -- 1
@@ -52,14 +49,14 @@ purify$ -- 0
 quote$ -- 0
 skip$ -- 282
 stack$ -- 0
-substring$ -- 5491
+substring$ -- 5199
 swap$ -- 824
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
+warning$ -- 0
 while$ -- 263
 width$ -- 40
-write$ -- 429
-(There were 4 error messages)
+write$ -- 431
+(There were 3 error messages)
