@@ -1,264 +1,257 @@
-\begin{thebibliography}{10}
-\providecommand{\url}[1]{\texttt{#1}}
-\providecommand{\urlprefix}{URL }
-\expandafter\ifx\csname urlstyle\endcsname\relax
-  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
-  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
-  \urlstyle{rm}\Url}\fi
-\providecommand{\bibAnnoteFile}[1]{%
-  \IfFileExists{#1}{\begin{quotation}\noindent\textsc{Key:} #1\\
-  \textsc{Annotation:}\ \input{#1}\end{quotation}}{}}
-\providecommand{\bibAnnote}[2]{%
-  \begin{quotation}\noindent\textsc{Key:} #1\\
-  \textsc{Annotation:}\ #2\end{quotation}}
-\providecommand{\eprint}[2][]{\url{#2}}
+\begin{thebibliography}{}
 
-\bibitem{Walsberg:2000uu}
-Walsberg G (2000) {Small mammals in hot deserts: Some generalizations
-  revisited}.
-\newblock Bioscience 50: 109--120.
-\bibAnnoteFile{Walsberg:2000uu}
+\bibitem[Altschuler et~al., 1979]{Altschuler:1979du}
+Altschuler, E.~M., Nagle, R.~B., Braun, E.~J., Lindstedt, S.~L., and Krutzsch,
+  P.~H. (1979).
+\newblock {Morphological study of the desert heteromyid kidney with emphasis on
+  the genus Perognathus.}
+\newblock {\em The Anatomical Record}, 194(3):461--468.
 
-\bibitem{Tatum:2009kp}
-Tatum R, Zhang Y, Salleng K, Lu Z, Lin JJ, et~al. (2009) {Renal salt wasting
-  and chronic dehydration in claudin-7-deficient mice}.
-\newblock Renal Physiology 298: F24--F34.
-\bibAnnoteFile{Tatum:2009kp}
+\bibitem[Aubry et~al., 2014]{Aubry:2014en}
+Aubry, S., Kelly, S., K{\"u}mpers, B. M.~C., Smith-Unna, R.~D., and Hibberd,
+  J.~M. (2014).
+\newblock {Deep Evolutionary Comparison of Gene Expression Identifies Parallel
+  Recruitment of Trans-Factors in Two Independent Origins of C4
+  Photosynthesis}.
+\newblock {\em PLOS Genetics}, 10(6):e1004365.
 
-\bibitem{Romero:2007fs}
-Romero DG, Plonczynski MW, Welsh BL, Gomez-Sanchez CE, Zhou MY, et~al. (2007)
-  {Gene expression profile in rat adrenal zona glomerulosa cells stimulated
-  with aldosterone secretagogues}.
-\newblock Physiological Genomics 32: 117--127.
-\bibAnnoteFile{Romero:2007fs}
+\bibitem[Bedford et~al., 2003]{Bedford:2003wa}
+Bedford, J.~J., Leader, J.~P., and Walker, R.~J. (2003).
+\newblock {Aquaporin expression in normal human kidney and in renal disease.}
+\newblock {\em Journal of the American Society of Nephrology},
+  14(10):2581--2587.
 
-\bibitem{Rojek:2006dg}
-Rojek A, Rojek A, Fuchtbauer E, Fuchtbauer E, Kwon T, et~al. (2006) {Severe
-  urinary concentrating defect in renal collecting duct-selective AQP2
-  conditional-knockout mice}.
-\newblock PNAS 103: 6037--6042.
-\bibAnnoteFile{Rojek:2006dg}
+\bibitem[Camacho et~al., 2009]{Camacho:2009fc}
+Camacho, C., Coulouris, G., Avagyan, V., Ma, N., Papadopoulos, J., Bealer, K.,
+  and Madden, T.~L. (2009).
+\newblock {BLAST+: architecture and applications}.
+\newblock {\em BMC Bioinformatics}, 10(1):421.
 
-\bibitem{NIELSEN:1995uq}
-Nielsen S, Chou C, Marples D, Christensen E, Kishore B, et~al. (1995)
-  {Vasopressin increases water permeability of kidney collecting duct by
-  inducing translocation of aquaporin-CD water channels to plasma-membrane}.
-\newblock PNAS 92: 1013--1017.
-\bibAnnoteFile{NIELSEN:1995uq}
+\bibitem[Chamary et~al., 2006]{Chamary:2006db}
+Chamary, J.~V., Parmley, J.~L., and Hurst, L.~D. (2006).
+\newblock {Hearing silence: non-neutral evolution at synonymous sites in
+  mammals}.
+\newblock {\em Nature Reviews Genetics}, 7(2):98--108.
 
-\bibitem{Mobasheri:2007tt}
-Mobasheri A, Marples D, Young IS, Floyd RV, Moskaluk CA, et~al. (2007)
-  {Distribution of the AQP4 Water Channel in Normal Human Tissues: Protein and
-  Tissue Microarrays Reveal Expression in Several New Anatomical Locations,
-  including the Prostate Gland Seminal Vesicles}.
-\newblock Channels 1: 30--39.
-\bibAnnoteFile{Mobasheri:2007tt}
-
-\bibitem{Bedford:2003wa}
-Bedford JJ, Leader JP, Walker RJ (2003) {Aquaporin expression in normal human
-  kidney and in renal disease.}
-\newblock Journal of the American Society of Nephrology 14: 2581--2587.
-\bibAnnoteFile{Bedford:2003wa}
-
-\bibitem{NIELSEN:1999vg}
-Nielsen S, Kwon TH, Christensen BM, Promeneur D, Fr{\o}kiaer J, et~al. (1999)
-  {Physiology and pathophysiology of renal aquaporins.}
-\newblock Journal of the American Society of Nephrology 10: 647--663.
-\bibAnnoteFile{NIELSEN:1999vg}
-
-\bibitem{Gallardo:2005fm}
-Gallardo PA, Cort{\'e}s A, Bozinovic F (2005) {Phenotypic flexibility at the
-  molecular and organismal level allows desert-dwelling rodents to cope with
-  seasonal water availability.}
-\newblock Physiological and Biochemical Zoology 78: 145--152.
-\bibAnnoteFile{Gallardo:2005fm}
-
-\bibitem{Kaissling:1975uu}
-Kaissling B, De~Rouffignac C, Barrett JM, Kriz W (1975) {The structural
-  organization of the kidney of the desert rodent \textit{Psammomys obesus}.}
-\newblock Anatomy and Embryology 148: 121--143.
-\bibAnnoteFile{Kaissling:1975uu}
-
-\bibitem{Altschuler:1979du}
-Altschuler EM, Nagle RB, Braun EJ, Lindstedt SL, Krutzsch PH (1979)
-  {Morphological study of the desert heteromyid kidney with emphasis on the
-  genus \textit{Perognathus}.}
-\newblock The Anatomical Record 194: 461--468.
-\bibAnnoteFile{Altschuler:1979du}
-
-\bibitem{Marra:2014de}
-Marra NJ, Romero A, DeWoody JA (2014) {Natural selection and the genetic basis
-  of osmoregulation in heteromyid rodents as revealed by RNA-seq}.
-\newblock Molecular Ecology 23: 2699--2711.
-\bibAnnoteFile{Marra:2014de}
-
-\bibitem{Giorello:2014iv}
-Giorello FM, Feijoo M, D'El{\'\i}a G, Valdez L, Opazo JC, et~al. (2014)
-  {Characterization of the kidney transcriptome of the South American olive
-  mouse \textit{Abrothrix olivacea}.}
-\newblock BMC Genomics 15: 446.
-\bibAnnoteFile{Giorello:2014iv}
-
-\bibitem{Veal:2001vp}
-Veal R, Caire W (2001) {\textit{Peromyscus} \textit{eremicus}}.
-\newblock Mammalian Species 118: 1--6.
-\bibAnnoteFile{Veal:2001vp}
-
-\bibitem{Bradley:2007jo}
-Feng BJ, Sun LD, Soltani-Arabshahi R, Bowcock AM, Nair RP, et~al. (2007)
-  {Toward a Molecular Phylogeny for \textit{Peromyscus}: Evidence from
+\bibitem[Feng et~al., 2007]{Bradley:2007jo}
+Feng, B.-J., Sun, L.-D., Soltani-Arabshahi, R., Bowcock, A.~M., Nair, R.~P.,
+  Stuart, P., Elder, J.~T., Schrodi, S.~J., Begovich, A.~B., Abecasis, G.~R.,
+  Zhang, X.-J., Callis-Duffin, K.~P., Krueger, G.~G., and Goldgar, D.~E.
+  (2007).
+\newblock {Toward a Molecular Phylogeny for \textit{Peromyscus}: Evidence from
   Mitochondrial Cytochrome- b Sequences}.
-\newblock Journal of Mammalogy 88: 1146--1159.
-\bibAnnoteFile{Bradley:2007jo}
+\newblock {\em Journal of Mammalogy}, 88(5):1146--1159.
 
-\bibitem{Shorter:2014kw}
-Shorter KR, Owen A, anderson V, Hall-South AC, Hayford S, et~al. (2014)
-  {Natural genetic variation underlying differences in \textit{Peromyscus}
-  repetitive and social/aggressive behaviors.}
-\newblock Behavior genetics 44: 126--135.
-\bibAnnoteFile{Shorter:2014kw}
+\bibitem[Gallardo et~al., 2005]{Gallardo:2005fm}
+Gallardo, P.~A., Cort{\'e}s, A., and Bozinovic, F. (2005).
+\newblock {Phenotypic flexibility at the molecular and organismal level allows
+  desert-dwelling rodents to cope with seasonal water availability.}
+\newblock {\em Physiological and Biochemical Zoology}, 78(2):145--152.
 
-\bibitem{Panhuis:2011co}
-Panhuis TM, Broitman-Maduro G, Uhrig J, Maduro M, Reznick DN (2011) {Analysis
-  of Expressed Sequence Tags from the Placenta of the Live-Bearing Fish
-  Poeciliopsis (Poeciliidae)}.
-\newblock Journal of Heredity 102: 352--361.
-\bibAnnoteFile{Panhuis:2011co}
+\bibitem[Giorello et~al., 2014]{Giorello:2014iv}
+Giorello, F.~M., Feijoo, M., D'El{\'\i}a, G., Valdez, L., Opazo, J.~C., Varas,
+  V., Naya, D.~E., and Lessa, E.~P. (2014).
+\newblock {Characterization of the kidney transcriptome of the South American
+  olive mouse Abrothrix olivacea.}
+\newblock {\em BMC Genomics}, 15(1):446.
 
-\bibitem{Shorter:2012ib}
-Shorter KR, Crossland JP, Webb D, Szalai G, Felder MR, et~al. (2012)
-  {\textit{Peromyscus} as a Mammalian Epigenetic Model}.
-\newblock Genetics Research International 2012: 1--11.
-\bibAnnoteFile{Shorter:2012ib}
+\bibitem[Haas et~al., 2013]{Haas:2013jq}
+Haas, B.~J., Papanicolaou, A., Yassour, M., Grabherr, M., Blood, P.~D., Bowden,
+  J., Couger, M.~B., Eccles, D., Li, B., Lieber, M., MacManes, M.~D., Ott, M.,
+  Orvis, J., Pochet, N., Strozzi, F., Weeks, N., Westerman, R., William, T.,
+  Dewey, C.~N., Henschel, R., Leduc, R.~D., Friedman, N., and Regev, A. (2013).
+\newblock {\textit{De novo} transcript sequence reconstruction from RNA-seq
+  using the Trinity platform for reference generation and analysis.}
+\newblock {\em Nature Protocols}, 8(8):1494--1512.
 
-\bibitem{Sikes:2011dz}
-Sikes RS, Gannon WL, {Animal Care and Use Committee of the American Society of
-  Mammalogists} (2011) {Guidelines of the American Society of Mammalogists for
-  the use of wild mammals in research}.
-\newblock Journal of Mammalogy 92: 235--253.
-\bibAnnoteFile{Sikes:2011dz}
+\bibitem[Heo et~al., 2014]{Heo:2014cb}
+Heo, Y., Wu, X.-L., Chen, D., Ma, J., and Hwu, W.-M. (2014).
+\newblock {BLESS: Bloom filter-based error correction solution for
+  high-throughput sequencing reads.}
+\newblock {\em Bioinformatics}, 30(10):1354--1362.
 
-\bibitem{Heo:2014cb}
-Heo Y, Wu XL, Chen D, Ma J, Hwu WM (2014) {BLESS: Bloom filter-based error
-  correction solution for high-throughput sequencing reads.}
-\newblock Bioinformatics 30: 1354--1362.
-\bibAnnoteFile{Heo:2014cb}
+\bibitem[Kaissling et~al., 1975]{Kaissling:1975uu}
+Kaissling, B., De~Rouffignac, C., Barrett, J.~M., and Kriz, W. (1975).
+\newblock {The structural organization of the kidney of the desert rodent
+  Psammomys obesus.}
+\newblock {\em Anatomy and Embryology}, 148(2):121--143.
 
-\bibitem{MacManes:2014io}
-MacManes MD (2014) {On the optimal trimming of high-throughput mRNA sequence
-  data}.
-\newblock Frontiers in Genetics 5.
-\bibAnnoteFile{MacManes:2014io}
+\bibitem[Korneliussen et~al., 2013]{Korneliussen:2013uz}
+Korneliussen, Thorfinn Sand~Moltke, I., Albrechtsen, a., and Nielsen, R.
+  (2013).
+\newblock {Calculation of Tajima's D and other neutrality test statistics from
+  low depth next-generation sequencing data.}
+\newblock {\em BMC Bioinformatics}, 14(1):289.
 
-\bibitem{Christoffels:2014bg}
-Mbandi SK, Hesse U, Rees DJG, Christoffels A (2014) {A glance at quality score:
-  Implication for \textit{de novo} transcriptome reconstruction of Illumina
-  reads.}
-\newblock Frontiers in Genetics 5: 17.
-\bibAnnoteFile{Christoffels:2014bg}
-
-\bibitem{Lohse:2012fg}
-Lohse M, Bolger AM, Nagel A, Fernie AR, Lunn JE, et~al. (2012) {RobiNA: A
-  user-friendly, integrated software solution for RNA-Seq-based
-  transcriptomics.}
-\newblock Nucleic Acids Research 40: W622--7.
-\bibAnnoteFile{Lohse:2012fg}
-
-\bibitem{Haas:2013jq}
-Haas BJ, Papanicolaou A, Yassour M, Grabherr M, Blood PD, et~al. (2013)
-  {\textit{De novo} transcript sequence reconstruction from RNA-seq using the
-  Trinity platform for reference generation and analysis.}
-\newblock Nature Protocols 8: 1494--1512.
-\bibAnnoteFile{Haas:2013jq}
-
-\bibitem{Pop:2009dp}
-Pop M (2009) {Genome assembly reborn: recent computational challenges}.
-\newblock Briefings In Bioinformatics 10: 354--366.
-\bibAnnoteFile{Pop:2009dp}
-
-\bibitem{MacManes:2012bu}
-\textbf{MacManes} MD, Lacey EA (2012) {The Social Brain: Transcriptome Assembly
-  and Characterization of the Hippocampus from a Social Subterranean Rodent,
-  the Colonial Tuco-Tuco (\textit{Ctenomys} \textit{sociabilis})}.
-\newblock PLOS ONE 7: e45524.
-\bibAnnoteFile{MacManes:2012bu}
-
-\bibitem{Li:2006hr}
-Li W, Godzik A (2006) {Cd-hit: A fast program for clustering and comparing
-  large sets of protein or nucleotide sequences.}
-\newblock Bioinformatics 22: 1658--1659.
-\bibAnnoteFile{Li:2006hr}
-
-\bibitem{Camacho:2009fc}
-Camacho C, Coulouris G, Avagyan V, Ma N, Papadopoulos J, et~al. (2009) {BLAST+:
-  architecture and applications}.
-\newblock BMC Bioinformatics 10: 421.
-\bibAnnoteFile{Camacho:2009fc}
-
-\bibitem{Mi:2004iv}
-Mi H (2004) {The PANTHER database of protein families, subfamilies, functions
-  and pathways}.
-\newblock Nucleic Acids Research 33: D284--D288.
-\bibAnnoteFile{Mi:2004iv}
-
-\bibitem{Wheeler:2013gj}
-Wheeler TJ, Eddy SR (2013) {nhmmer: DNA homology search with profile HMMs}.
-\newblock Bioinformatics 29: 2487--2489.
-\bibAnnoteFile{Wheeler:2013gj}
-
-\bibitem{Punta:2012ko}
-Punta M, Coggill PC, Eberhardt RY, Mistry J, Tate J, et~al. (2012) {The Pfam
-  protein families database.}
-\newblock Nucleic Acids Research 40: D290--301.
-\bibAnnoteFile{Punta:2012ko}
-
-\bibitem{Li:2013wn}
-Li H (2013) {Aligning sequence reads, clone sequences and assembly contigs with
+\bibitem[Li, 2013]{Li:2013wn}
+Li, H. (2013).
+\newblock {Aligning sequence reads, clone sequences and assembly contigs with
   BWA-MEM}.
-\newblock arXivorg .
-\bibAnnoteFile{Li:2013wn}
+\newblock {\em arXiv.org}.
 
-\bibitem{Roberts:2012dh}
-Roberts A, Pachter L (2013) {Streaming fragment assignment for real-time
-  analysis of sequencing experiments.}
-\newblock Nature Methods 10: 71--73.
-\bibAnnoteFile{Roberts:2012dh}
+\bibitem[Li and Godzik, 2006]{Li:2006hr}
+Li, W. and Godzik, A. (2006).
+\newblock {Cd-hit: A fast program for clustering and comparing large sets of
+  protein or nucleotide sequences.}
+\newblock {\em Bioinformatics}, 22(13):1658--1659.
 
-\bibitem{Korneliussen:2013uz}
-Korneliussen I Thorfinn Sand~Moltke, Albrechtsen a, Nielsen R (2013)
-  {Calculation of Tajima's D and other neutrality test statistics from low
-  depth next-generation sequencing data.}
-\newblock BMC Bioinformatics 14: 289.
-\bibAnnoteFile{Korneliussen:2013uz}
+\bibitem[Lohse et~al., 2012]{Lohse:2012fg}
+Lohse, M., Bolger, A.~M., Nagel, A., Fernie, A.~R., Lunn, J.~E., Stitt, M., and
+  Usadel, B. (2012).
+\newblock {RobiNA: A user-friendly, integrated software solution for
+  RNA-Seq-based transcriptomics.}
+\newblock {\em Nucleic Acids Research}, 40(Web Server issue):W622--7.
 
-\bibitem{Ranwez:2011kj}
-Ranwez V, Harispe S, Delsuc F, Douzery EJP (2011) {MACSE: Multiple Alignment of
-  Coding SEquences Accounting for Frameshifts and Stop Codons}.
-\newblock PLOS ONE 6: e22594.
-\bibAnnoteFile{Ranwez:2011kj}
+\bibitem[MacManes, 2014]{MacManes:2014io}
+MacManes, M.~D. (2014).
+\newblock {On the optimal trimming of high-throughput mRNA sequence data}.
+\newblock {\em Frontiers in Genetics}, 5.
 
-\bibitem{Aubry:2014en}
-Aubry S, Kelly S, K{\"u}mpers BMC, Smith-Unna RD, Hibberd JM (2014) {Deep
-  Evolutionary Comparison of Gene Expression Identifies Parallel Recruitment of
-  Trans-Factors in Two Independent Origins of C4 Photosynthesis}.
-\newblock PLOS Genetics 10: e1004365.
-\bibAnnoteFile{Aubry:2014en}
+\bibitem[Marra et~al., 2014]{Marra:2014de}
+Marra, N.~J., Romero, a., and DeWoody, J.~a. (2014).
+\newblock {Natural selection and the genetic basis of osmoregulation in
+  heteromyid rodents as revealed by RNA-seq}.
+\newblock {\em Molecular Ecology}, 23(11):2699--2711.
 
-\bibitem{Yang:2011bm}
-Yang Z, dos Reis M (2011) {Statistical Properties of the Branch-Site Test of
-  Positive Selection}.
-\newblock Molecular Biology and Evolution 28: 1217--1228.
-\bibAnnoteFile{Yang:2011bm}
+\bibitem[Mbandi et~al., 2014]{Christoffels:2014bg}
+Mbandi, S.~K., Hesse, U., Rees, D. J.~G., and Christoffels, A. (2014).
+\newblock {A glance at quality score: Implication for \textit{de novo}
+  transcriptome reconstruction of Illumina reads.}
+\newblock {\em Frontiers in Genetics}, 5:17.
 
-\bibitem{Yang:2007ki}
-Yang Z (2007) {PAML 4: Phylogenetic Analysis by Maximum Likelihood}.
-\newblock Molecular Biology and Evolution 24: 1586--1591.
-\bibAnnoteFile{Yang:2007ki}
+\bibitem[Mi, 2004]{Mi:2004iv}
+Mi, H. (2004).
+\newblock {The PANTHER database of protein families, subfamilies, functions and
+  pathways}.
+\newblock {\em Nucleic Acids Research}, 33(Database issue):D284--D288.
 
-\bibitem{Chamary:2006db}
-Chamary JV, Parmley JL, Hurst LD (2006) {Hearing silence: non-neutral evolution
-  at synonymous sites in mammals}.
-\newblock Nature Reviews Genetics 7: 98--108.
-\bibAnnoteFile{Chamary:2006db}
+\bibitem[Mobasheri et~al., 2007]{Mobasheri:2007tt}
+Mobasheri, A., Marples, D., Young, I.~S., Floyd, R.~V., Moskaluk, C.~A., and
+  Frigeri, A. (2007).
+\newblock {Distribution of the AQP4 Water Channel in Normal Human Tissues:
+  Protein and Tissue Microarrays Reveal Expression in Several New Anatomical
+  Locations, including the Prostate Gland Seminal Vesicles}.
+\newblock {\em Channels}, 1(1):30--39.
+
+\bibitem[Nielsen et~al., 1995]{NIELSEN:1995uq}
+Nielsen, S., Chou, C., Marples, D., Christensen, E., Kishore, B., and Knepper,
+  M. (1995).
+\newblock {Vasopressin increases water permeability of kidney collecting duct
+  by inducing translocation of aquaporin-CD water channels to plasma-membrane}.
+\newblock {\em Proceedings of The National Academy of Sciences of The United
+  States of America}, 92(4):1013--1017.
+
+\bibitem[Nielsen et~al., 1999]{NIELSEN:1999vg}
+Nielsen, S., Kwon, T.~H., Christensen, B.~M., Promeneur, D., Fr{\o}kiaer, J.,
+  and Marples, D. (1999).
+\newblock {Physiology and pathophysiology of renal aquaporins.}
+\newblock {\em Journal of the American Society of Nephrology}, 10(3):647--663.
+
+\bibitem[Panhuis et~al., 2011]{Panhuis:2011co}
+Panhuis, T.~M., Broitman-Maduro, G., Uhrig, J., Maduro, M., and Reznick, D.~N.
+  (2011).
+\newblock {Analysis of Expressed Sequence Tags from the Placenta of the
+  Live-Bearing Fish Poeciliopsis (Poeciliidae)}.
+\newblock {\em Journal of Heredity}, 102(3):352--361.
+
+\bibitem[Pop, 2009]{Pop:2009dp}
+Pop, M. (2009).
+\newblock {Genome assembly reborn: recent computational challenges}.
+\newblock {\em Briefings In Bioinformatics}, 10(4):354--366.
+
+\bibitem[Punta et~al., 2012]{Punta:2012ko}
+Punta, M., Coggill, P.~C., Eberhardt, R.~Y., Mistry, J., Tate, J., Boursnell,
+  C., Pang, N., Forslund, K., Ceric, G., Clements, J., Heger, A., Holm, L.,
+  Sonnhammer, E. L.~L., Eddy, S.~R., Bateman, A., and Finn, R.~D. (2012).
+\newblock {The Pfam protein families database.}
+\newblock {\em Nucleic Acids Research}, 40:D290--301.
+
+\bibitem[Ranwez et~al., 2011]{Ranwez:2011kj}
+Ranwez, V., Harispe, S., Delsuc, F., and Douzery, E. J.~P. (2011).
+\newblock {MACSE: Multiple Alignment of Coding SEquences Accounting for
+  Frameshifts and Stop Codons}.
+\newblock {\em PLOS ONE}, 6(9):e22594.
+
+\bibitem[Roberts and Pachter, 2013]{Roberts:2012dh}
+Roberts, A. and Pachter, L. (2013).
+\newblock {Streaming fragment assignment for real-time analysis of sequencing
+  experiments.}
+\newblock {\em Nature Methods}, 10(1):71--73.
+
+\bibitem[Rojek et~al., 2006]{Rojek:2006dg}
+Rojek, A., Rojek, A., Fuchtbauer, E., Fuchtbauer, E., Kwon, T., Kwon, T.,
+  Frokiaer, J., and Nielsen, S. (2006).
+\newblock {Severe urinary concentrating defect in renal collecting
+  duct-selective AQP2 conditional-knockout mice}.
+\newblock {\em Proceedings of The National Academy of Sciences of The United
+  States of America}, 103(15):6037--6042.
+
+\bibitem[Romero et~al., 2007]{Romero:2007fs}
+Romero, D.~G., Plonczynski, M.~W., Welsh, B.~L., Gomez-Sanchez, C.~E., Zhou,
+  M.~Y., and Gomez-Sanchez, E.~P. (2007).
+\newblock {Gene expression profile in rat adrenal zona glomerulosa cells
+  stimulated with aldosterone secretagogues}.
+\newblock {\em Physiological Genomics}, 32(1):117--127.
+
+\bibitem[Shorter et~al., 2012]{Shorter:2012ib}
+Shorter, K.~R., Crossland, J.~P., Webb, D., Szalai, G., Felder, M.~R., and
+  Vrana, P.~B. (2012).
+\newblock {\textit{Peromyscus} as a Mammalian Epigenetic Model}.
+\newblock {\em Genetics Research International}, 2012:1--11.
+
+\bibitem[Shorter et~al., 2014]{Shorter:2014kw}
+Shorter, K.~R., Owen, A., anderson, V., Hall-South, A.~C., Hayford, S., Cakora,
+  P., Crossland, J.~P., Georgi, V. R.~M., Perkins, A., Kelly, S.~J., Felder,
+  M.~R., and Vrana, P.~B. (2014).
+\newblock {Natural genetic variation underlying differences in
+  \textit{Peromyscus} repetitive and social/aggressive behaviors.}
+\newblock {\em Behavior genetics}, 44(2):126--135.
+
+\bibitem[Sikes et~al., 2011]{Sikes:2011dz}
+Sikes, R.~S., Gannon, W.~L., and {Animal Care and Use Committee of the American
+  Society of Mammalogists} (2011).
+\newblock {Guidelines of the American Society of Mammalogists for the use of
+  wild mammals in research}.
+\newblock {\em Journal of Mammalogy}, 92(1):235--253.
+
+\bibitem[Tatum et~al., 2009]{Tatum:2009kp}
+Tatum, R., Zhang, Y., Salleng, K., Lu, Z., Lin, J.~J., Lu, Q., Jeansonne,
+  B.~G., Ding, L., and Chen, Y.~H. (2009).
+\newblock {Renal salt wasting and chronic dehydration in claudin-7-deficient
+  mice}.
+\newblock {\em AJP: Renal Physiology}, 298(1):F24--F34.
+
+\bibitem[\textbf{MacManes} and Lacey, 2012]{MacManes:2012bu}
+\textbf{MacManes}, M.~D. and Lacey, E.~A. (2012).
+\newblock {The Social Brain: Transcriptome Assembly and Characterization of the
+  Hippocampus from a Social Subterranean Rodent, the Colonial Tuco-Tuco
+  (\textit{Ctenomys} \textit{sociabilis})}.
+\newblock {\em PLOS ONE}, 7(9):e45524.
+
+\bibitem[Veal and Caire, 2001]{Veal:2001vp}
+Veal, R. and Caire, W. (2001).
+\newblock {\textit{Peromyscus} \textit{eremicus}}.
+\newblock {\em Mammalian Species}, 118:1--6.
+
+\bibitem[Walsberg, 2000]{Walsberg:2000uu}
+Walsberg, G. (2000).
+\newblock {Small mammals in hot deserts: Some generalizations revisited}.
+\newblock {\em Bioscience}, 50(2):109--120.
+
+\bibitem[Wheeler and Eddy, 2013]{Wheeler:2013gj}
+Wheeler, T.~J. and Eddy, S.~R. (2013).
+\newblock {nhmmer: DNA homology search with profile HMMs}.
+\newblock {\em Bioinformatics}, 29(19):2487--2489.
+
+\bibitem[Yang, 2007]{Yang:2007ki}
+Yang, Z. (2007).
+\newblock {PAML 4: Phylogenetic Analysis by Maximum Likelihood}.
+\newblock {\em Molecular Biology and Evolution}, 24(8):1586--1591.
+
+\bibitem[Yang and dos Reis, 2011]{Yang:2011bm}
+Yang, Z. and dos Reis, M. (2011).
+\newblock {Statistical Properties of the Branch-Site Test of Positive
+  Selection}.
+\newblock {\em Molecular Biology and Evolution}, 28(3):1217--1228.
 
 \end{thebibliography}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.5.30)  27 SEP 2014 17:55
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.5.30)  27 SEP 2014 19:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -9,8 +9,8 @@ LaTeX2e <2011/06/27>
 Babel <3.9f> and hyphenation patterns for 78 languages loaded.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2013/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count80
 \c@section=\count81
@@ -23,6 +23,13 @@ File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count88
 )
 (/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
@@ -87,13 +94,13 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen103
-\Hy@linkcounter=\count88
-\Hy@pagecounter=\count89
+\Hy@linkcounter=\count89
+\Hy@pagecounter=\count90
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count90
+\Hy@SavedSpaceFactor=\count91
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -105,7 +112,7 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count91
+\c@Hy@tempcnt=\count92
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
@@ -113,7 +120,7 @@ Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen104
-\Fld@menulength=\count92
+\Fld@menulength=\count93
 \Field@Width=\dimen105
 \Fld@charsize=\dimen106
 Package hyperref Info: Hyper figures OFF on input line 6295.
@@ -125,9 +132,9 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count93
-\c@Item=\count94
-\c@Hfootnote=\count95
+\Hy@abspage=\count94
+\c@Item=\count95
+\c@Hfootnote=\count96
 )
 
 Package hyperref Message: Driver (autodetected): hxetex.
@@ -143,10 +150,10 @@ Package: stringenc 2011/12/02 v1.10 Convert strings between diff. encodings (HO
 )
 )
 \pdfm@box=\box26
-\c@Hy@AnnotLevel=\count96
-\HyField@AnnotCount=\count97
-\Fld@listcount=\count98
-\c@bookmark@seq@number=\count99
+\c@Hy@AnnotLevel=\count97
+\HyField@AnnotCount=\count98
+\Fld@listcount=\count99
+\c@bookmark@seq@number=\count100
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
@@ -157,21 +164,21 @@ Package rerunfilecheck Info: Feature \pdfmdfivesum is not available
 tly
 (rerunfilecheck)             and the loading of the package is aborted.
 )
-\Hy@SectionHShift=\skip43
+\Hy@SectionHShift=\skip45
 )
 (/usr/local/texlive/2013/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 Invalid UTF-8 byte or sequence at line 296 replaced by U+FFFD.
-\linenopenalty=\count100
+\linenopenalty=\count101
 \output=\toks15
-\linenoprevgraf=\count101
+\linenoprevgraf=\count102
 \linenumbersep=\dimen107
 \linenumberwidth=\dimen108
-\c@linenumber=\count102
-\c@pagewiselinenumber=\count103
-\c@LN@truepage=\count104
-\c@internallinenumber=\count105
-\c@internallinenumbers=\count106
+\c@linenumber=\count103
+\c@pagewiselinenumber=\count104
+\c@LN@truepage=\count105
+\c@internallinenumber=\count106
+\c@internallinenumbers=\count107
 \quotelinenumbersep=\dimen109
 \bframerule=\dimen110
 \bframesep=\dimen111
@@ -180,7 +187,7 @@ LaTeX Info: Redefining \\ on input line 3056.
 )
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
-\@mathmargin=\skip44
+\@mathmargin=\skip46
 
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -198,13 +205,13 @@ Package: amsbsy 1999/11/29 v1.2d
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count107
+\inf@bad=\count108
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count108
-\leftroot@=\count109
+\uproot@=\count109
+\leftroot@=\count110
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count110
-\DOTSCASE@=\count111
+\classnum@=\count111
+\DOTSCASE@=\count112
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
@@ -213,15 +220,15 @@ LaTeX Info: Redefining \cdots on input line 466.
 \big@size=\dimen114
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count112
-\c@MaxMatrixCols=\count113
+\macc@depth=\count113
+\c@MaxMatrixCols=\count114
 \dotsspace@=\muskip11
-\c@parentequation=\count114
-\dspbrk@lvl=\count115
+\c@parentequation=\count115
+\dspbrk@lvl=\count116
 \tag@help=\toks17
-\row@=\count116
-\column@=\count117
-\maxfields@=\count118
+\row@=\count117
+\column@=\count118
+\maxfields@=\count119
 \andhelp@=\toks18
 \eqnshift@=\dimen115
 \alignsep@=\dimen116
@@ -230,8 +237,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \totwidth@=\dimen119
 \lineht@=\dimen120
 \@envbody=\toks19
-\multlinegap=\skip45
-\multlinetaggap=\skip46
+\multlinegap=\skip47
+\multlinetaggap=\skip48
 \mathdisplay@stack=\toks20
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
@@ -248,8 +255,8 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 ))
 (/usr/local/texlive/2013/texmf-dist/tex/latex/changepage/chngpage.sty
 Package: chngpage 2009/10/20 v1.2b change page layout
-\c@cp@cnt=\count119
-\c@cp@tempcnt=\count120
+\c@cp@cnt=\count120
+\c@cp@tempcnt=\count121
 )
 (/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
@@ -271,11 +278,6 @@ File: xetex.def 2013/04/29 v0.96 LaTeX color/graphics driver for XeTeX (RRM/JK)
 ))
 \Gin@req@height=\dimen121
 \Gin@req@width=\dimen122
-)
-(/usr/local/texlive/2013/texmf-dist/tex/latex/cite/cite.sty
-LaTeX Info: Redefining \cite on input line 302.
-LaTeX Info: Redefining \nocite on input line 373.
-Package: cite 2010/09/10  v 5.3
 )
 (/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
@@ -299,7 +301,7 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \caption@parindent=\dimen128
 \caption@hangindent=\dimen129
 )
-\c@ContinuedFloat=\count121
+\c@ContinuedFloat=\count122
 Package caption Info: hyperref package is loaded.
 )
 (/Users/macmanes/Documents/pero_transcriptome/.texpadtmp/Pero_Transcriptome.aux
@@ -330,7 +332,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count122
+\c@section@level=\count123
 )
 LaTeX Info: Redefining \ref on input line 66.
 LaTeX Info: Redefining \pageref on input line 66.
@@ -379,34 +381,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 99--100
 
  []
 
-[2]
+[2] [3]
 LaTeX Font Info:    Try loading font information for OML+cmr on input line 121.
 
  (/usr/local/texlive/2013/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 121.
 
 
-LaTeX Warning: Citation `Lowe:2014iv' on page 3 undefined on input line 121.
+Package natbib Warning: Citation `Lowe:2014iv' on page 4 undefined on input lin
+e 121.
 
 
-LaTeX Warning: Citation `Vijay:2012gyandMacManesunpublishedobservations' on pag
-e 3 undefined on input line 121.
-
-[3]
-Overfull \hbox (1.67249pt too wide) in paragraph at lines 124--125
-\OT1/cmr/m/n/10.95 sembl ([]$\OT1/cmtt/m/n/10.95 ftp : / / ftp . ensembl . org 
-/ pub / release-[]75 / fasta / mus _ musculus/$[]\OT1/cmr/m/n/10.95 ) and the \
-OT1/cmr/m/it/10.95 Per-omyscus
- []
+Package natbib Warning: Citation `Vijay:2012gy and MacManes unpublished observa
+tions' on page 4 undefined on input line 121.
 
 
-Overfull \hbox (42.71968pt too wide) in paragraph at lines 124--125
-\OT1/cmr/m/it/10.95 man-ic-u-la-tus \OT1/cmr/m/n/10.95 ref-er-ence tran-scrip-t
-ome from NCBI ([]$\OT1/cmtt/m/n/10.95 ftp : / / ftp . ncbi . nlm . nih . gov / 
-genomes / Peromyscus _
+Overfull \hbox (17.39784pt too wide) in paragraph at lines 124--125
+\OT1/cmr/m/n/12 datasets from En-sembl ([]$\OT1/cmtt/m/n/12 ftp : / / ftp . ens
+embl . org / pub / release-[]75 / fasta / mus _ musculus/$[]\OT1/cmr/m/n/12 )
  []
 
 
@@ -414,7 +409,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--125
 
  []
 
-
+[4]
 Underfull \hbox (badness 10000) in paragraph at lines 130--131
 
  []
@@ -424,12 +419,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 132--133
 
  []
 
-[4]
+
 Underfull \hbox (badness 10000) in paragraph at lines 136--137
 
  []
 
-
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 141--142
 
  []
@@ -439,12 +434,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 149--151
 
  []
 
-[5]
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
 
-[6]
+[7]
 File: /Users/macmanes/Documents/pero_transcriptome/venn.jpeg Graphic file (type
  QTm)
  <use  "/Users/macmanes/Documents/pero_transcriptome/venn.jpeg" >
@@ -452,9 +447,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 190--191
 
  []
 
-[7]
+[8]
 Underfull \hbox (badness 10000) in paragraph at lines 192--193
 
+ []
+
+
+Overfull \hbox (2.16592pt too wide) in paragraph at lines 194--195
+\OT1/cmtt/m/n/12 dropbox . com / sh / 2jwzd8p6n6eluco / AAAO3nSdXb _ u4wtQZRTwq
+W9ia ? dl = 0$[]\OT1/cmr/m/n/12 .). From this fil-
+ []
+
+
+Overfull \hbox (2.05885pt too wide) in paragraph at lines 194--195
+[]$\OT1/cmtt/m/n/12 https : / / www . dropbox . com / sh / 2jwzd8p6n6eluco / AA
+AO3nSdXb _ u4wtQZRTwqW9ia ? dl = 0$[]\OT1/cmr/m/n/12 .. 
  []
 
 
@@ -468,11 +475,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 196--197
  []
 
 
-Overfull \hbox (20.61673pt too wide) in paragraph at lines 199--213
+Overfull \hbox (49.4847pt too wide) in paragraph at lines 199--213
 [][] 
  []
 
-[8]
+[9]
 Underfull \hbox (badness 10000) in paragraph at lines 223--224
 
  []
@@ -482,53 +489,63 @@ Underfull \hbox (badness 10000) in paragraph at lines 226--227
 
  []
 
+[10]
 File: /Users/macmanes/Documents/pero_transcriptome/tajD.jpeg Graphic file (type
  QTm)
-<use  "/Users/macmanes/Documents/pero_transcriptome/tajD.jpeg" > [9]
+ <use  "/Users/macmanes/Documents/pero_transcriptome/tajD.jpeg" >
 Underfull \hbox (badness 10000) in paragraph at lines 236--237
 
  []
 
 
+Overfull \hbox (17.66167pt too wide) in paragraph at lines 239--253
+[][] 
+ []
+
+[11]
 Underfull \hbox (badness 10000) in paragraph at lines 259--260
 
  []
 
-[10]
+
+Overfull \hbox (31.20876pt too wide) in paragraph at lines 262--276
+[][] 
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 284--285
 
  []
 
-
+[12]
 Underfull \hbox (badness 10000) in paragraph at lines 289--290
 
  []
 
-[11]
+
 (/Users/macmanes/Documents/pero_transcriptome/.texpadtmp/Pero_Transcriptome.bbl
-[12] [13] [14])
+[13] [14] [15] [16])
+
+Package natbib Warning: There were undefined citations.
+
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 342.
- [15]
+[17]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 342.
 
 (/Users/macmanes/Documents/pero_transcriptome/.texpadtmp/Pero_Transcriptome.aux
 )
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 342.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 342.
-
-
-LaTeX Warning: There were undefined references.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 342.
  ) 
 Here is how much of TeX's memory you used:
- 10390 strings out of 493938
- 148736 string characters out of 6148857
- 221643 words of memory out of 5000000
- 13582 multiletter control sequences out of 15000+600000
- 11993 words of font info for 44 fonts, out of 8000000 for 9000
+ 10653 strings out of 493938
+ 152676 string characters out of 6148857
+ 227393 words of memory out of 5000000
+ 13882 multiletter control sequences out of 15000+600000
+ 12291 words of font info for 45 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 36i,7n,38p,1462b,457s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,7n,38p,1469b,497s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on /Users/macmanes/Documents/pero_transcriptome/.texpadtmp/Pero_
-Transcriptome.pdf (15 pages).
+Transcriptome.pdf (17 pages).

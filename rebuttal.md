@@ -7,7 +7,7 @@ Pero Transcriptome Revision
 
 >Basic reporting
 
-
+--- 
 1. The authors do a good job at framing their work, showing why the study is needed, the limitations and the how the work will/can lead to future research.
 
 
@@ -23,35 +23,31 @@ Pero Transcriptome Revision
 
 4. I am trying to understand the filtering process for the assembled reads. From my understanding (Page 4, lines 103:109) sequences were filtered using Blastn, (Page 4, lines 113:120) annotated using Blastn, HMMER3 and Transdecoder. Is my understanding correct? If so, why were the assembled sequences filtered with Blastn before annotated with Blastn and HMMER3? I thought the point of HMMER3 was to retain divergent sequences not detected by blastn.
 
-	*Yes, I filtered based on blastN to the Peromyscus maniculatus and Mus musculus transcriptomes, as well as a Mus ncRNA dataset. Given the combo of P. maniculatus being so closely related (and with a high quality annotation) and Mus being more distantly related but fantastically annotated coding regions, I am confident that I am not missing a substantial number of 'real' transcripts by employing this strategy. I think it is likely that I could have recovered more contigs using Pfam, but I would worry that the sensitivity of a HMM based search may result in the recovery of 'false' transcripts, which I am relatively intolerant of.*
+	*Yes, I filtered based on blastN to the Peromyscus maniculatus and Mus musculus transcriptomes, as well as a Mus ncRNA dataset. Given the combo of P. maniculatus being so closely related (and with a high quality annotation) and Mus being more distantly related but fantastically annotated coding regions, I am confident that I am not missing a substantial number of 'real' transcripts by employing this strategy. I think it is likely that I could have recovered more contigs using Pfam, but I would worry that the sensitivity of a HMM based search may result in the recovery of 'false' transcripts, which I am relatively intolerant of. I am electing to not filter based on Pfam, understanding the implications of this.*
 
 5. For the natural section results, I think it would be interest to add more than two genes. Perhaps the top and bottom 10 genes from the Tajima’s D analysis.
+
+	*I have added a few more genes, Aqp1,2,4,9. There is not evidence of positive selection in the eremicus lineage for any of these genes, as expected. The de novo (e.g. NOT focused on candidate genes) exploration of positive selection on P. eremicus will be presented in a later work, in connection with a genome sequence*
+
 6. It would also be nice to have the various parts of the analysis in a repository, for reviewing and open science purposes.
+
+	*I will make sure that the scripts are placed in a public GitHub repo.*
 
 Overall I believe it is a good paper with interesting analysis, and cool results.
 
 
-Elijah K Lowe and C. Titus Brown
 
-Experimental design
+> Reviewer 2
 
-Some more explicit details to enable replication would be welcome, as described above.
-
-Validity of the findings
-
-No comments
-
-Comments for the author
-
-No comments.
-
-Reviewer 2
-
-Basic reporting
+>Basic reporting
+---
 
 Major comments in basic reporting section:
 
 1. Citation format should match the "name, year" format described for the journal, currently it is in a different, numbered format
+
+	*I have fixed this*
+
 
 2. Introduction, lines 46-47: In discussing that P. eremicus does not drink water, is there a study or citation that gives their lifespan and/or drinking habits? Are the authors referring back to the species account cited in the previous section?
 
