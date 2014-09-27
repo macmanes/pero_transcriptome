@@ -171,6 +171,11 @@ Haas BJ, Papanicolaou A, Yassour M, Grabherr M, Blood PD, et~al. (2013)
 \newblock Nature Protocols 8: 1494--1512.
 \bibAnnoteFile{Haas:2013jq}
 
+\bibitem{Pop:2009dp}
+Pop M (2009) {Genome assembly reborn: recent computational challenges}.
+\newblock Briefings In Bioinformatics 10: 354--366.
+\bibAnnoteFile{Pop:2009dp}
+
 \bibitem{MacManes:2012bu}
 \textbf{MacManes} MD, Lacey EA (2012) {The Social Brain: Transcriptome Assembly
   and Characterization of the Hippocampus from a Social Subterranean Rodent,

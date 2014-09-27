@@ -17,46 +17,47 @@ I was expecting a `,' or a `}'---line 43664 of file /Users/macmanes/Documents/pe
  : @article{Flatz:2010io,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "Lowe:2014iv"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 38 entries,
+You've used 39 entries,
             2441 wiz_defined-function locations,
-            800 strings with 13646 characters,
-and the built_in function-call counts, 34919 in all, are:
-= -- 3266
-> -- 604
+            808 strings with 13786 characters,
+and the built_in function-call counts, 35511 in all, are:
+= -- 3323
+> -- 608
 < -- 0
-+ -- 302
-- -- 151
-* -- 3060
-:= -- 4203
-add.period$ -- 76
-call.type$ -- 38
-change.case$ -- 38
++ -- 304
+- -- 152
+* -- 3109
+:= -- 4276
+add.period$ -- 78
+call.type$ -- 39
+change.case$ -- 39
 chr.to.int$ -- 0
-cite$ -- 76
-duplicate$ -- 3426
-empty$ -- 3594
-format.name$ -- 184
-if$ -- 7747
+cite$ -- 78
+duplicate$ -- 3484
+empty$ -- 3658
+format.name$ -- 185
+if$ -- 7880
 int.to.chr$ -- 0
-int.to.str$ -- 38
-missing$ -- 414
-newline$ -- 205
-num.names$ -- 38
-pop$ -- 419
+int.to.str$ -- 39
+missing$ -- 422
+newline$ -- 210
+num.names$ -- 39
+pop$ -- 425
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 282
+skip$ -- 285
 stack$ -- 0
-substring$ -- 5199
-swap$ -- 824
+substring$ -- 5287
+swap$ -- 840
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 263
-width$ -- 40
-write$ -- 431
+while$ -- 267
+width$ -- 41
+write$ -- 442
 (There were 3 error messages)
