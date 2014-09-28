@@ -6,61 +6,46 @@ White space in argument---line 39 of file Pero_Transcriptome.aux
  : \citation{Vijay:2012gy
  :                        and MacManes unpublished observations}
 I'm skipping whatever remains of this command
-Database file #1: /Users/macmanes/Documents/pero_transcriptome/biblio.bib.bib
-Repeated entry---line 1418 of file /Users/macmanes/Documents/pero_transcriptome/biblio.bib.bib
- : @article{Nielsen:1995uq
- :                        ,
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 26022 of file /Users/macmanes/Documents/pero_transcriptome/biblio.bib.bib
- : 
- : @article{Chesh:2012jd,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 43664 of file /Users/macmanes/Documents/pero_transcriptome/biblio.bib.bib
- : 
- : @article{Flatz:2010io,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Lowe:2014iv"
-You've used 39 entries,
+Database file #1: /Users/macmanes/Documents/pero_transcriptome/biblio2.bib.bib
+You've used 40 entries,
             1935 wiz_defined-function locations,
-            743 strings with 13103 characters,
-and the built_in function-call counts, 19048 in all, are:
-= -- 1790
-> -- 1121
-< -- 12
-+ -- 404
-- -- 404
-* -- 1875
-:= -- 3371
-add.period$ -- 117
-call.type$ -- 39
-change.case$ -- 397
-chr.to.int$ -- 39
-cite$ -- 39
-duplicate$ -- 544
-empty$ -- 1141
-format.name$ -- 455
-if$ -- 3561
+            747 strings with 13316 characters,
+and the built_in function-call counts, 19589 in all, are:
+= -- 1850
+> -- 1139
+< -- 13
++ -- 410
+- -- 410
+* -- 1920
+:= -- 3455
+add.period$ -- 120
+call.type$ -- 40
+change.case$ -- 405
+chr.to.int$ -- 40
+cite$ -- 40
+duplicate$ -- 564
+empty$ -- 1179
+format.name$ -- 462
+if$ -- 3672
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 39
-newline$ -- 198
-num.names$ -- 117
-pop$ -- 309
+missing$ -- 40
+newline$ -- 203
+num.names$ -- 120
+pop$ -- 317
 preamble$ -- 1
-purify$ -- 397
+purify$ -- 405
 quote$ -- 0
-skip$ -- 404
+skip$ -- 419
 stack$ -- 0
-substring$ -- 1347
-swap$ -- 39
-text.length$ -- 0
+substring$ -- 1404
+swap$ -- 45
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 234
+type$ -- 240
 warning$ -- 0
-while$ -- 145
+while$ -- 153
 width$ -- 0
-write$ -- 508
-(There were 4 error messages)
+write$ -- 521
+(There was 1 error message)

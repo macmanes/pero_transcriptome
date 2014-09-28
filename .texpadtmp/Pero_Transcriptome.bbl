@@ -4,7 +4,7 @@
 Altschuler, E.~M., Nagle, R.~B., Braun, E.~J., Lindstedt, S.~L., and Krutzsch,
   P.~H. (1979).
 \newblock {Morphological study of the desert heteromyid kidney with emphasis on
-  the genus Perognathus.}
+  the genus \textit{Perognathus}}.
 \newblock {\em The Anatomical Record}, 194(3):461--468.
 
 \bibitem[Aubry et~al., 2014]{Aubry:2014en}
@@ -29,7 +29,7 @@ Camacho, C., Coulouris, G., Avagyan, V., Ma, N., Papadopoulos, J., Bealer, K.,
 
 \bibitem[Chamary et~al., 2006]{Chamary:2006db}
 Chamary, J.~V., Parmley, J.~L., and Hurst, L.~D. (2006).
-\newblock {Hearing silence: non-neutral evolution at synonymous sites in
+\newblock {Hearing silence: Non-neutral evolution at synonymous sites in
   mammals}.
 \newblock {\em Nature Reviews Genetics}, 7(2):98--108.
 
@@ -52,7 +52,7 @@ Gallardo, P.~A., Cort{\'e}s, A., and Bozinovic, F. (2005).
 Giorello, F.~M., Feijoo, M., D'El{\'\i}a, G., Valdez, L., Opazo, J.~C., Varas,
   V., Naya, D.~E., and Lessa, E.~P. (2014).
 \newblock {Characterization of the kidney transcriptome of the South American
-  olive mouse Abrothrix olivacea.}
+  olive mouse \textit{Abrothrix olivacea}.}
 \newblock {\em BMC Genomics}, 15(1):446.
 
 \bibitem[Haas et~al., 2013]{Haas:2013jq}
@@ -73,21 +73,21 @@ Heo, Y., Wu, X.-L., Chen, D., Ma, J., and Hwu, W.-M. (2014).
 \bibitem[Kaissling et~al., 1975]{Kaissling:1975uu}
 Kaissling, B., De~Rouffignac, C., Barrett, J.~M., and Kriz, W. (1975).
 \newblock {The structural organization of the kidney of the desert rodent
-  Psammomys obesus.}
+  \textit{Psammomys obesus}}.
 \newblock {\em Anatomy and Embryology}, 148(2):121--143.
 
 \bibitem[Korneliussen et~al., 2013]{Korneliussen:2013uz}
 Korneliussen, Thorfinn Sand~Moltke, I., Albrechtsen, a., and Nielsen, R.
   (2013).
 \newblock {Calculation of Tajima's D and other neutrality test statistics from
-  low depth next-generation sequencing data.}
+  low depth next-generation sequencing data}.
 \newblock {\em BMC Bioinformatics}, 14(1):289.
 
 \bibitem[Li, 2013]{Li:2013wn}
 Li, H. (2013).
 \newblock {Aligning sequence reads, clone sequences and assembly contigs with
   BWA-MEM}.
-\newblock {\em arXiv.org}.
+\newblock {\em arXiv}.
 
 \bibitem[Li and Godzik, 2006]{Li:2006hr}
 Li, W. and Godzik, A. (2006).
@@ -100,15 +100,28 @@ Lohse, M., Bolger, A.~M., Nagel, A., Fernie, A.~R., Lunn, J.~E., Stitt, M., and
   Usadel, B. (2012).
 \newblock {RobiNA: A user-friendly, integrated software solution for
   RNA-Seq-based transcriptomics.}
-\newblock {\em Nucleic Acids Research}, 40(Web Server issue):W622--7.
+\newblock {\em Nucleic Acids Research}, 40(1):W622--7.
+
+\bibitem[Lowe et~al., 2014]{Lowe:2014iv}
+Lowe, E.~K., Swalla, B.~J., and Brown, C.~T. (2014).
+\newblock {Evaluating a lightweight transcriptome assembly pipeline on two
+  closely related Ascidian species}.
+\newblock {\em PeerJ Preprints}, pages 1--11.
 
 \bibitem[MacManes, 2014]{MacManes:2014io}
 MacManes, M.~D. (2014).
 \newblock {On the optimal trimming of high-throughput mRNA sequence data}.
-\newblock {\em Frontiers in Genetics}, 5.
+\newblock {\em Frontiers in Genetics}, 5:1--13.
+
+\bibitem[MacManes and Lacey, 2012]{MacManes:2012bu}
+MacManes, M.~D. and Lacey, E.~A. (2012).
+\newblock {The Social Brain: Transcriptome Assembly and Characterization of the
+  Hippocampus from a Social Subterranean Rodent, the Colonial Tuco-Tuco
+  (\textit{Ctenomys} \textit{sociabilis})}.
+\newblock {\em PLOS ONE}, 7(9):e45524.
 
 \bibitem[Marra et~al., 2014]{Marra:2014de}
-Marra, N.~J., Romero, a., and DeWoody, J.~a. (2014).
+Marra, N.~J., Romero, A., and DeWoody, J.~A. (2014).
 \newblock {Natural selection and the genetic basis of osmoregulation in
   heteromyid rodents as revealed by RNA-seq}.
 \newblock {\em Molecular Ecology}, 23(11):2699--2711.
@@ -117,7 +130,7 @@ Marra, N.~J., Romero, a., and DeWoody, J.~a. (2014).
 Mbandi, S.~K., Hesse, U., Rees, D. J.~G., and Christoffels, A. (2014).
 \newblock {A glance at quality score: Implication for \textit{de novo}
   transcriptome reconstruction of Illumina reads.}
-\newblock {\em Frontiers in Genetics}, 5:17.
+\newblock {\em Frontiers in Genetics}, 5:1--17.
 
 \bibitem[Mi, 2004]{Mi:2004iv}
 Mi, H. (2004).
@@ -137,7 +150,7 @@ Mobasheri, A., Marples, D., Young, I.~S., Floyd, R.~V., Moskaluk, C.~A., and
 Nielsen, S., Chou, C., Marples, D., Christensen, E., Kishore, B., and Knepper,
   M. (1995).
 \newblock {Vasopressin increases water permeability of kidney collecting duct
-  by inducing translocation of aquaporin-CD water channels to plasma-membrane}.
+  by inducing translocation of Aquaporin-CD water channels to plasma-membrane}.
 \newblock {\em Proceedings of The National Academy of Sciences of The United
   States of America}, 92(4):1013--1017.
 
@@ -151,12 +164,12 @@ Nielsen, S., Kwon, T.~H., Christensen, B.~M., Promeneur, D., Fr{\o}kiaer, J.,
 Panhuis, T.~M., Broitman-Maduro, G., Uhrig, J., Maduro, M., and Reznick, D.~N.
   (2011).
 \newblock {Analysis of Expressed Sequence Tags from the Placenta of the
-  Live-Bearing Fish Poeciliopsis (Poeciliidae)}.
+  Live-Bearing Fish \textit{Poeciliopsis} (Poeciliidae)}.
 \newblock {\em Journal of Heredity}, 102(3):352--361.
 
 \bibitem[Pop, 2009]{Pop:2009dp}
 Pop, M. (2009).
-\newblock {Genome assembly reborn: recent computational challenges}.
+\newblock {Genome assembly reborn: Recent computational challenges}.
 \newblock {\em Briefings In Bioinformatics}, 10(4):354--366.
 
 \bibitem[Punta et~al., 2012]{Punta:2012ko}
@@ -200,7 +213,7 @@ Shorter, K.~R., Crossland, J.~P., Webb, D., Szalai, G., Felder, M.~R., and
 \newblock {\em Genetics Research International}, 2012:1--11.
 
 \bibitem[Shorter et~al., 2014]{Shorter:2014kw}
-Shorter, K.~R., Owen, A., anderson, V., Hall-South, A.~C., Hayford, S., Cakora,
+Shorter, K.~R., Owen, A., Anderson, V., Hall-South, A.~C., Hayford, S., Cakora,
   P., Crossland, J.~P., Georgi, V. R.~M., Perkins, A., Kelly, S.~J., Felder,
   M.~R., and Vrana, P.~B. (2014).
 \newblock {Natural genetic variation underlying differences in
@@ -220,13 +233,6 @@ Tatum, R., Zhang, Y., Salleng, K., Lu, Z., Lin, J.~J., Lu, Q., Jeansonne,
 \newblock {Renal salt wasting and chronic dehydration in claudin-7-deficient
   mice}.
 \newblock {\em AJP: Renal Physiology}, 298(1):F24--F34.
-
-\bibitem[\textbf{MacManes} and Lacey, 2012]{MacManes:2012bu}
-\textbf{MacManes}, M.~D. and Lacey, E.~A. (2012).
-\newblock {The Social Brain: Transcriptome Assembly and Characterization of the
-  Hippocampus from a Social Subterranean Rodent, the Colonial Tuco-Tuco
-  (\textit{Ctenomys} \textit{sociabilis})}.
-\newblock {\em PLOS ONE}, 7(9):e45524.
 
 \bibitem[Veal and Caire, 2001]{Veal:2001vp}
 Veal, R. and Caire, W. (2001).
