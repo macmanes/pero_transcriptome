@@ -21,6 +21,11 @@ Bedford, J.~J., Leader, J.~P., and Walker, R.~J. (2003).
 \newblock {\em Journal of the American Society of Nephrology},
   14(10):2581--2587.
 
+\bibitem[Bolger et~al., 2014]{Bolger:2014ek}
+Bolger, A.~M., Lohse, M., and Usadel, B. (2014).
+\newblock {Trimmomatic: a flexible trimmer for Illumina sequence data}.
+\newblock {\em Bioinformatics}, 30(15):btu170--2120.
+
 \bibitem[Camacho et~al., 2009]{Camacho:2009fc}
 Camacho, C., Coulouris, G., Avagyan, V., Ma, N., Papadopoulos, J., Bealer, K.,
   and Madden, T.~L. (2009).
@@ -94,13 +99,6 @@ Li, W. and Godzik, A. (2006).
 \newblock {Cd-hit: A fast program for clustering and comparing large sets of
   protein or nucleotide sequences.}
 \newblock {\em Bioinformatics}, 22(13):1658--1659.
-
-\bibitem[Lohse et~al., 2012]{Lohse:2012fg}
-Lohse, M., Bolger, A.~M., Nagel, A., Fernie, A.~R., Lunn, J.~E., Stitt, M., and
-  Usadel, B. (2012).
-\newblock {RobiNA: A user-friendly, integrated software solution for
-  RNA-Seq-based transcriptomics.}
-\newblock {\em Nucleic Acids Research}, 40(1):W622--7.
 
 \bibitem[Lowe et~al., 2014]{Lowe:2014iv}
 Lowe, E.~K., Swalla, B.~J., and Brown, C.~T. (2014).
@@ -238,6 +236,14 @@ Tatum, R., Zhang, Y., Salleng, K., Lu, Z., Lin, J.~J., Lu, Q., Jeansonne,
 Veal, R. and Caire, W. (2001).
 \newblock {\textit{Peromyscus} \textit{eremicus}}.
 \newblock {\em Mammalian Species}, 118:1--6.
+
+\bibitem[Vijay et~al., 2013]{Vijay:2012gy}
+Vijay, N., Poelstra, J.~W., K{\"u}nstner, A., Wolf, J. B.~W., and Wolf, J.
+  B.~W. (2013).
+\newblock {Challenges and strategies in transcriptome assembly and differential
+  gene expression quantification. A comprehensive \textit{in silico} assessment
+  of RNA-seq experiments}.
+\newblock {\em Molecular Ecology}, 22(3):620--634.
 
 \bibitem[Walsberg, 2000]{Walsberg:2000uu}
 Walsberg, G. (2000).

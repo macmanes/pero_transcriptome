@@ -2,50 +2,45 @@ This is BibTeX, Version 0.99d (TeX Live 2013)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Pero_Transcriptome.aux
 The style file: apalike.bst
-White space in argument---line 39 of file Pero_Transcriptome.aux
- : \citation{Vijay:2012gy
- :                        and MacManes unpublished observations}
-I'm skipping whatever remains of this command
 Database file #1: /Users/macmanes/Documents/pero_transcriptome/biblio2.bib.bib
-You've used 40 entries,
+You've used 41 entries,
             1935 wiz_defined-function locations,
-            745 strings with 13264 characters,
-and the built_in function-call counts, 19589 in all, are:
-= -- 1850
-> -- 1139
+            750 strings with 13472 characters,
+and the built_in function-call counts, 20001 in all, are:
+= -- 1894
+> -- 1147
 < -- 13
-+ -- 410
-- -- 410
-* -- 1920
-:= -- 3455
-add.period$ -- 120
-call.type$ -- 40
-change.case$ -- 405
-chr.to.int$ -- 40
-cite$ -- 40
-duplicate$ -- 564
-empty$ -- 1179
-format.name$ -- 462
-if$ -- 3672
++ -- 412
+- -- 412
+* -- 1958
+:= -- 3522
+add.period$ -- 123
+call.type$ -- 41
+change.case$ -- 411
+chr.to.int$ -- 41
+cite$ -- 41
+duplicate$ -- 578
+empty$ -- 1214
+format.name$ -- 465
+if$ -- 3754
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 40
-newline$ -- 203
-num.names$ -- 120
-pop$ -- 317
+missing$ -- 41
+newline$ -- 208
+num.names$ -- 123
+pop$ -- 321
 preamble$ -- 1
-purify$ -- 405
+purify$ -- 411
 quote$ -- 0
-skip$ -- 419
+skip$ -- 429
 stack$ -- 0
-substring$ -- 1404
-swap$ -- 45
+substring$ -- 1456
+swap$ -- 46
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 240
+type$ -- 246
 warning$ -- 0
-while$ -- 153
+while$ -- 157
 width$ -- 0
-write$ -- 521
-(There was 1 error message)
+write$ -- 534
