@@ -143,9 +143,13 @@ Minor Revisions:
 
 3. Do the authors have data on Tajima's D for either of the genes tested in the branch sites test? If so they should report these values.
 
+	*Excellent idea. See the new table 5*
 
 
-Minor comments:
 
-Line 200: Do the authors mean complete coding sequence or open reading frame rather than 'complete exons'?
+> Minor comments:
+
+4. Line 200: Do the authors mean complete coding sequence or open reading frame rather than 'complete exons'?
+
+	*Yes, the wording has been changed to 'open reading frame'*
 
