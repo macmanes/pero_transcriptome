@@ -27,7 +27,7 @@ Pero Transcriptome Revision
 
 5. For the natural section results, I think it would be interest to add more than two genes. Perhaps the top and bottom 10 genes from the Tajima’s D analysis.
 
-	*I have added a few more genes, Aqp1,2,4,9. There is not evidence of positive selection in the eremicus lineage for any of these genes, as expected. The de novo (e.g. NOT focused on candidate genes) exploration of positive selection on P. eremicus will be presented in a later work, in connection with a genome sequence*
+	*I have added a few more genes, Aqp 1,2,4,9. There is not evidence of positive selection in the eremicus lineage for any of these genes, as expected. The de novo (e.g. NOT focused on candidate genes) exploration of positive selection on P. eremicus will be presented in a later work, in connection with a genome sequence*
 
 6. It would also be nice to have the various parts of the analysis in a repository, for reviewing and open science purposes.
 
@@ -40,6 +40,7 @@ Overall I believe it is a good paper with interesting analysis, and cool results
 > Reviewer 2
 
 >Basic reporting
+
 ---
 
 Major comments in basic reporting section:
@@ -51,50 +52,86 @@ Major comments in basic reporting section:
 
 2. Introduction, lines 46-47: In discussing that P. eremicus does not drink water, is there a study or citation that gives their lifespan and/or drinking habits? Are the authors referring back to the species account cited in the previous section?
 
+	*I have changed the placement of the ref to make it more clear the issue of lifespan. The issue of drinking, however, seems like relatively straightforward. After all, these are animals that live in the desert. Rain may happen on rare occasions, but by definition deserts are habitats exceptionally devoid of naturally-occuring drinking water.*
+
 3. In reporting the individuals captured the authors should provide some metadata such as age (juvenile vs. adult) and sex (were there equal numbers of each sex, or more of one sex than the other)?
+
+	*This is done. Line 72*
 
 4. In the methods lines 86-89, the specific multiplexing and number of lanes of sequencing should be reported (how many individuals were sequenced on each lane, etc.) Perhaps this information could be included in table 1.
 
+	*This information is largely there. For instance, I specify that the 4 reference tissue samples were sequenced on 2 lanes of a Hiseq 2500. The 15 replicate samples were sequence across several lanes, so this number (how many individuals sequenced per lane) is not representative. Instead, the number of reads seems like the more informative number. *
+
 5. The figure legend for figure 1 needs to be more descriptive and informative.
+
+	*I have added more detail*
 
 Minor Revisions:
 
-Line 106: The abbreviation for transcripts per million (TMP) is provided here but the full term is not stated until line 189, TMP should be defined here first.
+1. Line 106: The abbreviation for transcripts per million (TMP) is provided here but the full term is not stated until line 189, TMP should be defined here first.
 
-Lines 164-168. Should assembly be plural in these two sentences? As it reads, it seems that the authors are referring to one combined assembly of all 4 reference tissues, but given the numbers and the subsequent text this meaning does not seem to be correct and it should instead be 'assemblies'.
+	*I have added the definition at the 1st use of the abbreviation.*
 
-Lines 167-168: The use of 'tissue-specific' terminology is somewhat confusing as this denotes that the transcripts are unique to the tissue but this is clearly not the meaning here given lines 183-185 and figure 1.
+2. Lines 164-168. Should assembly be plural in these two sentences? As it reads, it seems that the authors are referring to one combined assembly of all 4 reference tissues, but given the numbers and the subsequent text this meaning does not seem to be correct and it should instead be 'assemblies'.
 
-Why aren't gene symbols provided for each of the genes in tables 3 and 4, if you are going to report gene symbols for some of the genes why not do so for all of the genes?
+	*Tricky grammer issue. I have changed these terms to their plural*
 
-Line 248 and Line 250: Were p-values truly equal to 0 and 1 or are these rounded estimates, would p<.05 or p>.05 be more appropriate? This may be a matter of personal preference.
-Very Minor/Grammatical revisions:
+3. Lines 167-168: The use of 'tissue-specific' terminology is somewhat confusing as this denotes that the transcripts are unique to the tissue but this is clearly not the meaning here given lines 183-185 and figure 1.
 
-Line 48: The beginning of the sentence should probably read "These rodents have a distinct..."). This is one of several minor grammatical changes/typos that should be addressed but I will not belabor this as it is a very minor point.
+	*Excellent point! I have modified the text. Lines 198:202. It now reads brain-derived*
 
-Experimental design
+4. Why aren't gene symbols provided for each of the genes in tables 3 and 4, if you are going to report gene symbols for some of the genes why not do so for all of the genes?
 
-Major comments:
+	*Genes were given symbols when symbols exist. For some, e.g. h-2 class I histocompatibility antigen XM_006997718.1 has the symbol "LOC102911283". This does not seem informative, so it was left off.*
+
+
+5. Line 248 and Line 250: Were p-values truly equal to 0 and 1 or are these rounded estimates, would p<.05 or p>.05 be more appropriate? This may be a matter of personal preference.
+
+	*These are numbers reported by PAML, so I think it is appropriate to leave them standing as is*
+
+> Very Minor/Grammatical revisions:
+
+6. Line 48: The beginning of the sentence should probably read "These rodents have a distinct..."). This is one of several minor grammatical changes/typos that should be addressed but I will not belabor this as it is a very minor point.
+
+	*Corrected here and a few other places*
+
+>Experimental design
+
+>Major comments:
 
 1. Can the authors provide an explanation for the choice of male reproductive tissue for the reference tissues while leaving out the female reproductive tissue? Presumably one of the other sampled individuals was a female and tissue could have been harvested, yet only the testes were included in the reference transcriptome sequencing.
 
+	*Thanks for bring this up. The 4 tissues were from the male animal that has been sequenced for genome assembly - these 4 tissues will aid in the annotation process. From this animal, I did not sequence all available tissues (e.g. no lung, skeletal muscle, large intestines, etc) secondary to financial constraint. Had I chosen a female animal for genome sequencing, ovary would have been included.*
+
 2. For the sentence from line 136-140 the authors later reference a paper for this, but the citation should probably be included here as well and addressed heteromyid rodents, not just Dipodomys.
+
+	*Excellent point. I have added the citation here and changed Dipodomys to Hetermyid to more accurately reflect the work done in that paper.*
 
 3. Lines 138-142 Did the alignments produced contain insertions/deletions or internal stop codons? If so how were these treated for the PAML analysis? The results of the branch-sites test can be sensitive to alignment errors and with a small number of comparisons the alignments can be inspected manually to ensure this does not occur.
 
+	*The alignments were visually inspected. While some indels do occur (especially in Homo relative to the other rodents), these all occur in units of 3, which to me at least suggests that they are likely accurate. The alignment column in which premature stop codons are treated as missing data in PAML. Line286*
+
 4. Line 143 Clustal-Omega is usually used as a multiple sequence aligner, can the authors provide details on what method it uses for producing a tree and whether branch lengths were provided to PAML or estimated in PAML?
+
+	*Nice catch! It is ClustalW2-Phylogeny. I have changed that in the text, as well as indicate that branch lengths are estimated in this software. Line 168*
 
 5. This may be something planned in subsequent work but could the authors have provided kidney expression data for the 15 additional individuals or tested for differences in expression between the individuals of different sex?
 
-Minor comments:
+	*I would rather not, given this is outside of the current project. I actually did not even calculate individual expression values. I suppose I could if you think it would add significantly to the manuscript (I don't think it does).*
 
-Line 95, do the authors mean PHRED < 2 or PHRED <20?
+>Minor comments:
 
-Line 109 should this say "using default settings"?
+6. Line 95, do the authors mean PHRED < 2 or PHRED <20?
 
-Validity of the findings
+	*Phred <2*
 
-Major comments:
+7. Line 109 should this say "using default settings"?
+
+	*Fixed*
+
+>Validity of the findings
+
+>Major comments:
 
 1. The authors mention calculating the site frequency spectrum for their data in line 133, did anything come of this analysis?
 
