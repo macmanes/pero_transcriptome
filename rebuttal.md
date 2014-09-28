@@ -133,18 +133,19 @@ Minor Revisions:
 
 >Major comments:
 
-1. The authors mention calculating the site frequency spectrum for their data in line 133, did anything come of this analysis?
+8. The authors mention calculating the site frequency spectrum for their data in line 133, did anything come of this analysis?
 
-2. Is anything known about the demographic history of this population? As the authors acknowledge, the patterns used to infer selection according to Tajima's D can also be produced from demographic events and the authors should provide any data that exists on the population history. If this data does not exist the authors should state that this and include demography as a possible explanation of their data in their conclusions about tables 3 and 4.
+	*This SFS analysis was done as part of the calculation of Tajima's D. Nothing per se was done with the SFS itself.*
+
+9. Is anything known about the demographic history of this population? As the authors acknowledge, the patterns used to infer selection according to Tajima's D can also be produced from demographic events and the authors should provide any data that exists on the population history. If this data does not exist the authors should state that this and include demography as a possible explanation of their data in their conclusions about tables 3 and 4.
+
+	*Nothing specific is known of these populations, other than what can be inferred from paleo-climate models of desert expansion over the last 10k years. I have added a claus in the interpretation of Tajima's D to reflect the possibility that demography may impact these metrics. Line 257*
 
 3. Do the authors have data on Tajima's D for either of the genes tested in the branch sites test? If so they should report these values.
+
+
 
 Minor comments:
 
 Line 200: Do the authors mean complete coding sequence or open reading frame rather than 'complete exons'?
 
-Comments for the author
-
-In this study the authors characterized the transcriptome of four separate tissues for an individual Peromyscus eremicus and conducted RNA-seq of kidney tissue of an additional 15 individuals to provide transcriptomic resources for the study of osmoregulation in this desert rodent. The study is sound in its methodology and provides a significant resource, however it does require some modifications and/or clarifications about some of the methodology and data before it could be published. In the above sections I provide suggestions and/or questions that should be addressed.
-
-© 2014, PeerJ, Inc. PO Box 614 Corte Madera, CA 94976, USA
