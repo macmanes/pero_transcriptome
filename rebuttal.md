@@ -31,7 +31,7 @@ Pero Transcriptome Revision
 
 6. It would also be nice to have the various parts of the analysis in a repository, for reviewing and open science purposes.
 
-	*I will make sure that the scripts are placed in a public GitHub repo.*
+	*See https://github.com/macmanes/pero_transcriptome/blob/master/analyses.md, I have also added links to portions of this document in the relevant places in the manuscript.*
 
 ---
 
