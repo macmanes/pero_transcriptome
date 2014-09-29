@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Pero_Transcriptome.aux
 The style file: apalike.bst
 Database file #1: /Users/macmanes/Documents/pero_transcriptome/biblio2.bib.bib
-You've used 41 entries,
+You've used 42 entries,
             1935 wiz_defined-function locations,
-            750 strings with 13472 characters,
-and the built_in function-call counts, 20001 in all, are:
-= -- 1894
-> -- 1147
+            757 strings with 13710 characters,
+and the built_in function-call counts, 20572 in all, are:
+= -- 1947
+> -- 1185
 < -- 13
-+ -- 412
-- -- 412
-* -- 1958
-:= -- 3522
-add.period$ -- 123
-call.type$ -- 41
-change.case$ -- 411
-chr.to.int$ -- 41
-cite$ -- 41
-duplicate$ -- 578
-empty$ -- 1214
-format.name$ -- 465
-if$ -- 3754
++ -- 426
+- -- 426
+* -- 2017
+:= -- 3622
+add.period$ -- 126
+call.type$ -- 42
+change.case$ -- 423
+chr.to.int$ -- 42
+cite$ -- 42
+duplicate$ -- 592
+empty$ -- 1246
+format.name$ -- 480
+if$ -- 3860
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 41
-newline$ -- 208
-num.names$ -- 123
-pop$ -- 321
+missing$ -- 42
+newline$ -- 213
+num.names$ -- 126
+pop$ -- 331
 preamble$ -- 1
-purify$ -- 411
+purify$ -- 423
 quote$ -- 0
-skip$ -- 429
+skip$ -- 439
 stack$ -- 0
-substring$ -- 1456
-swap$ -- 46
+substring$ -- 1499
+swap$ -- 47
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 246
+type$ -- 252
 warning$ -- 0
-while$ -- 157
+while$ -- 161
 width$ -- 0
-write$ -- 534
+write$ -- 547

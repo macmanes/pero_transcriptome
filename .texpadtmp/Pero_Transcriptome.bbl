@@ -94,6 +94,13 @@ Li, H. (2013).
   BWA-MEM}.
 \newblock {\em arXiv}.
 
+\bibitem[Li et~al., 2009]{Li:2009ka}
+Li, H., Handsaker, B., Wysoker, A., Fennell, T., Ruan, J., Homer, N., Marth,
+  G., Abecasis, G., Durbin, R., and {1000 Genome Project Data Processing
+  Subgroup} (2009).
+\newblock {The Sequence Alignment/Map format and SAMtools.}
+\newblock {\em Bioinformatics}, 25(16):2078--2079.
+
 \bibitem[Li and Godzik, 2006]{Li:2006hr}
 Li, W. and Godzik, A. (2006).
 \newblock {Cd-hit: A fast program for clustering and comparing large sets of
@@ -190,8 +197,7 @@ Roberts, A. and Pachter, L. (2013).
 \newblock {\em Nature Methods}, 10(1):71--73.
 
 \bibitem[Rojek et~al., 2006]{Rojek:2006dg}
-Rojek, A., Rojek, A., Fuchtbauer, E., Fuchtbauer, E., Kwon, T., Kwon, T.,
-  Frokiaer, J., and Nielsen, S. (2006).
+Rojek, A., Fuchtbauer, E., Kwon, T., Frokiaer, J., and Nielsen, S. (2006).
 \newblock {Severe urinary concentrating defect in renal collecting
   duct-selective AQP2 conditional-knockout mice}.
 \newblock {\em Proceedings of The National Academy of Sciences of The United
