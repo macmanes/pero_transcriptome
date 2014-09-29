@@ -139,14 +139,12 @@ BLASTing
     cat testes.final.fasta | awk '{print $1}' > testes.fasta    
     mv testes.fasta testes.final.fasta
 
-CD-HIT-EST 
+CD-HIT-EST on concatenated dataset (filtered brain/testes/liver/kidney)
 --
-
-- on concatenated dataset (filtered brain/testes/liver/kidney)
 
 	cd-hit-est -M 5000 -T 30 -c .95 -i concat.Trin.fasta -o Pero.BLTK.fasta
 	
-TransDecoder 
+TransDecoder on concatenated daatset
 ---
 
 	TransDecoder -S -cpu 30 -t Pero.BLTK.fasta
